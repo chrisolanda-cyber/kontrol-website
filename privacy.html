@@ -340,7 +340,7 @@
   <div class="contact-box">
     <div class="cb-title">Contact Us</div>
     <p>Questions about this policy or your data?</p>
-    <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#55343c153e3a3b21273a39343c7b363a387b3420"><span class="__cf_email__" data-cfemail="412028012a2e2f35332e2d20286f222e2c6f2034">[email&#160;protected]</span></a></p>
+    <p><strong>Email:</strong> <a href="#" id="kmail">ai [at] kontrolai [dot] com [dot] au</a></p>
     <p><strong>Location:</strong> Gold Coast, Australia</p>
   </div>
 </main>
@@ -359,5 +359,15 @@
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+<script>
+(function () {
+  var parts = ['ai', 'kontrolai', 'com', 'au'];
+  var addr = parts[0] + '\u0040' + parts[1] + '.' + parts[2] + '.' + parts[3];
+  var el = document.getElementById('kmail');
+  if (el) {
+    el.href = 'mailto:' + addr;
+    el.textContent = addr;
+  }
+})();
+</script></body>
 </html>
