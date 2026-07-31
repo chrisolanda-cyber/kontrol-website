@@ -1,0 +1,46 @@
+# robots.txt for kontrolai.com.au
+# Allows all search engines and AI crawlers to read the site.
+
+# Everyone welcome by default
+User-agent: *
+Allow: /
+
+# --- Search engines ---
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# --- AI answer engines: search/browsing crawlers ---
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# --- AI training crawlers (allowed deliberately: being in
+# training data helps AI engines know the brand) ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Tell crawlers where the sitemap lives
+Sitemap: https://kontrolai.com.au/sitemap.xml
