@@ -275,6 +275,70 @@
             "@type": "Answer",
             "text": "No. Most AI automation connects to the systems you already run — SimPRO, ServiceM8, Xero, MYOB, Microsoft 365, your CRM — through their existing APIs. Replacing a job management system is rarely the right first move. Automation sits between systems rather than inside them, so a typical build connects your email, job management and accounting tools and moves structured data between them. That matters commercially: a platform migration is a months-long project carrying retraining and data risk, while a workflow connecting what you already own can be live in days. Kontrol AI builds on n8n as the orchestration layer for exactly this reason — it connects to standard business APIs without asking your team to learn different software."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does AI automation cost for a small business in Australia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Four things move the price: how many jobs or invoices run through the process each month, how many systems must be connected, how variable the incoming information is, and how many exception cases need a rule. Published ranges in this market vary so widely that quoting one would be misleading — a single connection between two cloud systems and a multi-step pipeline handling hundreds of jobs a month are not the same product. What is consistent is the structure: a one-off build cost, then an ongoing running cost for hosting and model usage that is typically a small fraction of it. Kontrol AI (CO Advisory Pty Ltd), Gold Coast, scopes and prices each build after the free 60-minute workflow audit, so the number comes from your actual process rather than an average."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does an AI workflow audit cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nothing. The Kontrol AI workflow audit is a free 60-minute session that maps how the work currently moves, identifies where the admin hours are going, and comes back with the automation opportunities worth building. No obligation. The audit exists because scoping is the part that determines whether an automation is worth building at all. It covers the process as it actually runs, the systems involved, the volume going through it, and which steps could safely be handled without a person. What comes out is a short list of candidates and a view on which one pays back first. Nothing is charged before a scope is agreed, and there is no requirement to proceed to a build afterwards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What am I paying for — the software, or your time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mostly the time. The platforms an automation runs on cost tens of dollars a month; the work is mapping the process, connecting the systems, handling the exceptions and testing it against real data. It is worth separating the two, because they behave differently. Software is a recurring subscription you would pay whoever built the workflow — n8n, the model provider, the server. Build effort is a one-off: the process mapping, the integration work against SimPRO, ServiceM8, Xero or a CRM, the decisions about what happens when an input is ambiguous, and the testing that stops a bad automated action reaching a customer. The second is where the cost sits, and it is also where the value sits — a workflow built on a process nobody mapped properly is the usual reason automation projects fail."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the ongoing costs of AI automation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Three things recur: the automation platform the workflows run on, the AI model usage they consume per run, and any support arrangement you choose to keep. Support is optional and agreed at handover, not assumed. Model usage scales with volume, because each run sends a small amount of text to a model and pays per token — a workflow processing a few hundred jobs a month sits at the low end of that. The platform cost depends on whether n8n is self-hosted or run on n8n Cloud. Support is where the variation is: some clients take a monthly arrangement, others take the documentation at handover and call when something changes. Kontrol AI's builds are documented and portable, so ongoing support is a choice rather than a dependency."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does n8n cost to run?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The self-hosted Community Edition is free and unlimited; a small cloud server to run it costs under $10 a month. n8n Cloud starts around US$24 a month for 2,500 workflow executions, with unlimited workflows and users. n8n prices on execution volume rather than on workflows or seats, so the number of automations and the number of people using them do not change the bill. As at 3 August 2026 the published Cloud tiers run from roughly US$24 a month for 2,500 executions to US$60 for 10,000, with larger business tiers above that; n8n bills in US dollars and euros, not Australian dollars, so check the current page before budgeting. Self-hosting removes the licence cost entirely and leaves only the server — which is why Kontrol AI builds on n8n rather than on a platform that charges per task."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is custom automation more expensive than a Zapier subscription?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because a subscription buys the connectors, not the process. Zapier moves data between apps when the trigger matches exactly; a custom build interprets messy input, handles the exceptions and writes into your job and accounting systems reliably. The comparison is between a tool and a piece of work. Off-the-shelf automation is genuinely good for simple, predictable triggers, and where that is the whole problem it is the right answer — a consultant who tells you otherwise is selling. The cost appears when the input is a free-text email, a photo of a job sheet or a PDF, when a step has to be reversible, or when a field in SimPRO has to be right or payroll goes out wrong. Per-task subscription pricing also inverts at volume: the more the automation runs, the more it costs, where a self-hosted build does not."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the cheapest way to start with automation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with one workflow, not a program. Take the free audit, pick the single process eating the most hours, build that one, and let it run for a month before committing to anything else. The expensive mistake is scoping a whole transformation before anything is proven. One workflow is cheap enough to be a real test, and it produces the thing a spreadsheet cannot: evidence from your own data about whether the hours actually came back. It also surfaces the awkward parts of the process early, when changing the design is still cheap. Kontrol AI's own client pipelines were built this way — job intake first, then invoicing six weeks later, together removing 13.3 hours of admin a week as at 3 August 2026."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there hidden costs I should ask about?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The ones that catch people out are hosting and model usage after handover, paid connectors for systems the platform does not support natively, changes to scope mid-build, and whether support is included or billed separately. Two more are worth asking any automation consultant, because they are where the real money hides. The first is who holds the platform account: if the workflows live inside a vendor's own environment, leaving means rebuilding. The second is what happens when your job management system changes its API — someone has to fix it, and whether that is chargeable should be settled at handover rather than discovered later. Kontrol AI's builds are documented and portable, support is agreed at handover rather than assumed, and a scope change is re-quoted before the work is done rather than after."
+          }
         }
       ]
     }
@@ -2328,6 +2392,64 @@
       </div>
 
     </div>
+
+    <!-- FAQ:b -->
+    <div class="faq-sub">
+      <div class="faq-sub-head">
+        <div class="faq-sub-title">Questions about cost</div>
+        <div class="faq-sub-label">// pricing</div>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3 class="faq-q">How much does AI automation cost for a small business in Australia?</h3>
+          <p class="faq-capsule">Four things move the price: how many jobs or invoices run through the process each month, how many systems must be connected, how variable the incoming information is, and how many exception cases need a rule.</p>
+          <p class="faq-context">Published ranges in this market vary so widely that quoting one would be misleading — a single connection between two cloud systems and a multi-step pipeline handling hundreds of jobs a month are not the same product. What is consistent is the structure: a one-off build cost, then an ongoing running cost for hosting and model usage that is typically a small fraction of it. Kontrol AI (CO Advisory Pty Ltd), Gold Coast, scopes and prices each build after the free 60-minute workflow audit, so the number comes from your actual process rather than an average.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">How much does an AI workflow audit cost?</h3>
+          <p class="faq-capsule">Nothing. The Kontrol AI workflow audit is a free 60-minute session that maps how the work currently moves, identifies where the admin hours are going, and comes back with the automation opportunities worth building. No obligation.</p>
+          <p class="faq-context">The audit exists because scoping is the part that determines whether an automation is worth building at all. It covers the process as it actually runs, the systems involved, the volume going through it, and which steps could safely be handled without a person. What comes out is a short list of candidates and a view on which one pays back first. Nothing is charged before a scope is agreed, and there is no requirement to proceed to a build afterwards.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">What am I paying for — the software, or your time?</h3>
+          <p class="faq-capsule">Mostly the time. The platforms an automation runs on cost tens of dollars a month; the work is mapping the process, connecting the systems, handling the exceptions and testing it against real data.</p>
+          <p class="faq-context">It is worth separating the two, because they behave differently. Software is a recurring subscription you would pay whoever built the workflow — n8n, the model provider, the server. Build effort is a one-off: the process mapping, the integration work against SimPRO, ServiceM8, Xero or a CRM, the decisions about what happens when an input is ambiguous, and the testing that stops a bad automated action reaching a customer. The second is where the cost sits, and it is also where the value sits — a workflow built on a process nobody mapped properly is the usual reason automation projects fail.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">What are the ongoing costs of AI automation?</h3>
+          <p class="faq-capsule">Three things recur: the automation platform the workflows run on, the AI model usage they consume per run, and any support arrangement you choose to keep. Support is optional and agreed at handover, not assumed.</p>
+          <p class="faq-context">Model usage scales with volume, because each run sends a small amount of text to a model and pays per token — a workflow processing a few hundred jobs a month sits at the low end of that. The platform cost depends on whether n8n is self-hosted or run on n8n Cloud. Support is where the variation is: some clients take a monthly arrangement, others take the documentation at handover and call when something changes. Kontrol AI's builds are documented and portable, so ongoing support is a choice rather than a dependency.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">What does n8n cost to run?</h3>
+          <p class="faq-capsule">The self-hosted Community Edition is free and unlimited; a small cloud server to run it costs under $10 a month. n8n Cloud starts around US$24 a month for 2,500 workflow executions, with unlimited workflows and users.</p>
+          <p class="faq-context">n8n prices on execution volume rather than on workflows or seats, so the number of automations and the number of people using them do not change the bill. As at 3 August 2026 the published Cloud tiers run from roughly US$24 a month for 2,500 executions to US$60 for 10,000, with larger business tiers above that; n8n bills in US dollars and euros, not Australian dollars, so check the current page before budgeting. Self-hosting removes the licence cost entirely and leaves only the server — which is why Kontrol AI builds on n8n rather than on a platform that charges per task.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">Why is custom automation more expensive than a Zapier subscription?</h3>
+          <p class="faq-capsule">Because a subscription buys the connectors, not the process. Zapier moves data between apps when the trigger matches exactly; a custom build interprets messy input, handles the exceptions and writes into your job and accounting systems reliably.</p>
+          <p class="faq-context">The comparison is between a tool and a piece of work. Off-the-shelf automation is genuinely good for simple, predictable triggers, and where that is the whole problem it is the right answer — a consultant who tells you otherwise is selling. The cost appears when the input is a free-text email, a photo of a job sheet or a PDF, when a step has to be reversible, or when a field in SimPRO has to be right or payroll goes out wrong. Per-task subscription pricing also inverts at volume: the more the automation runs, the more it costs, where a self-hosted build does not.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">What's the cheapest way to start with automation?</h3>
+          <p class="faq-capsule">Start with one workflow, not a program. Take the free audit, pick the single process eating the most hours, build that one, and let it run for a month before committing to anything else.</p>
+          <p class="faq-context">The expensive mistake is scoping a whole transformation before anything is proven. One workflow is cheap enough to be a real test, and it produces the thing a spreadsheet cannot: evidence from your own data about whether the hours actually came back. It also surfaces the awkward parts of the process early, when changing the design is still cheap. Kontrol AI's own client pipelines were built this way — job intake first, then invoicing six weeks later, together removing 13.3 hours of admin a week as at 3 August 2026.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">Are there hidden costs I should ask about?</h3>
+          <p class="faq-capsule">The ones that catch people out are hosting and model usage after handover, paid connectors for systems the platform does not support natively, changes to scope mid-build, and whether support is included or billed separately.</p>
+          <p class="faq-context">Two more are worth asking any automation consultant, because they are where the real money hides. The first is who holds the platform account: if the workflows live inside a vendor's own environment, leaving means rebuilding. The second is what happens when your job management system changes its API — someone has to fix it, and whether that is chargeable should be settled at handover rather than discovered later. Kontrol AI's builds are documented and portable, support is agreed at handover rather than assumed, and a scope change is re-quoted before the work is done rather than after.</p>
+        </div>
+      </div>
+    </div>
+    <!-- /FAQ:b -->
   </div>
 </section>
 
