@@ -634,7 +634,7 @@
     --teal-glow: #58d8d030;
     --rust:     #e05a2b;
   --mustard:  #e0a82e;
-  --mustard-lift: #f0bc46;
+  --mustard-rule: #e0a82e4d;
     --text:     #dfe4e9;
     --text-mid: #8d98a3;
     --text-dim: #6a7682;
@@ -1495,23 +1495,25 @@
   .deep-link:hover .deep-link-title { color: var(--teal); }
 
   /* Mustard marks the cards that navigate to another page. Teal stays the
-     primary action colour, so the two never mean the same thing. */
+     primary action colour, so the two never mean the same thing. Kept as a
+     hairline-underlined label rather than a filled block — the site is built
+     on 1px rules, and a solid button in every card shouts. */
   .deep-link-cta {
     display: inline-block;
-    margin-top: 18px;
+    margin-top: 16px;
     font-family: 'JetBrains Mono', monospace;
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    padding: 9px 16px;
-    background: var(--mustard);
-    color: var(--bg);
-    transition: background 0.2s;
+    color: var(--mustard);
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--mustard-rule);
+    transition: border-color 0.2s;
   }
 
   .deep-link:hover .deep-link-cta,
-  .deep-link:focus-visible .deep-link-cta { background: var(--mustard-lift); }
+  .deep-link:focus-visible .deep-link-cta { border-bottom-color: var(--mustard); }
 
   :focus-visible { outline: 2px solid var(--mustard); outline-offset: 3px; }
 
