@@ -695,12 +695,13 @@
   .nav-logo {
     font-family: 'Orbitron', 'Barlow Condensed', sans-serif;
     font-weight: 800;
-    font-size: 36px;
+    font-size: 50px;
     letter-spacing: 0.01em;
     color: var(--teal);
     text-transform: uppercase;
     line-height: 1;
     text-decoration: none;
+    white-space: nowrap;
   }
 
   .nav-logo span { color: var(--text); }
@@ -1865,9 +1866,13 @@
   }
 
   /* Orbitron is much wider per character than the condensed face it replaced, so
-     between the mobile breakpoint and roughly 980px the wordmark and the links
-     run into each other. Tighten both rather than dropping the nav links, since
-     there is no hamburger menu to fall back to. */
+     the wordmark has to step down twice on the way to mobile or it runs into the
+     nav links. Tightening beats dropping the links, since there is no hamburger
+     menu to fall back to. */
+  @media (max-width: 1100px) {
+    .nav-logo { font-size: 36px; }
+  }
+
   @media (max-width: 980px) {
     .nav-logo { font-size: 24px; }
     .nav-links { gap: 20px; margin-right: 24px; }
@@ -1876,7 +1881,9 @@
 
   @media (max-width: 768px) {
     nav { padding: 0 20px; height: 68px; }
-    .nav-logo { font-size: 40px; }
+    /* 40px suited the condensed face; in Orbitron it wrapped to two lines and
+       collided with the button on a 375px screen. */
+    .nav-logo { font-size: 28px; }
     .nav-links { display: none; }
     .nav-cta { margin-left: auto; }
     .ticker-band { margin-top: 68px !important; }
