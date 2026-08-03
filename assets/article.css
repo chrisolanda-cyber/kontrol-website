@@ -30,6 +30,13 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("fonts/orbitron-800.woff2") format('woff2');
+}
+@font-face {
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 400;
@@ -303,6 +310,8 @@
   --teal-dim: #088880;
   --teal-faint:#58d8d015;
   --rust:     #e05a2b;
+  --mustard:  #e0a82e;
+  --mustard-rule: #e0a82e4d;
   --text:     #dfe4e9;
   --text-mid: #8d98a3;
   --text-dim: #6a7682;
@@ -352,10 +361,10 @@ nav {
 }
 
 .nav-logo {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Orbitron', 'Barlow Condensed', sans-serif;
   font-weight: 800;
-  font-size: 44px;
-  letter-spacing: -0.01em;
+  font-size: 26px;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
   color: var(--teal);
   text-decoration: none;
@@ -638,6 +647,25 @@ nav {
 
 .related-card:hover .related-title { color: var(--teal); }
 
+/* Mustard marks the cards that navigate to another page. Teal stays the
+   primary action colour, so the two never mean the same thing. */
+.related-cta {
+  display: inline-block;
+  margin-top: 16px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mustard);
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--mustard-rule);
+  transition: border-color 0.2s;
+}
+
+.related-card:hover .related-cta,
+.related-card:focus-visible .related-cta { border-bottom-color: var(--mustard); }
+
 .cta-band {
   margin-top: 72px;
   padding: 44px 40px;
@@ -714,7 +742,7 @@ footer {
 .footer-copy a { color: var(--text-dim); text-decoration: none; }
 .footer-copy a:hover { color: var(--teal); }
 
-:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--mustard); outline-offset: 3px; }
 
 @media (max-width: 768px) {
   nav { padding: 0 20px; height: 68px; }
