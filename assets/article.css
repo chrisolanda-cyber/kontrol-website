@@ -303,6 +303,8 @@
   --teal-dim: #088880;
   --teal-faint:#58d8d015;
   --rust:     #e05a2b;
+  --mustard:  #e0a82e;
+  --mustard-lift: #f0bc46;
   --text:     #dfe4e9;
   --text-mid: #8d98a3;
   --text-dim: #6a7682;
@@ -638,6 +640,25 @@ nav {
 
 .related-card:hover .related-title { color: var(--teal); }
 
+/* Mustard marks the cards that navigate to another page. Teal stays the
+   primary action colour, so the two never mean the same thing. */
+.related-cta {
+  display: inline-block;
+  margin-top: 16px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 9px 16px;
+  background: var(--mustard);
+  color: var(--bg);
+  transition: background 0.2s;
+}
+
+.related-card:hover .related-cta,
+.related-card:focus-visible .related-cta { background: var(--mustard-lift); }
+
 .cta-band {
   margin-top: 72px;
   padding: 44px 40px;
@@ -714,7 +735,7 @@ footer {
 .footer-copy a { color: var(--text-dim); text-decoration: none; }
 .footer-copy a:hover { color: var(--teal); }
 
-:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--mustard); outline-offset: 3px; }
 
 @media (max-width: 768px) {
   nav { padding: 0 20px; height: 68px; }
