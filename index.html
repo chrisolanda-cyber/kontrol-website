@@ -30,7 +30,9 @@
       "logo": "https://kontrolai.com.au/assets/kontrol-lockup-dark.png",
       "description": "Kontrolai, operated by CO Advisory Pty Ltd, is a Gold Coast based AI workflow automation consultancy helping Australian SMEs in trades, professional services and field services automate admin with workflow audits, n8n automation builds, and dashboard reporting.",
       "email": "ai@kontrolai.com.au",
-      "founder": { "@id": "https://kontrolai.com.au/#chris-olanda" },
+      "founder": {
+        "@id": "https://kontrolai.com.au/#chris-olanda"
+      },
       "areaServed": {
         "@type": "Country",
         "name": "Australia"
@@ -65,7 +67,9 @@
       "url": "https://kontrolai.com.au/#about",
       "image": "https://kontrolai.com.au/assets/chris-olanda.jpg",
       "email": "ai@kontrolai.com.au",
-      "worksFor": { "@id": "https://kontrolai.com.au/#organization" },
+      "worksFor": {
+        "@id": "https://kontrolai.com.au/#organization"
+      },
       "hasCredential": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "degree",
@@ -96,31 +100,191 @@
       "@id": "https://kontrolai.com.au/#website",
       "url": "https://kontrolai.com.au/",
       "name": "Kontrol AI",
-      "publisher": { "@id": "https://kontrolai.com.au/#organization" }
+      "publisher": {
+        "@id": "https://kontrolai.com.au/#organization"
+      }
     },
     {
       "@type": "Service",
       "name": "AI Workflow Audit",
       "serviceType": "Business process and automation audit",
-      "provider": { "@id": "https://kontrolai.com.au/#organization" },
-      "areaServed": { "@type": "Country", "name": "Australia" },
-      "description": "Fixed-fee diagnostic that maps a business's admin workflows and identifies the highest-value automation opportunities."
+      "provider": {
+        "@id": "https://kontrolai.com.au/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "description": "Free 60-minute diagnostic that maps a business's admin workflows and identifies the highest-value automation opportunities.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "AUD",
+        "availability": "https://schema.org/InStock"
+      }
     },
     {
       "@type": "Service",
       "name": "Automation Builds",
       "serviceType": "Workflow automation implementation",
-      "provider": { "@id": "https://kontrolai.com.au/#organization" },
-      "areaServed": { "@type": "Country", "name": "Australia" },
+      "provider": {
+        "@id": "https://kontrolai.com.au/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
       "description": "Custom n8n-based automations connecting operational software such as SimPRO, Xero and CRMs to eliminate repetitive admin work."
     },
     {
       "@type": "Service",
       "name": "Dashboard-as-a-Service",
       "serviceType": "Operational reporting dashboards",
-      "provider": { "@id": "https://kontrolai.com.au/#organization" },
-      "areaServed": { "@type": "Country", "name": "Australia" },
+      "provider": {
+        "@id": "https://kontrolai.com.au/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
       "description": "Live operational dashboards connecting a client's job management and accounting systems into a single reporting view."
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://kontrolai.com.au/#faq",
+      "url": "https://kontrolai.com.au/#faq",
+      "inLanguage": "en-AU",
+      "isPartOf": {
+        "@id": "https://kontrolai.com.au/#website"
+      },
+      "author": {
+        "@id": "https://kontrolai.com.au/#chris-olanda"
+      },
+      "publisher": {
+        "@id": "https://kontrolai.com.au/#organization"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do we start working together?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With a free 60-minute discovery call. Kontrol AI maps your current workflow, works out where the admin hours are going, and comes back with the automation opportunities worth building. No obligation to go further. After that the process runs in four steps: discovery, a mapped design of the automation built around your existing tools, the build and testing against live data, then handover with documentation and a walkthrough for your team. Most first builds go live in under a week. Nothing is charged before a scope is agreed, and an engagement can start with a single workflow rather than a whole program of work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a typical automation project take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A single scoped workflow usually goes live in under a week from the design being agreed. Larger programs run longer, but they are built and released one workflow at a time rather than as one big launch. Timelines depend far more on access and decisions than on build effort. Waiting on system credentials, or on a decision about what should happen to an edge case, is what stretches a project. The build itself is quick because it connects existing platforms instead of replacing them. Testing against real data is the part worth not rushing: a workflow that handles the ordinary case in a day but mishandles the unusual one costs more than it saved."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do I need to have in place before automating?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A process that happens roughly the same way each time, the systems it runs through, and someone who can answer questions about the exceptions. You do not need clean data or documented procedures to start. The common blocker isn't technology, it's a process that genuinely differs every time — usually a sign the decision should stay with a human. Messy is fine; inconsistent by design is not. Practically, you will need administrator access to the systems being connected so permissioned credentials can be issued, and about an hour from whoever knows how the work actually gets done, which is often not the business owner."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if the automation breaks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It raises an alert rather than failing quietly. A failed run notifies a person with the original input attached, the work falls back to the manual process it replaced, and nothing is lost — the job waits rather than disappearing. Silent failure is the real risk with automation, not failure itself, so monitoring is part of the build rather than an extra. Every run is logged, so a problem can be traced to the input that caused it instead of guessed at. Kontrol AI's pipelines have recorded a 99.6% success rate across 1,002 automation runs as at 3 August 2026, with the remainder surfacing as exceptions for a human to handle. Support arrangements are agreed at handover, so there is a known path when something does need fixing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who owns the automations after the project ends?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You do. The workflows are built on n8n, a standard and widely used automation platform, documented at handover and able to be picked up by another developer at any time. Nothing is locked inside a proprietary system. This is worth asking any automation consultant directly, because building inside a closed platform the client cannot access or export is a well-documented industry pattern. Handover here means the working system, documentation of how it is built, and a walkthrough for whoever looks after it internally. Ongoing support is available but optional. The real test of ownership is whether the automation would keep running if you walked away — and it would."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How accurate is the AI, and what happens when it's unsure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A well-built workflow doesn't guess. It acts automatically when confident and routes anything ambiguous to a person with the original message attached, so an unclear input becomes a short human check rather than a silent error. Accuracy should be measured rather than asserted. Kontrol AI's live pipelines have recorded a 99.6% success rate across 1,002 automation runs and 728 jobs as at 3 August 2026, with exceptions surfaced rather than hidden. The design principle is that a wrong automated action costs far more than a human glance, so confidence thresholds start conservative and are tightened only after the workflow has been watched against real data. Every run is logged, so any output can be traced back to the input that produced it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is AI workflow automation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI workflow automation is software that runs an admin process end to end — reading an email, extracting the details, creating the job in your system — making the judgment calls a person would otherwise make along the way. Traditional automation follows fixed rules: if this exact thing happens, do that. The AI layer adds interpretation, so the input no longer has to arrive in a predictable shape. A workflow can read an unstructured request, work out that it is a job, pull the site address, the fault and the urgency out of the text, and create the record in SimPRO or ServiceM8 without anyone re-keying it. Kontrol AI (CO Advisory Pty Ltd), a Gold Coast consultancy, builds these on n8n; its live client pipelines have processed 728 jobs and removed 13.3 hours of admin a week as at 3 August 2026."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between AI automation and regular automation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Regular automation moves data between apps when conditions match exactly. AI automation handles input that varies — free-text emails, PDFs, photos, call transcripts — by interpreting it first, then handing off to the same reliable rules. Most businesses already run some rule-based automation: a Zapier connection, an invoice template in Xero, an alert in their job management system. Those break the moment the input isn't in the expected shape, which is why inbound email is still usually handled by hand. The pattern that works is a hybrid — the AI layer reads and structures the messy input, then deterministic steps do the actual writing into SimPRO, Xero or a CRM, so every action is logged and repeatable. Across 1,002 automation runs, Kontrol AI's pipelines have recorded a 99.6% success rate on that model."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between RPA and workflow automation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RPA mimics a person clicking through a screen, so it breaks when the screen changes. Workflow automation connects systems through their APIs instead, and an AI layer on top reads the input a fixed rule can't interpret. RPA — robotic process automation — was built for older software with no API, and it drives the user interface the way a person would. It works, but it is brittle and expensive to maintain. Where a business runs modern cloud tools such as Xero, SimPRO, ServiceM8 or Microsoft 365, an API-based workflow is more reliable and far cheaper to run, because it talks to the system directly instead of pretending to be a user. For most Australian SMEs the practical answer is API-first, with RPA reserved for a legacy system that genuinely has no other way in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What business tasks can realistically be automated in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The realistic wins are high-volume admin with a describable process: email and job intake, quoting, scheduling and dispatch, invoicing, data entry between systems, and report generation. Work needing negotiation, physical presence or a real relationship does not. A useful test is whether the task is repetitive, whether someone could write the process down, and whether a right answer would be checkable. Job intake, invoice preparation and compliance reporting all pass it. A pricing negotiation with a long-standing client does not. Australia's National AI Centre put SME adoption at 43% across December 2025 to February 2026, with fewer than 30% of construction businesses using AI against more than half in the services sectors — so in trades in particular, most of this work is still being done by hand. Which task to automate first is a different question, usually answered by looking at where the hours go."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I just do this with ChatGPT myself?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can for drafting, and it's worth doing. What ChatGPT can't do is run without you: an automation is connected to your inbox and your job system, and it executes at 2am when nobody is at a desk. The gap is integration, reliability and maintenance rather than intelligence. The work is mapping the real process, deciding which steps are safe to automate, connecting email, SimPRO, Xero, ServiceM8 or a CRM with authenticated and permissioned access, handling the edge cases that break naive workflows, and monitoring the thing once it is live. Copying output out of a chat window still leaves a person moving information between systems — and that is the step that was costing the hours in the first place."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between AI automation and hiring an admin person?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An automation handles the repetitive, describable part of an admin role — intake, data entry, invoicing — at any hour and at consistent quality. It cannot exercise judgment, hold a client relationship, or notice that something feels wrong. The realistic comparison is capacity, not replacement. Two live Kontrol AI pipelines together remove 13.3 hours of admin a week — roughly two days of someone's time — by taking the typing, not the thinking. What is left is the work that actually needs a person: the unusual job, the awkward client conversation, the call about a variation. The honest limitation is that automation covers only the part of a role you can describe as a process. Anything requiring discretion, escalation or a phone call stays with a human."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my business data safe with an AI automation system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can be, if it is designed for it. The controls that matter are where the data is processed, whether it is used to train third-party models, who can access it, and whether every action is logged. Australian businesses handling personal information sit under the Privacy Act 1988 and the Australian Privacy Principles, administered by the OAIC — an automation inherits those obligations rather than changing them. From 10 December 2026, businesses using automated decision making that significantly affects individuals must also disclose it in their privacy policy. In practice that means business API tiers where inputs are not used for model training, credentials held in a secrets store rather than in the workflow, each integration limited to the permissions it needs, and a full audit trail. Kontrol AI builds every workflow with that trail, and routes anything ambiguous to a human."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to replace my current software?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Most AI automation connects to the systems you already run — SimPRO, ServiceM8, Xero, MYOB, Microsoft 365, your CRM — through their existing APIs. Replacing a job management system is rarely the right first move. Automation sits between systems rather than inside them, so a typical build connects your email, job management and accounting tools and moves structured data between them. That matters commercially: a platform migration is a months-long project carrying retraining and data risk, while a workflow connecting what you already own can be live in days. Kontrol AI builds on n8n as the orchestration layer for exactly this reason — it connects to standard business APIs without asking your team to learn different software."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Kontrol AI the same as Kontrol4?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Kontrol AI is an Australian AI workflow automation consultancy trading as CO Advisory Pty Ltd (ABN 85 693 421 788), based on the Gold Coast at kontrolai.com.au. It has no connection to Kontrol4, Kontrola or Kontrol-IT. The names are close enough to cause genuine confusion, particularly with Kontrol4, which is unrelated Australian contractor software. Kontrol AI does not sell a software product. It is a consultancy that designs and builds automation connecting the systems a business already runs, founded by Chris Olanda in 2026 and operating from the Gold Coast. The correct domain is kontrolai.com.au and the legal entity is CO Advisory Pty Ltd, ABN 85 693 421 788."
+          }
+        }
+      ]
     }
   ]
 }
@@ -1195,6 +1359,139 @@
     margin-top: 10px;
   }
 
+  /* ─── FAQ ─── */
+  .faq {
+    padding: 100px 48px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .faq-inner { max-width: 1200px; margin: 0 auto; }
+
+  .faq-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--rule);
+  }
+
+  .faq-item {
+    background: var(--card-bg);
+    padding: 36px 32px;
+    transition: background 0.2s;
+  }
+
+  /* FAQ blocks embedded inside another section */
+  .faq-sub { margin-top: 80px; }
+
+  .faq-sub-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 24px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .faq-sub-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text);
+    line-height: 1;
+  }
+
+  .faq-sub-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--teal);
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+  }
+
+  .faq-item:hover { background: var(--bg3); }
+
+  .faq-q {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text);
+    line-height: 1.15;
+    margin-bottom: 18px;
+  }
+
+  .faq-capsule {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 1.7;
+    padding-left: 16px;
+    border-left: 2px solid var(--teal-dim);
+  }
+
+  .faq-context {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-mid);
+    line-height: 1.75;
+    margin-top: 16px;
+  }
+
+  /* ─── DEEP LINKS ─── */
+  .deep-links {
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--rule);
+    border-top: 1px solid var(--rule);
+  }
+
+  .deep-links--single { grid-template-columns: 1fr; }
+
+  .deep-link {
+    background: var(--card-bg);
+    padding: 28px 26px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.2s;
+  }
+
+  .deep-link:hover { background: var(--bg3); }
+
+  .deep-link-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+  }
+
+  .deep-link-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text);
+    line-height: 1.15;
+    transition: color 0.2s;
+  }
+
+  .deep-link:hover .deep-link-title { color: var(--teal); }
+
+  .deep-link-desc {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--text-mid);
+    line-height: 1.55;
+    margin-top: 10px;
+  }
+
   /* ─── PROOF ─── */
   .proof {
     padding: 100px 48px;
@@ -1531,13 +1828,14 @@
     .nav-links { display: none; }
     .ticker-band { margin-top: 68px !important; }
     .hero { padding: 100px 20px 60px; min-height: auto; }
-    .how, .services, .industries, .about, .cta-section { padding: 64px 20px; }
+    .how, .services, .industries, .about, .faq, .cta-section { padding: 64px 20px; }
     .results-band { padding: 40px 20px; }
     .section-header { flex-direction: column; align-items: flex-start; gap: 16px; margin-bottom: 40px; }
     .section-desc { text-align: left; max-width: 100%; }
     .steps-track,
     .services-grid,
     .industries-list,
+    .faq-list,
     .about-grid,
     .about-stats,
     .proof-grid { grid-template-columns: 1fr; }
@@ -1547,6 +1845,10 @@
     .result-item:last-child { border-bottom: none; }
     .hero-stats-panel { padding: 28px; }
     .service-card { padding: 32px 24px; }
+    .faq-item { padding: 30px 24px; }
+    .faq-sub { margin-top: 56px; }
+    .deep-links { grid-template-columns: 1fr; margin-top: 48px; }
+    .faq-sub-head { flex-direction: column; align-items: flex-start; gap: 10px; margin-bottom: 28px; }
     .cta-box { padding: 32px 24px; }
     .hero-actions { flex-direction: column; align-items: stretch; }
     .btn-primary { text-align: center; }
@@ -1575,6 +1877,7 @@
     <li><a href="#services">Services</a></li>
     <li><a href="#industries">Industries</a></li>
     <li><a href="#about">About</a></li>
+    <li><a href="#faq">FAQ</a></li>
   </ul>
   <a href="#contact" class="nav-cta">Book a call</a>
 </nav>
@@ -1699,6 +2002,53 @@
         <div class="step-tag">Your system, your kontrol</div>
       </div>
     </div>
+
+    <!-- FAQ:e -->
+    <div class="faq-sub">
+      <div class="faq-sub-head">
+        <div class="faq-sub-title">Questions about working together</div>
+        <div class="faq-sub-label">// common questions</div>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3 class="faq-q">How do we start working together?</h3>
+          <p class="faq-capsule">With a free 60-minute discovery call. Kontrol AI maps your current workflow, works out where the admin hours are going, and comes back with the automation opportunities worth building. No obligation to go further.</p>
+          <p class="faq-context">After that the process runs in four steps: discovery, a mapped design of the automation built around your existing tools, the build and testing against live data, then handover with documentation and a walkthrough for your team. Most first builds go live in under a week. Nothing is charged before a scope is agreed, and an engagement can start with a single workflow rather than a whole program of work.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">How long does a typical automation project take?</h3>
+          <p class="faq-capsule">A single scoped workflow usually goes live in under a week from the design being agreed. Larger programs run longer, but they are built and released one workflow at a time rather than as one big launch.</p>
+          <p class="faq-context">Timelines depend far more on access and decisions than on build effort. Waiting on system credentials, or on a decision about what should happen to an edge case, is what stretches a project. The build itself is quick because it connects existing platforms instead of replacing them. Testing against real data is the part worth not rushing: a workflow that handles the ordinary case in a day but mishandles the unusual one costs more than it saved.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">What do I need to have in place before automating?</h3>
+          <p class="faq-capsule">A process that happens roughly the same way each time, the systems it runs through, and someone who can answer questions about the exceptions. You do not need clean data or documented procedures to start.</p>
+          <p class="faq-context">The common blocker isn't technology, it's a process that genuinely differs every time — usually a sign the decision should stay with a human. Messy is fine; inconsistent by design is not. Practically, you will need administrator access to the systems being connected so permissioned credentials can be issued, and about an hour from whoever knows how the work actually gets done, which is often not the business owner.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">What happens if the automation breaks?</h3>
+          <p class="faq-capsule">It raises an alert rather than failing quietly. A failed run notifies a person with the original input attached, the work falls back to the manual process it replaced, and nothing is lost — the job waits rather than disappearing.</p>
+          <p class="faq-context">Silent failure is the real risk with automation, not failure itself, so monitoring is part of the build rather than an extra. Every run is logged, so a problem can be traced to the input that caused it instead of guessed at. Kontrol AI's pipelines have recorded a 99.6% success rate across 1,002 automation runs as at 3 August 2026, with the remainder surfacing as exceptions for a human to handle. Support arrangements are agreed at handover, so there is a known path when something does need fixing.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">Who owns the automations after the project ends?</h3>
+          <p class="faq-capsule">You do. The workflows are built on n8n, a standard and widely used automation platform, documented at handover and able to be picked up by another developer at any time. Nothing is locked inside a proprietary system.</p>
+          <p class="faq-context">This is worth asking any automation consultant directly, because building inside a closed platform the client cannot access or export is a well-documented industry pattern. Handover here means the working system, documentation of how it is built, and a walkthrough for whoever looks after it internally. Ongoing support is available but optional. The real test of ownership is whether the automation would keep running if you walked away — and it would.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">How accurate is the AI, and what happens when it's unsure?</h3>
+          <p class="faq-capsule">A well-built workflow doesn't guess. It acts automatically when confident and routes anything ambiguous to a person with the original message attached, so an unclear input becomes a short human check rather than a silent error.</p>
+          <p class="faq-context">Accuracy should be measured rather than asserted. Kontrol AI's live pipelines have recorded a 99.6% success rate across 1,002 automation runs and 728 jobs as at 3 August 2026, with exceptions surfaced rather than hidden. The design principle is that a wrong automated action costs far more than a human glance, so confidence thresholds start conservative and are tightened only after the workflow has been watched against real data. Every run is logged, so any output can be traced back to the input that produced it.</p>
+        </div>
+      </div>
+    </div>
+    <!-- /FAQ:e -->
+
   </div>
 </section>
 
@@ -1814,6 +2164,26 @@
         </div>
       </div>
     </div>
+
+
+    <div class="deep-links">
+      <a class="deep-link" href="ai-automation-trade-contractors.html">
+        <div class="deep-link-label">// trades</div>
+        <div class="deep-link-title">AI automation for trade contractors →</div>
+        <div class="deep-link-desc">What gets automated first, the real numbers, and what doesn't automate.</div>
+      </a>
+      <a class="deep-link" href="simpro-xero-integration.html">
+        <div class="deep-link-label">// integration</div>
+        <div class="deep-link-title">SimPRO and Xero →</div>
+        <div class="deep-link-desc">What the Accounting Link covers, and the four gaps it leaves behind.</div>
+      </a>
+      <a class="deep-link" href="servicem8-xero-integration.html">
+        <div class="deep-link-label">// integration</div>
+        <div class="deep-link-title">ServiceM8 and Xero →</div>
+        <div class="deep-link-desc">What syncs automatically, and where the hours actually are.</div>
+      </a>
+    </div>
+
   </div>
 </section>
 
@@ -1892,6 +2262,86 @@
         <p>Kontrol AI is based on the Gold Coast, serves Brisbane and South East Queensland, and works with clients nationally.</p>
       </div>
     </div>
+
+
+    <div class="deep-links deep-links--single">
+      <a class="deep-link" href="ai-consultant-gold-coast.html">
+        <div class="deep-link-label">// gold coast</div>
+        <div class="deep-link-title">AI automation consultant, Gold Coast →</div>
+        <div class="deep-link-desc">Service area, the Australian software stack, and how to judge any automation consultant.</div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="faq-inner">
+    <div class="section-header">
+      <div>
+        <div class="section-num">// 05</div>
+        <h2 class="section-title">Common <span>Questions</span></h2>
+      </div>
+      <div class="section-desc">Straight answers on what workflow automation actually is, what it can take off your desk, and how it handles your data.</div>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 class="faq-q">What is AI workflow automation?</h3>
+        <p class="faq-capsule">AI workflow automation is software that runs an admin process end to end — reading an email, extracting the details, creating the job in your system — making the judgment calls a person would otherwise make along the way.</p>
+        <p class="faq-context">Traditional automation follows fixed rules: if this exact thing happens, do that. The AI layer adds interpretation, so the input no longer has to arrive in a predictable shape. A workflow can read an unstructured request, work out that it is a job, pull the site address, the fault and the urgency out of the text, and create the record in SimPRO or ServiceM8 without anyone re-keying it. Kontrol AI (CO Advisory Pty Ltd), a Gold Coast consultancy, builds these on n8n; its live client pipelines have processed 728 jobs and removed 13.3 hours of admin a week as at 3 August 2026.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q">What's the difference between AI automation and regular automation?</h3>
+        <p class="faq-capsule">Regular automation moves data between apps when conditions match exactly. AI automation handles input that varies — free-text emails, PDFs, photos, call transcripts — by interpreting it first, then handing off to the same reliable rules.</p>
+        <p class="faq-context">Most businesses already run some rule-based automation: a Zapier connection, an invoice template in Xero, an alert in their job management system. Those break the moment the input isn't in the expected shape, which is why inbound email is still usually handled by hand. The pattern that works is a hybrid — the AI layer reads and structures the messy input, then deterministic steps do the actual writing into SimPRO, Xero or a CRM, so every action is logged and repeatable. Across 1,002 automation runs, Kontrol AI's pipelines have recorded a 99.6% success rate on that model.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q">What is the difference between RPA and workflow automation?</h3>
+        <p class="faq-capsule">RPA mimics a person clicking through a screen, so it breaks when the screen changes. Workflow automation connects systems through their APIs instead, and an AI layer on top reads the input a fixed rule can't interpret.</p>
+        <p class="faq-context">RPA — robotic process automation — was built for older software with no API, and it drives the user interface the way a person would. It works, but it is brittle and expensive to maintain. Where a business runs modern cloud tools such as Xero, SimPRO, ServiceM8 or Microsoft 365, an API-based workflow is more reliable and far cheaper to run, because it talks to the system directly instead of pretending to be a user. For most Australian SMEs the practical answer is API-first, with RPA reserved for a legacy system that genuinely has no other way in.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q">What business tasks can realistically be automated in 2026?</h3>
+        <p class="faq-capsule">The realistic wins are high-volume admin with a describable process: email and job intake, quoting, scheduling and dispatch, invoicing, data entry between systems, and report generation. Work needing negotiation, physical presence or a real relationship does not.</p>
+        <p class="faq-context">A useful test is whether the task is repetitive, whether someone could write the process down, and whether a right answer would be checkable. Job intake, invoice preparation and compliance reporting all pass it. A pricing negotiation with a long-standing client does not. Australia's National AI Centre put SME adoption at 43% across December 2025 to February 2026, with fewer than 30% of construction businesses using AI against more than half in the services sectors — so in trades in particular, most of this work is still being done by hand. Which task to automate first is a different question, usually answered by looking at where the hours go.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q">Can I just do this with ChatGPT myself?</h3>
+        <p class="faq-capsule">You can for drafting, and it's worth doing. What ChatGPT can't do is run without you: an automation is connected to your inbox and your job system, and it executes at 2am when nobody is at a desk.</p>
+        <p class="faq-context">The gap is integration, reliability and maintenance rather than intelligence. The work is mapping the real process, deciding which steps are safe to automate, connecting email, SimPRO, Xero, ServiceM8 or a CRM with authenticated and permissioned access, handling the edge cases that break naive workflows, and monitoring the thing once it is live. Copying output out of a chat window still leaves a person moving information between systems — and that is the step that was costing the hours in the first place.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q">What's the difference between AI automation and hiring an admin person?</h3>
+        <p class="faq-capsule">An automation handles the repetitive, describable part of an admin role — intake, data entry, invoicing — at any hour and at consistent quality. It cannot exercise judgment, hold a client relationship, or notice that something feels wrong.</p>
+        <p class="faq-context">The realistic comparison is capacity, not replacement. Two live Kontrol AI pipelines together remove 13.3 hours of admin a week — roughly two days of someone's time — by taking the typing, not the thinking. What is left is the work that actually needs a person: the unusual job, the awkward client conversation, the call about a variation. The honest limitation is that automation covers only the part of a role you can describe as a process. Anything requiring discretion, escalation or a phone call stays with a human.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q">Is my business data safe with an AI automation system?</h3>
+        <p class="faq-capsule">It can be, if it is designed for it. The controls that matter are where the data is processed, whether it is used to train third-party models, who can access it, and whether every action is logged.</p>
+        <p class="faq-context">Australian businesses handling personal information sit under the Privacy Act 1988 and the Australian Privacy Principles, administered by the OAIC — an automation inherits those obligations rather than changing them. From 10 December 2026, businesses using automated decision making that significantly affects individuals must also disclose it in their privacy policy. In practice that means business API tiers where inputs are not used for model training, credentials held in a secrets store rather than in the workflow, each integration limited to the permissions it needs, and a full audit trail. Kontrol AI builds every workflow with that trail, and routes anything ambiguous to a human.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q">Do I need to replace my current software?</h3>
+        <p class="faq-capsule">No. Most AI automation connects to the systems you already run — SimPRO, ServiceM8, Xero, MYOB, Microsoft 365, your CRM — through their existing APIs. Replacing a job management system is rarely the right first move.</p>
+        <p class="faq-context">Automation sits between systems rather than inside them, so a typical build connects your email, job management and accounting tools and moves structured data between them. That matters commercially: a platform migration is a months-long project carrying retraining and data risk, while a workflow connecting what you already own can be live in days. Kontrol AI builds on n8n as the orchestration layer for exactly this reason — it connects to standard business APIs without asking your team to learn different software.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q">Is Kontrol AI the same as Kontrol4?</h3>
+        <p class="faq-capsule">No. Kontrol AI is an Australian AI workflow automation consultancy trading as CO Advisory Pty Ltd (ABN 85 693 421 788), based on the Gold Coast at kontrolai.com.au. It has no connection to Kontrol4, Kontrola or Kontrol-IT.</p>
+        <p class="faq-context">The names are close enough to cause genuine confusion, particularly with Kontrol4, which is unrelated Australian contractor software. Kontrol AI does not sell a software product. It is a consultancy that designs and builds automation connecting the systems a business already runs, founded by Chris Olanda in 2026 and operating from the Gold Coast. The correct domain is kontrolai.com.au and the legal entity is CO Advisory Pty Ltd, ABN 85 693 421 788.</p>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -1936,6 +2386,7 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#industries">Industries</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="footer-copy">© 2026 Kontrol AI · Gold Coast, AU · <a href="privacy.html" style="color:var(--text-dim);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--teal)'" onmouseout="this.style.color='var(--text-dim)'">Privacy Policy</a> · <a href="terms.html" style="color:var(--text-dim);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--teal)'" onmouseout="this.style.color='var(--text-dim)'">Terms</a></div>
