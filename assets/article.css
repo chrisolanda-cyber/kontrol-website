@@ -374,6 +374,30 @@ nav {
 
 .nav-logo span { color: var(--text); }
 
+/* Nav is space-between with logo and CTA at the edges; margin-left:auto pulls
+   the link list across so it sits beside the CTA, matching the homepage. */
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0 28px 0 auto;
+  padding: 0;
+}
+
+.nav-links a {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  text-decoration: none;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+
+.nav-links a:hover { color: var(--teal); }
+
 .nav-cta {
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
@@ -839,6 +863,8 @@ footer {
   nav { padding: 0 20px; height: 68px; }
   /* 38px suited the condensed face; Orbitron is far wider and wrapped here. */
   .nav-logo { font-size: 28px; }
+  /* No hamburger to fall back to, so the links drop rather than collide. */
+  .nav-links { display: none; }
   .page { padding: 116px 20px 72px; }
   .page h2 { font-size: 27px; margin-top: 48px; }
   .answer { padding: 20px 22px; font-size: 17px; }
