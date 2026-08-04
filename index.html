@@ -3,16 +3,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kontrol AI — Automate the Admin Between the Work</title>
-<meta name="description" content="Kontrolai (CO Advisory Pty Ltd) is a Gold Coast AI workflow automation consultancy helping Australian SMEs automate admin with audits, n8n builds and dashboards.">
+<meta name="description" content="Kontrolai (CO Advisory Pty Ltd) is a Gold Coast AI workflow automation consultancy helping Australian SMEs automate admin with workflow reviews, n8n builds and dashboards.">
 <link rel="canonical" href="https://kontrolai.com.au/">
 <meta name="msvalidate.01" content="84F9F9F424B8D7DA4022E1B17550CEEC" />
+<script src="assets/analytics.js"></script>
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kontrol AI">
 <meta property="og:locale" content="en_AU">
 <meta property="og:url" content="https://kontrolai.com.au/">
 <meta property="og:title" content="Kontrol AI — Automate the Admin Between the Work">
-<meta property="og:description" content="Kontrolai (CO Advisory Pty Ltd) is a Gold Coast AI workflow automation consultancy helping Australian SMEs automate admin with audits, n8n builds and dashboards.">
+<meta property="og:description" content="Kontrolai (CO Advisory Pty Ltd) is a Gold Coast AI workflow automation consultancy helping Australian SMEs automate admin with workflow reviews, n8n builds and dashboards.">
 <meta property="og:image" content="https://kontrolai.com.au/assets/kontrol-lockup-dark.png">
 <meta name="twitter:card" content="summary">
 
@@ -29,7 +30,7 @@
       "taxID": "85 693 421 788",
       "url": "https://kontrolai.com.au/",
       "logo": "https://kontrolai.com.au/assets/kontrol-lockup-dark.png",
-      "description": "Kontrolai, operated by CO Advisory Pty Ltd, is a Gold Coast based AI workflow automation consultancy helping Australian SMEs in trades, professional services and field services automate admin with workflow audits, n8n automation builds, and dashboard reporting.",
+      "description": "Kontrolai, operated by CO Advisory Pty Ltd, is a Gold Coast based AI workflow automation consultancy helping Australian SMEs in trades, professional services and field services automate admin with workflow reviews, n8n automation builds, and dashboard reporting.",
       "email": "ai@kontrolai.com.au",
       "founder": {
         "@id": "https://kontrolai.com.au/#chris-olanda"
@@ -107,8 +108,8 @@
     },
     {
       "@type": "Service",
-      "name": "AI Workflow Audit",
-      "serviceType": "Business process and automation audit",
+      "name": "AI Workflow Review",
+      "serviceType": "Business process and automation review",
       "provider": {
         "@id": "https://kontrolai.com.au/#organization"
       },
@@ -234,15 +235,15 @@
           "name": "How much does AI automation cost for a small business in Australia?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Four things move the price: how many jobs or invoices run through the process each month, how many systems must be connected, how variable the incoming information is, and how many exception cases need a rule. Published ranges in this market vary so widely that quoting one would be misleading — a single connection between two cloud systems and a multi-step pipeline handling hundreds of jobs a month are not the same product. What is consistent is the structure: a one-off build cost, then an ongoing running cost for hosting and model usage that is typically a small fraction of it. Kontrol AI (CO Advisory Pty Ltd), Gold Coast, scopes and prices each build after the free 60-minute workflow audit, so the number comes from your actual process rather than an average."
+            "text": "Four things move the price: how many jobs or invoices run through the process each month, how many systems must be connected, how variable the incoming information is, and how many exception cases need a rule. Published ranges in this market vary so widely that quoting one would be misleading — a single connection between two cloud systems and a multi-step pipeline handling hundreds of jobs a month are not the same product. What is consistent is the structure: a one-off build cost, then an ongoing running cost for hosting and model usage that is typically a small fraction of it. Kontrol AI (CO Advisory Pty Ltd), Gold Coast, scopes and prices each build after the free 60-minute workflow review, so the number comes from your actual process rather than an average."
           }
         },
         {
           "@type": "Question",
-          "name": "How much does an AI workflow audit cost?",
+          "name": "How much does an AI workflow review cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Nothing. The Kontrol AI workflow audit is a free 60-minute session that maps how the work currently moves, identifies where the admin hours are going, and comes back with the automation opportunities worth building. No obligation. The audit exists because scoping is the part that determines whether an automation is worth building at all. It covers the process as it actually runs, the systems involved, the volume going through it, and which steps could safely be handled without a person. What comes out is a short list of candidates and a view on which one pays back first. Nothing is charged before a scope is agreed, and there is no requirement to proceed to a build afterwards."
+            "text": "Nothing. The Kontrol AI workflow review is a free 60-minute session that maps how the work currently moves, identifies where the admin hours are going, and comes back with the automation opportunities worth building. No obligation. The review exists because scoping is the part that determines whether an automation is worth building at all. It covers the process as it actually runs, the systems involved, the volume going through it, and which steps could safely be handled without a person. What comes out is a short list of candidates and a view on which one pays back first. Nothing is charged before a scope is agreed, and there is no requirement to proceed to a build afterwards."
           }
         },
         {
@@ -282,7 +283,7 @@
           "name": "What's the cheapest way to start with automation?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Start with one workflow, not a program. Take the free audit, pick the single process eating the most hours, build that one, and let it run for a month before committing to anything else. The expensive mistake is scoping a whole transformation before anything is proven. One workflow is cheap enough to be a real test, and it produces the thing a spreadsheet cannot: evidence from your own data about whether the hours actually came back. It also surfaces the awkward parts of the process early, when changing the design is still cheap. Kontrol AI's own client pipelines were built this way — job intake first, then invoicing six weeks later, together removing 13.3 hours of admin a week as at 3 August 2026."
+            "text": "Start with one workflow, not a program. Take the free review, pick the single process eating the most hours, build that one, and let it run for a month before committing to anything else. The expensive mistake is scoping a whole transformation before anything is proven. One workflow is cheap enough to be a real test, and it produces the thing a spreadsheet cannot: evidence from your own data about whether the hours actually came back. It also surfaces the awkward parts of the process early, when changing the design is still cheap. Kontrol AI's own client pipelines were built this way — job intake first, then invoicing six weeks later, together removing 13.3 hours of admin a week as at 3 August 2026."
           }
         },
         {
@@ -1687,6 +1688,48 @@
     align-items: center;
   }
 
+  /* Inline Cal.com booking calendar, sitting under the two-column CTA block. */
+  .cta-book {
+    max-width: 1200px;
+    margin: 76px auto 0;
+    position: relative;
+  }
+
+  .cta-book-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 28px;
+  }
+
+  .cta-book-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text);
+  }
+
+  .cta-book-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+  }
+
+  .cal-embed {
+    width: 100%;
+    min-height: 640px;
+    overflow: hidden;
+    background: var(--bg2);
+    border: 1px solid var(--card-border);
+  }
+
+  .cal-fallback { margin: 0; }
+
   .cta-headline {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 800;
@@ -1862,6 +1905,9 @@
   @media (max-width: 1024px) {
     .hero-inner { grid-template-columns: 1fr; gap: 56px; }
     .cta-inner { grid-template-columns: 1fr; gap: 48px; }
+    .cta-book { margin-top: 56px; }
+    .cta-book-head { flex-direction: column; align-items: flex-start; gap: 6px; }
+    .cal-embed { min-height: 560px; }
     .steps-track { grid-template-columns: 1fr 1fr; }
     .cta-box { min-width: 0; }
   }
@@ -2041,7 +2087,7 @@
       <div class="step">
         <div class="step-num">01</div>
         <h3 class="step-title">Discovery</h3>
-        <div class="step-body">We audit your current workflow — every email, spreadsheet, and manual step — to identify exactly where the friction lives.</div>
+        <div class="step-body">We review your current workflow — every email, spreadsheet, and manual step — to identify exactly where the friction lives.</div>
         <div class="step-tag">60 min session</div>
       </div>
       <div class="step">
@@ -2068,7 +2114,7 @@
       <a class="deep-link" href="ai-automation-process.html">
         <div class="deep-link-label">// process</div>
         <div class="deep-link-title">How an AI automation project actually works</div>
-        <div class="deep-link-desc">What the audit covers, what we need from you, how it's tested, and what you get at handover.</div>
+        <div class="deep-link-desc">What the review covers, what we need from you, how it's tested, and what you get at handover.</div>
         <span class="deep-link-cta">Click for more info →</span>
       </a>
     </div>
@@ -2375,13 +2421,13 @@
         <div class="faq-item">
           <h3 class="faq-q">How much does AI automation cost for a small business in Australia?</h3>
           <p class="faq-capsule">Four things move the price: how many jobs or invoices run through the process each month, how many systems must be connected, how variable the incoming information is, and how many exception cases need a rule.</p>
-          <p class="faq-context">Published ranges in this market vary so widely that quoting one would be misleading — a single connection between two cloud systems and a multi-step pipeline handling hundreds of jobs a month are not the same product. What is consistent is the structure: a one-off build cost, then an ongoing running cost for hosting and model usage that is typically a small fraction of it. Kontrol AI (CO Advisory Pty Ltd), Gold Coast, scopes and prices each build after the free 60-minute workflow audit, so the number comes from your actual process rather than an average.</p>
+          <p class="faq-context">Published ranges in this market vary so widely that quoting one would be misleading — a single connection between two cloud systems and a multi-step pipeline handling hundreds of jobs a month are not the same product. What is consistent is the structure: a one-off build cost, then an ongoing running cost for hosting and model usage that is typically a small fraction of it. Kontrol AI (CO Advisory Pty Ltd), Gold Coast, scopes and prices each build after the free 60-minute workflow review, so the number comes from your actual process rather than an average.</p>
         </div>
 
         <div class="faq-item">
-          <h3 class="faq-q">How much does an AI workflow audit cost?</h3>
-          <p class="faq-capsule">Nothing. The Kontrol AI workflow audit is a free 60-minute session that maps how the work currently moves, identifies where the admin hours are going, and comes back with the automation opportunities worth building. No obligation.</p>
-          <p class="faq-context">The audit exists because scoping is the part that determines whether an automation is worth building at all. It covers the process as it actually runs, the systems involved, the volume going through it, and which steps could safely be handled without a person. What comes out is a short list of candidates and a view on which one pays back first. Nothing is charged before a scope is agreed, and there is no requirement to proceed to a build afterwards.</p>
+          <h3 class="faq-q">How much does an AI workflow review cost?</h3>
+          <p class="faq-capsule">Nothing. The Kontrol AI workflow review is a free 60-minute session that maps how the work currently moves, identifies where the admin hours are going, and comes back with the automation opportunities worth building. No obligation.</p>
+          <p class="faq-context">The review exists because scoping is the part that determines whether an automation is worth building at all. It covers the process as it actually runs, the systems involved, the volume going through it, and which steps could safely be handled without a person. What comes out is a short list of candidates and a view on which one pays back first. Nothing is charged before a scope is agreed, and there is no requirement to proceed to a build afterwards.</p>
         </div>
 
         <div class="faq-item">
@@ -2410,7 +2456,7 @@
 
         <div class="faq-item">
           <h3 class="faq-q">What's the cheapest way to start with automation?</h3>
-          <p class="faq-capsule">Start with one workflow, not a program. Take the free audit, pick the single process eating the most hours, build that one, and let it run for a month before committing to anything else.</p>
+          <p class="faq-capsule">Start with one workflow, not a program. Take the free review, pick the single process eating the most hours, build that one, and let it run for a month before committing to anything else.</p>
           <p class="faq-context">The expensive mistake is scoping a whole transformation before anything is proven. One workflow is cheap enough to be a real test, and it produces the thing a spreadsheet cannot: evidence from your own data about whether the hours actually came back. It also surfaces the awkward parts of the process early, when changing the design is still cheap. Kontrol AI's own client pipelines were built this way — job intake first, then invoicing six weeks later, together removing 13.3 hours of admin a week as at 3 August 2026.</p>
         </div>
 
@@ -2441,8 +2487,8 @@
     </div>
     <div class="cta-box">
       <h3 class="cta-box-title">Book a discovery call</h3>
-      <div class="cta-box-desc">Free 60-min workflow audit. Gold Coast and national.</div>
-      <form action="https://formspree.io/f/mgojnaya" method="POST">
+      <div class="cta-box-desc">Free 60-min workflow review. Gold Coast and national.</div>
+      <form action="https://formspree.io/f/mgojnaya" method="POST" id="contact-form">
         <input type="hidden" name="_subject" value="New discovery call request — Kontrol AI">
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
         <input class="cta-input" type="text" name="name" placeholder="Name" required="">
@@ -2454,6 +2500,15 @@
       </form>
       <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-dim);margin-top:16px;padding-top:16px;border-top:1px solid var(--rule);letter-spacing:0.04em;">Or email us directly: <a href="mailto:ai@kontrolai.com.au" style="color:var(--teal);text-decoration:none;">ai@kontrolai.com.au</a></p>
     </div>
+  </div>
+
+  <div class="cta-book" id="book">
+    <div class="cta-book-head">
+      <h3 class="cta-book-title">Or pick a time now</h3>
+      <span class="cta-book-label">// free · 60 minutes · no obligation</span>
+    </div>
+    <div class="cal-embed"></div>
+    <p class="cal-fallback" hidden><a class="btn-primary" href="#contact">Book a discovery call →</a></p>
   </div>
 </section>
 
@@ -2474,5 +2529,22 @@
 </footer>
 
 
+
+<script src="assets/booking.js" defer></script>
+
+<script>
+/* Fire the lead conversion when the contact form is submitted. The form posts
+   to Formspree and navigates away, so this is a submit-time signal rather than
+   a confirmed-delivery one — gtag sends it via the beacon transport. */
+(function () {
+  var form = document.getElementById('contact-form');
+  if (!form) { return; }
+  form.addEventListener('submit', function () {
+    if (typeof window.kontrolTrackLead === 'function') {
+      window.kontrolTrackLead('homepage contact form');
+    }
+  });
+})();
+</script>
 
 </body></html>

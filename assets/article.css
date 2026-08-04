@@ -743,6 +743,96 @@ footer {
 .footer-copy a { color: var(--text-dim); text-decoration: none; }
 .footer-copy a:hover { color: var(--teal); }
 
+/* Screenshot figures. Used on the dashboards page; safe to reuse anywhere. */
+.shot {
+  margin: 40px 0;
+  border: 1px solid var(--rule);
+  background: var(--card-bg);
+}
+
+.shot a {
+  display: block;
+  line-height: 0;
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* Dashboard boards are dense — at the 860px prose measure they scale to ~38%
+   and the tables stop being readable. On wide viewports the figure breaks out
+   of the column and centres on the viewport instead. */
+@media (min-width: 1000px) {
+  .shot {
+    position: relative;
+    left: 50%;
+    width: min(1240px, calc(100vw - 96px));
+    transform: translateX(-50%);
+  }
+}
+
+.shot figcaption {
+  padding: 16px 22px 18px;
+}
+
+.shot-label {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal-dim);
+  margin-bottom: 8px;
+}
+
+.shot-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-mid);
+  margin: 0;
+}
+
+/* Placeholder state. The figures ship with a real <img> plus a hidden fallback
+   frame; if the image 404s, an onerror handler adds .is-empty and swaps them.
+   Drop the file in and it renders — no markup change needed. */
+.shot .shot-frame { display: none; }
+
+.shot.is-empty {
+  border-style: dashed;
+}
+
+.shot.is-empty .shot-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+  border-bottom: 1px solid var(--rule);
+  background: var(--bg2);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  text-align: center;
+  padding: 24px;
+}
+
+/* Cal.com inline booking embed, mounted in the CTA band. */
+.cal-embed {
+  width: 100%;
+  min-height: 640px;
+  margin-top: 28px;
+  overflow: hidden;
+  background: var(--bg2);
+  border: 1px solid var(--rule);
+}
+
+.cal-fallback {
+  margin-top: 28px;
+}
+
 :focus-visible { outline: 2px solid var(--mustard); outline-offset: 3px; }
 
 @media (max-width: 768px) {
@@ -754,6 +844,10 @@ footer {
   .answer { padding: 20px 22px; font-size: 17px; }
   .faq-item { padding: 26px 22px; }
   .faq-block-head { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .cal-embed { min-height: 560px; margin-top: 22px; }
+  .shot { margin: 32px 0; }
+  .shot figcaption { padding: 14px 18px 16px; }
+  .shot.is-empty .shot-frame { min-height: 180px; }
   .cta-band { padding: 32px 24px; }
   footer { padding: 32px 20px; }
   .footer-inner { flex-direction: column; align-items: flex-start; }

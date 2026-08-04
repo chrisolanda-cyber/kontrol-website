@@ -8,6 +8,7 @@
 <link rel="canonical" href="https://kontrolai.com.au/simpro-xero-integration.html">
 <meta name="msvalidate.01" content="84F9F9F424B8D7DA4022E1B17550CEEC" />
 <link rel="stylesheet" href="assets/article.css">
+<script src="assets/analytics.js"></script>
 
 <script type="application/ld+json">
 {
@@ -106,7 +107,7 @@
           "name": "When do I need custom API work instead of the native integration?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "When the gap costs more than the fix. If someone re-keys data the link doesn't carry, checks exported timesheets by hand weekly, or untangles split payments at reconciliation, that time is measurable — and worth pricing against a build. The native link is free and maintained by the vendor, so it should always do as much of the work as it can. Custom work earns its place at the edges: validating timesheets before they export, handling a payment allocation the link flattens, or moving data the link was never designed to touch — job intake, quote follow-ups, compliance documents. The right test is hours saved per week against build cost, which is what the free workflow audit measures before anything gets built."
+            "text": "When the gap costs more than the fix. If someone re-keys data the link doesn't carry, checks exported timesheets by hand weekly, or untangles split payments at reconciliation, that time is measurable — and worth pricing against a build. The native link is free and maintained by the vendor, so it should always do as much of the work as it can. Custom work earns its place at the edges: validating timesheets before they export, handling a payment allocation the link flattens, or moving data the link was never designed to touch — job intake, quote follow-ups, compliance documents. The right test is hours saved per week against build cost, which is what the free workflow review measures before anything gets built."
           }
         },
         {
@@ -127,7 +128,7 @@
 
 <nav>
   <a href="index.html" class="nav-logo">Kontrol<span> AI</span></a>
-  <a href="index.html#contact" class="nav-cta">Book a call</a>
+  <a href="#book" class="nav-cta">Book a call</a>
 </nav>
 
 <main class="page">
@@ -160,7 +161,7 @@
   <div class="gotcha">
     <div class="gotcha-label">// where payroll weeks go wrong</div>
     <p>A supervisor approves a correction on Friday afternoon. The transfer ran Friday morning. Nothing errors, nothing alerts, and payroll goes out on the earlier numbers unless a person happens to notice.</p>
-    <p>The fix is a check <em>before</em> the export rather than a review after it: compare entries against the last transfer, flag anything edited since, and hold the run until someone confirms.</p>
+    <p>The fix is a check <em>before</em> the export rather than an audit after it: compare entries against the last transfer, flag anything edited since, and hold the run until someone confirms.</p>
   </div>
 
   <h3>2. Payments across several invoices arrive split</h3>
@@ -198,7 +199,7 @@
       <div class="faq-item">
         <h3 class="faq-q">When do I need custom API work instead of the native integration?</h3>
         <p class="faq-capsule">When the gap costs more than the fix. If someone re-keys data the link doesn't carry, checks exported timesheets by hand weekly, or untangles split payments at reconciliation, that time is measurable — and worth pricing against a build.</p>
-        <p class="faq-context">The native link is free and maintained by the vendor, so it should always do as much of the work as it can. Custom work earns its place at the edges: validating timesheets before they export, handling a payment allocation the link flattens, or moving data the link was never designed to touch — job intake, quote follow-ups, compliance documents. The right test is hours saved per week against build cost, which is what the free workflow audit measures before anything gets built.</p>
+        <p class="faq-context">The native link is free and maintained by the vendor, so it should always do as much of the work as it can. Custom work earns its place at the edges: validating timesheets before they export, handling a payment allocation the link flattens, or moving data the link was never designed to touch — job intake, quote follow-ups, compliance documents. The right test is hours saved per week against build cost, which is what the free workflow review measures before anything gets built.</p>
       </div>
 
       <div class="faq-item">
@@ -222,10 +223,11 @@
     </a>
   </div>
 
-  <section class="cta-band">
+  <section class="cta-band" id="book">
     <div class="cta-band-title">Take kontrol.</div>
-    <p>Book a free 60-minute workflow audit. We map where your admin hours are going and which processes are worth automating. No obligation, and nothing is charged before a scope is agreed.</p>
-    <a class="btn-primary" href="index.html#contact">Book a discovery call →</a>
+    <p>Book a free 60-minute workflow review. We map where your admin hours are going and which processes are worth automating. No obligation, and nothing is charged before a scope is agreed.</p>
+    <div class="cal-embed"></div>
+    <p class="cal-fallback" hidden><a class="btn-primary" href="index.html#contact">Book a discovery call →</a></p>
   </section>
 </main>
 
@@ -242,6 +244,8 @@
     <div class="footer-copy">© 2026 Kontrol AI · CO Advisory Pty Ltd · ABN 85 693 421 788 · Gold Coast, AU · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms</a></div>
   </div>
 </footer>
+
+<script src="assets/booking.js" defer></script>
 
 </body>
 </html>
