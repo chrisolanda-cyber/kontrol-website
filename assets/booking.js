@@ -63,7 +63,20 @@ var KONTROL_CAL_LINK = 'kontrol-ai/workflow-review';
 
   Cal.ns.review('ui', {
     hideEventTypeDetails: false,
-    layout: 'month_view'
+    layout: 'month_view',
+    /* Cal.com's default validation messages are too pale to spot ("This field
+       is required." renders at #f9e3e1 on the dark theme). Strong red for the
+       error text and the invalid field's border in both themes. */
+    cssVarsPerTheme: {
+      light: {
+        'cal-text-error': '#D92D20',
+        'cal-border-error': '#D92D20'
+      },
+      dark: {
+        'cal-text-error': '#FF5C5C',
+        'cal-border-error': '#FF5C5C'
+      }
+    }
   });
 
   /* Real conversion signal: the booking completed. */
