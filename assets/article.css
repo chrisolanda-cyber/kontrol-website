@@ -878,3 +878,95 @@ footer {
   footer { padding: 32px 20px; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
 }
+
+/* ─── HERO CTA (above-the-fold booking shortcut on ad landing pages) ─── */
+.hero-cta { margin: 26px 0 0; }
+.hero-cta .btn-primary { margin-top: 0; }
+
+/* ─── LEAD MAGNET (checklist capture — the lower-commitment path) ─── */
+.magnet {
+  margin-top: 40px;
+  padding: 36px 40px;
+  background: var(--bg2);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--mustard);
+}
+
+.magnet-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.magnet-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  line-height: 1;
+  margin: 0;
+}
+
+.magnet-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+}
+
+.magnet p { margin-top: 14px; }
+
+.magnet-form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.magnet-form .btn-primary {
+  margin-top: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.magnet-input {
+  flex: 1 1 240px;
+  min-width: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  padding: 13px 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.magnet-input:focus { border-color: var(--teal); }
+.magnet-input::placeholder { color: var(--text-dim); }
+
+.magnet-note {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+.magnet-note a { color: var(--teal-dim); text-decoration: none; }
+
+.magnet-success {
+  margin-top: 16px;
+  color: var(--text);
+}
+
+.magnet-success a { color: var(--teal); text-decoration: none; }
+
+@media (max-width: 640px) {
+  .magnet { padding: 28px 22px; }
+  .magnet-form .btn-primary { width: 100%; text-align: center; }
+}
