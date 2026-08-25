@@ -1793,6 +1793,17 @@
   .cta-input:focus { border-color: var(--teal); }
   .cta-input::placeholder { color: var(--text-dim); }
 
+  /* Invalid-field flag, matching the Cal.com embed's error red. :user-invalid
+     only applies after the visitor has interacted with the field, so empty
+     required fields don't start out red on page load. */
+  .cta-input:user-invalid {
+    border-color: #FF5C5C;
+    color: #FF5C5C;
+    font-weight: 600;
+  }
+  .cta-input:user-invalid::placeholder { color: #FF5C5C; font-weight: 600; }
+  .cta-input:user-invalid:focus { border-color: #FF5C5C; }
+
   /* ─── FOOTER ─── */
   footer {
     background: var(--bg);

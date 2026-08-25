@@ -949,6 +949,17 @@ footer {
 .magnet-input:focus { border-color: var(--teal); }
 .magnet-input::placeholder { color: var(--text-dim); }
 
+/* Invalid-field flag, matching the Cal.com embed's error red. :user-invalid
+   only applies after the visitor has interacted with the field, so the empty
+   email field doesn't start out red on page load. */
+.magnet-input:user-invalid {
+  border-color: #FF5C5C;
+  color: #FF5C5C;
+  font-weight: 600;
+}
+.magnet-input:user-invalid::placeholder { color: #FF5C5C; font-weight: 600; }
+.magnet-input:user-invalid:focus { border-color: #FF5C5C; }
+
 .magnet-note {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px;
