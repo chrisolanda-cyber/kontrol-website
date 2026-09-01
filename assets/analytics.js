@@ -78,3 +78,15 @@ window.kontrolTrackLead = function (source) {
 window.kontrolTrackBooking = function () {
   window.kontrolTrackLead('cal.com booking');
 };
+
+/* Light-touch pathway: clicking any mailto link fires quick_question_click so
+   the email rung shows up in GA4 alongside form submits and bookings. Not a
+   conversion — a click only proves intent, not a sent email. */
+document.addEventListener('click', function (e) {
+  var link = e.target && e.target.closest ? e.target.closest('a[href^="mailto:"]') : null;
+  if (!link || !window.KONTROL_GA4_LIVE) { return; }
+  gtag('event', 'quick_question_click', {
+    link_text: (link.textContent || '').trim().slice(0, 60),
+    page_path: location.pathname
+  });
+});
