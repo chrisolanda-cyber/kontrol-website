@@ -823,6 +823,21 @@
     align-items: center;
   }
 
+  .hero-reassure {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    letter-spacing: 0.04em;
+    line-height: 1.8;
+    margin-top: 22px;
+    max-width: 460px;
+  }
+
+  .hero-reassure a {
+    color: var(--teal);
+    text-decoration: none;
+  }
+
   .btn-primary {
     font-family: 'JetBrains Mono', monospace;
     font-size: 12px;
@@ -1871,12 +1886,13 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
-  .hero h1, .hero-sub, .hero-actions, .hero-stats-panel {
+  .hero h1, .hero-sub, .hero-actions, .hero-reassure, .hero-stats-panel {
     animation: fadeInUp 0.7s ease-out forwards;
   }
 
   .hero-sub { animation-delay: 0.1s; opacity: 0; }
   .hero-actions { animation-delay: 0.2s; opacity: 0; }
+  .hero-reassure { animation-delay: 0.25s; opacity: 0; }
   .hero-stats-panel { animation-delay: 0.3s; opacity: 0; }
 
   /* ─── TICKER ─── */
@@ -2056,6 +2072,7 @@
         <a href="#contact" class="btn-primary">Book your free 60-minute review</a>
         <a href="#how" class="btn-ghost">See how it works</a>
       </div>
+      <p class="hero-reassure">No prep, no obligation and no sales pitch. You leave with a list of what's worth automating.<br>Not ready for a call? <a href="mailto:ai@kontrolai.com.au">Send a quick question →</a></p>
     </div>
 
     <div class="hero-right">
@@ -2507,11 +2524,11 @@
         Take<br>
         <span>kontrol.</span>
       </h2>
-      <p class="cta-sub">Book your free 60-minute workflow review. We'll map your current workflow, identify the biggest automation wins, and give you a clear picture of what's possible — no obligation, and you'll be talking with the founder who builds the work.</p>
+      <p class="cta-sub">Book your free 60-minute workflow review. We'll map your current workflow, identify the biggest automation wins, and you'll leave with a clear list of what's worth automating first. No prep needed, no obligation, and you'll be talking with the founder who builds the work.</p>
     </div>
     <div class="cta-box">
       <h3 class="cta-box-title">Book your free 60-minute review</h3>
-      <div class="cta-box-desc">Free 60-min workflow review. Gold Coast and national.</div>
+      <div class="cta-box-desc">Free 60-min workflow review. No prep needed. Gold Coast and national.</div>
       <form action="https://formspree.io/f/mgojnaya" method="POST" id="contact-form">
         <input type="hidden" name="_subject" value="New workflow review request — Kontrol AI">
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
@@ -2522,7 +2539,7 @@
         <button type="submit" class="btn-primary" style="width:100%;text-align:center;display:block;margin-top:4px;">Request my free review →</button>
         <p style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text-dim);margin-top:12px;line-height:1.6;">By submitting this form you agree to our <a href="privacy.html" style="color:var(--teal-dim);text-decoration:none;">Privacy Policy</a>. We don't share your information with third parties.</p>
       </form>
-      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-dim);margin-top:16px;padding-top:16px;border-top:1px solid var(--rule);letter-spacing:0.04em;">Or email us directly: <a href="mailto:ai@kontrolai.com.au" style="color:var(--teal);text-decoration:none;">ai@kontrolai.com.au</a></p>
+      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-dim);margin-top:16px;padding-top:16px;border-top:1px solid var(--rule);letter-spacing:0.04em;">Got a quick question first? Email <a href="mailto:ai@kontrolai.com.au" style="color:var(--teal);text-decoration:none;">ai@kontrolai.com.au</a> and it comes straight to the founder.</p>
     </div>
   </div>
 
