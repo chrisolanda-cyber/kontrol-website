@@ -922,6 +922,74 @@
     margin: 14px 0 22px;
   }
 
+  /* ─── WORKS-WITH BAND ─── */
+  .works-band {
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    background: var(--card-bg);
+  }
+
+  .works-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px 36px;
+    flex-wrap: wrap;
+  }
+
+  .works-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+
+  .works-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px 30px;
+  }
+
+  .works-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    letter-spacing: 0.03em;
+    color: var(--text-mid);
+    white-space: nowrap;
+    transition: color 0.2s;
+  }
+
+  .works-item:hover { color: var(--teal); }
+
+  .works-logo {
+    display: block;
+    width: auto;
+  }
+
+  .works-logo--wide { opacity: 0.92; }
+
+  .works-note {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+    margin-left: auto;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 760px) {
+    .works-inner { padding: 24px 24px; }
+    .works-note { margin-left: 0; }
+  }
+
   .stat-cell {
     background: var(--card-bg);
     padding: 24px 20px;
@@ -2123,6 +2191,23 @@
     </div>
   </div>
 </section>
+
+<!-- WORKS WITH -->
+<div class="works-band" aria-label="Systems Kontrol AI works with">
+  <div class="works-inner">
+    <div class="works-label">// works with the systems you already run</div>
+    <div class="works-items">
+      <span class="works-item"><img class="works-logo works-logo--wide" src="assets/logos/simpro-wordmark-white.svg" alt="SimPRO" height="18" loading="lazy"></span>
+      <span class="works-item"><img class="works-logo" src="assets/logos/xero.svg" alt="" height="22" loading="lazy">Xero</span>
+      <span class="works-item"><img class="works-logo" src="assets/logos/n8n.svg" alt="" height="20" loading="lazy">n8n</span>
+      <span class="works-item"><img class="works-logo" src="assets/logos/claude.svg" alt="" height="20" loading="lazy">Claude</span>
+      <span class="works-item"><img class="works-logo" src="assets/logos/chatgpt.svg" alt="" height="20" loading="lazy">ChatGPT</span>
+      <span class="works-item"><img class="works-logo" src="assets/logos/microsoft.svg" alt="" height="18" loading="lazy">Microsoft 365</span>
+      <span class="works-item"><img class="works-logo" src="assets/logos/google-g.svg" alt="" height="20" loading="lazy">Google Workspace</span>
+    </div>
+    <div class="works-note">+ anything with an API</div>
+  </div>
+</div>
 
 <!-- HOW IT WORKS -->
 <section class="how" id="how">
