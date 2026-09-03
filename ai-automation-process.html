@@ -115,7 +115,7 @@
           "name": "What happens if the automation breaks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "It raises an alert rather than failing quietly. A failed run notifies a person with the original input attached, the work falls back to the manual process it replaced, and nothing is lost — the job waits rather than disappearing. Silent failure is the real risk with automation, not failure itself, so monitoring is part of the build rather than an extra. Every run is logged, so a problem can be traced to the input that caused it instead of guessed at. Kontrol AI's pipelines have recorded a 99.6% success rate across 1,002 automation runs as at 3 August 2026, with the remainder surfacing as exceptions for a human to handle. Support arrangements are agreed at handover, so there is a known path when something does need fixing."
+            "text": "It raises an alert rather than failing quietly. A failed run notifies a person with the original input attached, the work falls back to the manual process it replaced, and nothing is lost — the job waits rather than disappearing. Silent failure is the real risk with automation, not failure itself, so monitoring is part of the build rather than an extra. Every run is logged, so a problem can be traced to the input that caused it instead of guessed at. Kontrol AI's pipelines log every run, surface failures as exceptions for a human to handle, and publish their current success rate and run counts on the home page, refreshed daily from production data. Support arrangements are agreed at handover, so there is a known path when something does need fixing."
           }
         },
         {
@@ -131,7 +131,7 @@
           "name": "How accurate is the AI, and what happens when it's unsure?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A well-built workflow doesn't guess. It acts automatically when confident and routes anything ambiguous to a person with the original message attached, so an unclear input becomes a short human check rather than a silent error. Accuracy should be measured rather than asserted. Kontrol AI's live pipelines have recorded a 99.6% success rate across 1,002 automation runs and 728 jobs as at 3 August 2026, with exceptions surfaced rather than hidden. The design principle is that a wrong automated action costs far more than a human glance, so confidence thresholds start conservative and are tightened only after the workflow has been watched against real data. Every run is logged, so any output can be traced back to the input that produced it."
+            "text": "A well-built workflow doesn't guess. It acts automatically when confident and routes anything ambiguous to a person with the original message attached, so an unclear input becomes a short human check rather than a silent error. Accuracy should be measured rather than asserted. Kontrol AI's live pipelines log every run with exceptions surfaced rather than hidden; their current success rate, run and job counts are published on the home page, refreshed daily from production data. The design principle is that a wrong automated action costs far more than a human glance, so confidence thresholds start conservative and are tightened only after the workflow has been watched against real data. Every run is logged, so any output can be traced back to the input that produced it."
           }
         }
       ]
@@ -182,7 +182,7 @@
 
   <h2>How is the automation tested before it goes live?</h2>
   <p>Against real data, not sample data. The pattern that matters is how the workflow behaves on the unusual input rather than the ordinary one — a well-built workflow acts automatically when it is confident and routes anything ambiguous to a person with the original message attached.</p>
-  <p>Confidence thresholds start conservative and are tightened only after the workflow has been watched against live traffic. Every run is logged, so any output can be traced back to the input that produced it. Across 1,002 automation runs and 728 jobs, Kontrol AI's live client pipelines have recorded a 99.6% success rate as at 3 August 2026, with the remainder surfaced as exceptions rather than hidden.</p>
+  <p>Confidence thresholds start conservative and are tightened only after the workflow has been watched against live traffic. Every run is logged, so any output can be traced back to the input that produced it. Kontrol AI's live client pipelines run at a measured success rate, published on the home page and refreshed daily from production data, with the remainder surfaced as exceptions rather than hidden.</p>
 
   <h2>What does handover include?</h2>
   <p>The working system, documentation of how it is built, and a walkthrough for whoever looks after it internally. The workflows run on n8n — a standard, widely used automation platform — so another developer can pick them up at any time. Nothing is locked inside a proprietary system you cannot access or export.</p>
@@ -215,7 +215,7 @@
       <div class="faq-item">
         <h3 class="faq-q">What happens if the automation breaks?</h3>
         <p class="faq-capsule">It raises an alert rather than failing quietly. A failed run notifies a person with the original input attached, the work falls back to the manual process it replaced, and nothing is lost — the job waits rather than disappearing.</p>
-        <p class="faq-context">Silent failure is the real risk with automation, not failure itself, so monitoring is part of the build rather than an extra. Every run is logged, so a problem can be traced to the input that caused it instead of guessed at. Kontrol AI's pipelines have recorded a 99.6% success rate across 1,002 automation runs as at 3 August 2026, with the remainder surfacing as exceptions for a human to handle. Support arrangements are agreed at handover, so there is a known path when something does need fixing.</p>
+        <p class="faq-context">Silent failure is the real risk with automation, not failure itself, so monitoring is part of the build rather than an extra. Every run is logged, so a problem can be traced to the input that caused it instead of guessed at. Kontrol AI's pipelines log every run, surface failures as exceptions for a human to handle, and publish their current success rate and run counts on the home page, refreshed daily from production data. Support arrangements are agreed at handover, so there is a known path when something does need fixing.</p>
       </div>
 
       <div class="faq-item">
@@ -227,7 +227,7 @@
       <div class="faq-item">
         <h3 class="faq-q">How accurate is the AI, and what happens when it's unsure?</h3>
         <p class="faq-capsule">A well-built workflow doesn't guess. It acts automatically when confident and routes anything ambiguous to a person with the original message attached, so an unclear input becomes a short human check rather than a silent error.</p>
-        <p class="faq-context">Accuracy should be measured rather than asserted. Kontrol AI's live pipelines have recorded a 99.6% success rate across 1,002 automation runs and 728 jobs as at 3 August 2026, with exceptions surfaced rather than hidden. The design principle is that a wrong automated action costs far more than a human glance, so confidence thresholds start conservative and are tightened only after the workflow has been watched against real data. Every run is logged, so any output can be traced back to the input that produced it.</p>
+        <p class="faq-context">Accuracy should be measured rather than asserted. Kontrol AI's live pipelines log every run with exceptions surfaced rather than hidden; their current success rate, run and job counts are published on the home page, refreshed daily from production data. The design principle is that a wrong automated action costs far more than a human glance, so confidence thresholds start conservative and are tightened only after the workflow has been watched against real data. Every run is logged, so any output can be traced back to the input that produced it.</p>
       </div>
     </div>
   </section>
