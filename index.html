@@ -912,6 +912,15 @@
     margin-bottom: 1px;
   }
 
+  .stats-source {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    color: var(--text-dim);
+    line-height: 1.5;
+    margin: 14px 0 22px;
+  }
+
   .stat-cell {
     background: var(--card-bg);
     padding: 24px 20px;
@@ -2077,25 +2086,26 @@
 
     <div class="hero-right">
       <div class="hero-stats-panel">
-        <div class="stats-label">// live pipeline metrics</div>
+        <div class="stats-label">// production pipelines</div>
         <div class="stats-grid">
           <div class="stat-cell">
-            <div class="stat-num">3–10<span class="stat-unit">×</span></div>
-            <div class="stat-label">Faster processing</div>
+            <div class="stat-num">13.3<span class="stat-unit" style="margin-left:3px;">hrs</span></div>
+            <div class="stat-label">Admin removed per week</div>
           </div>
           <div class="stat-cell">
-            <div class="stat-num">24/7<span class="stat-unit" style="font-size:22px;margin-left:2px;">/365</span></div>
-            <div class="stat-label">Always-on processing</div>
+            <div class="stat-num">728</div>
+            <div class="stat-label">Jobs processed</div>
           </div>
           <div class="stat-cell">
-            <div class="stat-num">95–100<span class="stat-unit">%</span></div>
-            <div class="stat-label">Error reduction</div>
+            <div class="stat-num">99.6<span class="stat-unit">%</span></div>
+            <div class="stat-label">Automation success rate</div>
           </div>
           <div class="stat-cell">
-            <div class="stat-num">100<span class="stat-unit">%</span></div>
-            <div class="stat-label">Audit trail</div>
+            <div class="stat-num">1,002</div>
+            <div class="stat-label">Automation runs</div>
           </div>
         </div>
+        <div class="stats-source">In production for a multi-trade contracting group running SimPRO.</div>
         <div class="pipeline-demo">
           <div class="pipeline-label">// example workflow</div>
           <div class="pipeline-nodes">
