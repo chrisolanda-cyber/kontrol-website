@@ -726,6 +726,10 @@ nav {
 
 .btn-primary:hover { background: #7ee6df; text-decoration: none; }
 
+/* Anchor buttons inside .page otherwise inherit `.page a`'s teal — teal on teal */
+.page a.btn-primary { color: var(--bg); }
+.page a.btn-primary:hover { color: var(--bg); text-decoration: none; }
+
 /* ─── FOOTER ─── */
 footer {
   position: relative;
