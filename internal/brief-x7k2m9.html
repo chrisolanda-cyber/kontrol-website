@@ -52,6 +52,10 @@
   .delta .down{color:var(--rust);font-weight:600}
   .delta .flat{color:var(--ink-3);font-weight:600}
   .tile svg{margin-top:6px}
+  /* Extra bullet lines under the delta (e.g. lifetime spend under Ad spend) */
+  .tile .bullet{font-size:12px;line-height:1.45;color:var(--ink-2);padding-left:12px;position:relative}
+  .tile .bullet::before{content:"";position:absolute;left:0;top:7px;width:5px;height:5px;
+                        border-radius:1.5px;background:var(--teal)}
   /* Plain-English definition, pinned to the bottom of the tile so it lines up across a row */
   .tile .def{margin-top:auto;padding-top:9px;border-top:1px solid var(--line-soft);
              font-size:11px;line-height:1.4;color:var(--ink-3)}
@@ -196,6 +200,7 @@
       </div>
       <div class="chart-box" id="chan-chart"></div>
       <details><summary>Data table</summary><div id="chan-table"></div></details>
+      <details id="sm-details" hidden><summary>Source / medium</summary><div id="sm-table"></div></details>
     </section>
 
     <section class="card">
@@ -249,19 +254,30 @@
    ============================================================ */
 let DATA = null;
 const FEED = "https://colanda.app.n8n.cloud/webhook/kontrol-brief-data?k=K9vq4Tt7Xz2m";
+const NARRATIVE = "brief-narrative.json"; // committed daily by the 7am n8n brief
 
 async function bootstrap(){
   const dl = document.getElementById("date-line");
   dl.textContent = "Loading live numbers\u2026";
+  const narReq = fetch(NARRATIVE + "?t=" + Date.now(), {cache: "no-store"})
+    .then(r => r.ok ? r.json() : null).catch(() => null);
   try {
     const r = await fetch(FEED, {cache: "no-store"});
     if (!r.ok) throw new Error("feed returned " + r.status);
     DATA = await r.json();
-    renderBrief();
   } catch (err) {
     dl.textContent = "Could not load live data";
     document.getElementById("data-through").textContent = String(err && err.message || err);
+    return;
   }
+  const N = await narReq;
+  if (N){
+    if (N.committee) DATA.committee = N.committee;
+    if (N.weekly && N.weekly.length){ DATA.weekly = N.weekly; DATA.weeklySub = N.weeklySub || ""; }
+    if (N.actions) DATA.actions = N.actions;
+    if (N.dateLine) DATA.dataThrough += " \u00B7 brief written " + N.dateLine;
+  }
+  renderBrief();
 }
 
 /* ============================================================
@@ -303,6 +319,7 @@ for (const t of DATA.tiles){
     html("span",t.delta.dir,d,t.delta.text);
     if (t.delta.note) d.appendChild(document.createTextNode(" · " + t.delta.note));
   }
+  if (t.bullets) for (const b of t.bullets) html("div","bullet",tile,b);
   if (t.spark) tile.appendChild(sparkline(sessionsSeries));
   if (t.def) html("div","def",tile,t.def);
 }
@@ -444,6 +461,21 @@ addEventListener("scroll", hideTip, {passive:true});
     html("td","num",tr,String(r.now));
     html("td","num",tr,String(r.prior));
   });
+
+  /* Source / medium detail — hidden unless DATA.sourceMedium is present */
+  if (DATA.sourceMedium && DATA.sourceMedium.length){
+    document.getElementById("sm-details").hidden = false;
+    const st = html("table",null,$("sm-table"));
+    const shr = html("tr",null,html("thead",null,st));
+    ["Source / medium","This week","Prior week"].forEach((h,i)=>html("th",i?"num":null,shr,h));
+    const stb = html("tbody",null,st);
+    DATA.sourceMedium.forEach(r=>{
+      const tr = html("tr",null,stb);
+      html("td",null,tr,r.sm);
+      html("td","num",tr,String(r.now));
+      html("td","num",tr,String(r.prior));
+    });
+  }
 })();
 
 /* Landing pages table with share bars */
@@ -493,8 +525,8 @@ if (DATA.search){
   }
 }
 
-/* Weekly wrap (Fridays) */
-if (DATA.edition === "weekly"){
+/* Weekly wrap (Fridays) — shown whenever weekly items are present */
+if (DATA.weekly && DATA.weekly.length){
   $("weekly-card").hidden = false;
   $("weekly-sub").textContent = DATA.weeklySub;
   for (const [strong, rest] of DATA.weekly){
@@ -504,8 +536,8 @@ if (DATA.edition === "weekly"){
   }
 }
 
-/* Action list (Fridays) — committee-agreed actions + status of last week's; hidden on daily editions */
-if (DATA.edition === "weekly" && DATA.actions){
+/* Action list (Fridays) — committee-agreed actions + status of last week's; hidden when absent */
+if (DATA.actions && ((DATA.actions.carried && DATA.actions.carried.length) || (DATA.actions.next && DATA.actions.next.length))){
   $("actions-card").hidden = false;
   $("actions-sub").textContent = DATA.actions.sub || "";
   const body = $("actions-body");
