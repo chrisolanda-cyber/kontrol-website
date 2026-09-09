@@ -1,12 +1,42 @@
 {
- "dateLine": "Tuesday 9 September 2026",
+ "dateLine": "Wednesday 9 September 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · placeholder seeded 9 Sept · the 7am workflow overwrites this file each morning",
-  "items": [],
-  "actions": []
+  "sub": "Morning brief · Wednesday 9 September 2026 · the committee’s read on the 7am numbers",
+  "items": [
+   {
+    "who": "Marshall",
+    "text": "Ad spend fell to $89.74 from $136.03 and clicks to 15 from 23, yet conversions stayed at zero. Only 3 clicks have landed since the 8 Sept restart, too few to judge the new structure yet."
+   },
+   {
+    "who": "Vallaeys",
+    "text": "Impression share sits at just 10% over 30 days, with rank lost at 77.1% against budget lost at 16.1%. The campaign is rank-limited, not budget-limited, so the budget conversation stays closed."
+   },
+   {
+    "who": "Fishkin",
+    "text": "Sessions are down 30% (43 vs 61) and Direct fell to 22 from 37, but Direct still can't be trusted as demand since the internal traffic filter only went live 3 Sept and this window straddles that date. Organic Search, the only clean unpaid signal, ticked up to 5 from 3, still tiny. Search Console (data through 6 Sept, two days behind yesterday) shows 244 impressions for just 2 clicks, with most queries parked past position 40. AI Assistant traffic is still zero."
+   },
+   {
+    "who": "Wiebe · Gardner",
+    "text": "The homepage draws the most traffic (23 sessions) followed by /ai-automation-agency.html (12), but /simpro-xero-integration.html only pulled 6 sessions despite being the top search page with 124 impressions and position 18, suggesting a message match gap between what people search and what that page delivers."
+   }
+  ],
+  "actions": [
+   {
+    "who": "Vallaeys",
+    "text": "Add the missing logo and image assets and write keyword-matched RSA headlines for the ad groups now serving."
+   },
+   {
+    "who": "Gardner",
+    "text": "Fix the homepage form so kontrolTrackLead fires on the Formspree verdict (confirm-then-count), not before it."
+   },
+   {
+    "who": "Wiebe",
+    "text": "Update RSA description D1, which still claims 13.3 hours of admin per week, to match the current site stats."
+   }
+  ]
  },
  "weekly": [],
- "weeklySub": "",
+ "weeklySub": "Week of Wed 2 Sep – Tue 8 Sep, vs the seven days before it",
  "parseError": false
 }
