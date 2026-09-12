@@ -1,42 +1,42 @@
 {
- "dateLine": "Saturday 12 September 2026",
+ "dateLine": "Sunday 13 September 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Saturday 12 September 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Sunday 13 September 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Spend fell from $131.95 to $95.03 over the last 7 days and clicks dropped from 22 to 16, yet conversions sit at zero either way, so the lower spend hasn't cost any performance that wasn't already missing."
+    "text": "Spend held flat at $115.57 versus $114.72 prior, and clicks matched at 19 versus 19, with CTR up to 5.5% from 3%, yet conversions are still zero. Post restart clicks since 8 Sept sit at 17, nowhere near the 150 stop-loss trigger."
    },
    {
     "who": "Vallaeys",
-    "text": "Impression share is 10% with rank lost at 77.4% against budget lost at 16.1%, so ad rank is the binding constraint right now, not budget. Kontrol Search National stays ENABLED as intended post restart with postRestartClicksSince8Sept at 13."
+    "text": "Search Console data only runs through 10 Sept, two days behind yesterday (Sat 12), so treat it as a lagging read. Impressions were 252 over 8 days against just 3 clicks, with target terms parked at position 39 to 50 while the brand term 'kontrol' sits at 7. Budget lost 30d is 16.6% against rank lost 30d at 77%, so the budget conversation stays closed for now."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "Sessions dropped 49% week on week (32 vs 63) and Direct fell from 36 to 12, but Direct still mixes in Chris' own pre filter visits so it isn't a demand signal. Of the 32 sessions last7, /ai-automation-agency.html pulled 13, the second biggest landing page after the homepage's 15."
+    "text": "Landing sessions are led by /ai-automation-agency.html on 16 and the homepage on 15, but the Search Console top page, /simpro-xero-integration.html, drew 148 impressions and zero clicks at position 20, pointing to a message match gap between what people search and what that page delivers."
    },
    {
     "who": "Fishkin",
-    "text": "Organic Search ticked up slightly (7 vs 5) but Search Console (data through 9 Sept, two days behind yesterday) shows just 3 clicks from 262 impressions over 8 days, so unpaid visibility is still thin. LinkedIn sessions sit at zero despite Chris posting there, which points to untagged links rather than no interest."
+    "text": "Organic Search ticked up to 8 sessions from 3, still the only unpaid signal worth trusting given it is genuinely tiny. AI Assistant sessions stayed at 0 for both periods, nothing to report there yet. Direct fell from 32 to 11, but that drop lines up with the internal traffic filter cutting out Chris's own visits rather than any real change in unpaid demand."
    }
   ],
   "actions": [
    {
-    "who": "Wiebe · Gardner",
-    "text": "Logo and image assets plus keyword matched RSA headlines for the serving ad groups are still open, action these."
+    "who": "Marshall",
+    "text": "Logo and image assets plus keyword-matched RSA headlines for the currently serving ad groups are still outstanding, get these finalised."
    },
    {
     "who": "Vallaeys",
-    "text": "Fix the homepage form so kontrolTrackLead fires on the Formspree verdict rather than before it, the confirm then count change is still pending."
+    "text": "The homepage form still needs the confirm-then-count fix so kontrolTrackLead fires on the Formspree verdict rather than before it."
    },
    {
     "who": "Wiebe",
-    "text": "RSA description D1 still claims 13.3 hours of admin per week, update it to match the current site stats."
+    "text": "RSA description D1 still claims 13.3 hours of admin per week, update the copy to match the current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Sat 5 Sep – Fri 11 Sep, vs the seven days before it",
+ "weeklySub": "Week of Sun 6 Sep – Sat 12 Sep, vs the seven days before it",
  "parseError": false
 }
