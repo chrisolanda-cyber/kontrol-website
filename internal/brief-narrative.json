@@ -1,42 +1,42 @@
 {
- "dateLine": "Monday 14 September 2026",
+ "dateLine": "Tuesday 15 September 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Monday 14 September 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Tuesday 15 September 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Spend rose to $141.86 from $102.10 with clicks up to 23 from 17, but conversions are still 0 for the week. Post-restart clicks since 8 Sept sit at 21, nowhere near the 150-click stop-loss threshold."
+    "text": "Spend last7 was $147.98 vs $98.33 prior (+50%), clicks rose to 24 from 16 and CPC sits at $6.17, yet conversions are still 0."
    },
    {
     "who": "Vallaeys",
-    "text": "Rank lost share is 76.6% against budget lost of only 17%, so ad rank is the constraint, not budget. Impression share is 10% for the week, consistent with a small, deliberately scoped campaign."
+    "text": "CTR improved to 4.2% from 2.8%, but rank lost impression share (76.4%) still dwarfs budget lost (17.3%), so ranking factors, not budget, are the limit on impression share right now."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "/ai-automation-agency.html pulled 18 of the week's 38 sessions and led all landing pages, while /simpro-xero-integration.html shows 148 impressions and 0 clicks at position 20 in Search Console, suggesting the page is not matching what those searchers expect."
+    "text": "/ai-automation-agency.html leads landing pages with 17 sessions and / with 15, yet calculator usedLast7 is 0, no one engaged the admin time cost calculator this week despite 37 total sessions."
    },
    {
     "who": "Fishkin",
-    "text": "AI Assistant sessions are 0 for a second straight week and LinkedIn is also 0, worth checking whether Chris's posts are untagged given AI referrer data undercounts anyway. Organic search ticked up to 8 sessions from 3, still a small number."
+    "text": "AI Assistant sessions are 0 for the second week running and Organic Search, the only trustworthy unpaid signal, is just 8 sessions this week, up from 4 but still tiny."
    }
   ],
   "actions": [
    {
     "who": "Wiebe",
-    "text": "Source logo and image assets and draft keyword-matched RSA headlines for the currently serving ad groups."
+    "text": "Logo and image assets plus keyword-matched RSA headlines for the serving ad groups are still outstanding, finalise these."
    },
    {
     "who": "Vallaeys",
-    "text": "Fix the homepage form so kontrolTrackLead fires on the Formspree verdict, not before it, so lead counts only reflect confirmed submissions."
+    "text": "The homepage form confirm-then-count fix is still open: make kontrolTrackLead fire on the Formspree verdict, not before it."
    },
    {
     "who": "Wiebe",
-    "text": "Update RSA description D1, which still claims 13.3 hours of admin per week, to match the current site stats."
+    "text": "RSA description D1 still claims 13.3 hours of admin per week, update it to match current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Mon 7 Sep – Sun 13 Sep, vs the seven days before it",
+ "weeklySub": "Week of Tue 8 Sep – Mon 14 Sep, vs the seven days before it",
  "parseError": false
 }
