@@ -1,42 +1,42 @@
 {
- "dateLine": "Wednesday 16 September 2026",
+ "dateLine": "Thursday 17 September 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Wednesday 16 September 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Thursday 17 September 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Spend nearly doubled week on week (A$163.27 vs A$83.92) and clicks rose to 26 from 14, but conversionsLast7 is still 0. Post-restart clicks sit at 29 of the 150 stop-loss threshold, so no case to pull back yet."
+    "text": "Spend jumped to A$185.58 over the last 7 days from A$69.93 prior, with clicks up to 29 from 12, but conversions are still 0. Post-restart clicks since 8 Sept sit at 34 of the 150 stop-loss threshold."
    },
    {
     "who": "Vallaeys",
-    "text": "Rank lost to budget 30 days is 76.8% against budgetLost30d of 17%, so the constraint is ad rank not spend. Impression share is only 10%. The budget conversation stays closed until that gap flips."
+    "text": "Budget lost share (18.2%) remains well below rank lost share (75.7%) over the last 30 days, so the case for more budget still does not stack up. CTR also slipped to 3.5% from 4.9%."
    },
    {
-    "who": "Wiebe · Gardner",
-    "text": "Homepage (22 sessions) and /ai-automation-agency.html (21 sessions) are carrying the traffic, but calculator.usedLast7 is 0 against 46 total sessions, so nobody is reaching the ungated calculator step."
+    "who": "Gardner",
+    "text": "Sessions last7 rose to 51 from 34, but calculator.usedLast7 is still 0, unchanged from prior7. The ungated calculator step in the funnel is not getting used despite more traffic reaching the site."
    },
    {
     "who": "Fishkin",
-    "text": "AI Assistant sessions are still 0 for the week and LinkedIn is 0 despite Chris posting there, which points to untagged links rather than no interest. Organic Search ticked up to 7 from 5, still a small signal. Search Console data only runs through 13 Sept, two days behind yesterday."
+    "text": "LinkedIn sessions are flat at 0 for both periods despite Chris continuing to post there, which points to untagged links rather than no traffic. Organic Search held steady at 7 sessions, still the only unpaid channel worth trusting, and remains small."
    }
   ],
   "actions": [
    {
     "who": "Gardner",
-    "text": "Logo and image assets plus keyword-matched RSA headlines for the serving ad groups are still outstanding."
+    "text": "Add logo and image assets plus keyword-matched RSA headlines for the ad groups currently serving."
    },
    {
     "who": "Vallaeys",
-    "text": "The homepage form confirm-then-count fix so kontrolTrackLead fires on the Formspree verdict, not before it, remains open."
+    "text": "Fix the homepage form so kontrolTrackLead fires on the Formspree confirm rather than before it, so lead counts reflect verified submissions."
    },
    {
     "who": "Wiebe",
-    "text": "RSA description D1 still claims 13.3 hours of admin per week; update it to match current site stats."
+    "text": "Update RSA description D1, which still claims 13.3 hours of admin per week, to match the current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Wed 9 Sep – Tue 15 Sep, vs the seven days before it",
+ "weeklySub": "Week of Thu 10 Sep – Wed 16 Sep, vs the seven days before it",
  "parseError": false
 }
