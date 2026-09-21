@@ -1,42 +1,42 @@
 {
- "dateLine": "Monday 21 September 2026",
+ "dateLine": "Tuesday 22 September 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Monday 21 September 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Tuesday 22 September 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Spend last 7 days was $152.67 against $141.86 prior with 24 clicks and 0 conversions, so cost per click sits at $6.36 with nothing to show for it yet. Post restart clicks since 8 Sept are 45 of the 150 stop loss trigger, so the campaign stays on."
+    "text": "Ad spend was $156.45 over the last 7 days versus $147.98 the week before, for 25 clicks and still zero conversions. Post-restart clicks sit at 49 of the 150 that would trigger the stop-loss."
    },
    {
     "who": "Vallaeys",
-    "text": "Impressions nearly doubled from 430 to 888 but CTR fell from 5.3% to 2.7%, so the extra volume is not converting to clicks at the old rate. Budget lost (20.2%) is still well under rank lost (74.3%), so the budget conversation has not opened."
+    "text": "Impression share is 10% with rank lost at 73.9% against budget lost at 20.7%, so the budget conversation has not opened yet. CTR slipped from 4.2% to 3.4% week on week."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "Sessions last 7 days rose to 61 from 38 but calculator.usedLast7 is still 0, meaning the extra visits to the homepage (35 sessions) and /ai-automation-agency.html (20 sessions) are not reaching the ungated tool."
+    "text": "In Search Console data through 19 Sept (two days behind, as usual), 'kontrol ai' ranks position 1 and took 4 of 7 total clicks, while 'simpro integration' and 'procore xero integration' sit past position 40 with zero clicks. Of 57 sessions this week, 30 landed on / and 21 on /ai-automation-agency.html."
    },
    {
     "who": "Fishkin",
-    "text": "AI Assistant sessions moved from 0 to 2 last 7 days, all from chatgpt.com, worth noting given this undercounts real AI referral traffic. LinkedIn stayed at 0 despite Chris posting, which points to untagged links rather than no activity. Organic Search is still the only clean unpaid signal and it is tiny at 9 sessions."
+    "text": "AI Assistant sessions rose to 2 last 7 days from 0, led by chatgpt.com, though this likely undercounts because many AI referrals arrive with no referrer and get logged as Direct. LinkedIn stayed at 0 sessions both periods."
    }
   ],
   "actions": [
    {
-    "who": "Vallaeys",
-    "text": "Logo and image assets plus keyword matched RSA headlines for the serving ad groups are still outstanding, get these built."
+    "who": "Wiebe",
+    "text": "Ship the logo and image assets and get keyword-matched RSA headlines live for the currently serving ad groups."
    },
    {
     "who": "Vallaeys",
-    "text": "The homepage form still fires kontrolTrackLead before the Formspree verdict, fix it to confirm-then-count so lead counting is accurate."
+    "text": "Fix the homepage form so kontrolTrackLead fires only on the Formspree confirm-then-count verdict, not before it."
    },
    {
     "who": "Wiebe",
-    "text": "RSA description D1 still claims 13.3 hours of admin per week, update the copy to match current site stats."
+    "text": "Rewrite RSA description D1, which still claims 13.3 hours of admin per week, to match the current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Mon 14 Sep – Sun 20 Sep, vs the seven days before it",
+ "weeklySub": "Week of Tue 15 Sep – Mon 21 Sep, vs the seven days before it",
  "parseError": false
 }
