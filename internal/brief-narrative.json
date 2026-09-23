@@ -1,42 +1,42 @@
 {
- "dateLine": "Wednesday 23 September 2026",
+ "dateLine": "Thursday 24 September 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Wednesday 23 September 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Thursday 24 September 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Spend eased to A$146.19 over the last 7 days from A$163.27 prior, clicks slipped to 24 from 26, and CPC sits at A$6.09 with conversions still at zero. Post-restart clicks since 8 Sept are 53 of the 150 stop-loss threshold."
+    "text": "Ad spend fell to $135.11 from $185.58 and clicks to 23 from 29, with conversions still at zero. postRestartClicksSince8Sept sits at 57, well short of the 150-click stop-loss threshold."
    },
    {
     "who": "Vallaeys",
-    "text": "Rank lost share (73.1%) still dwarfs budget lost share (21.7%), and impression share sits at just 10%. CTR did improve to 4.1% from 3.5% over the same week."
+    "text": "budgetLost30d (22.6%) remains below rankLost30d (72.3%), so the budget conversation stays closed. CTR actually improved to 4.6% from 3.5% even as impressions dropped to 495 from 824."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "/ai-automation-agency.html pulled 21 of 53 sessions last 7 days, second only to the homepage's 26. Calculator use ticked up to 1 from 0, still too thin to read as a trend."
+    "text": "Homepage and /ai-automation-agency.html each drew 22 sessions, but /simpro-xero-integration.html pulled 81 impressions in search and converted only 2 clicks at position 17, a message-match gap worth noting on that page."
    },
    {
     "who": "Fishkin",
-    "text": "AI Assistant sessions rose to 2 from 0 last 7 days, all from chatgpt.com, though this channel undercounts since many AI referrals land as Direct with no referrer. LinkedIn stayed at 0 despite Chris's posting, so tagging is worth checking. Organic Search edged up to 10 from 8, still the only unpaid signal worth trusting."
+    "text": "AI Assistant sessions rose to 2 from 0 over the last 7 days, all via chatgpt.com. This channel undercounts since many AI referrals land as Direct with no referrer. Organic Search also grew to 12 sessions from 7, with google/organic up to 11 from 4."
    }
   ],
   "actions": [
    {
-    "who": "Wiebe",
-    "text": "Logo and image assets plus keyword-matched RSA headlines for the serving ad groups are still outstanding."
+    "who": "Gardner",
+    "text": "Logo and image assets plus keyword-matched RSA headlines for the currently serving ad groups are still outstanding."
    },
    {
     "who": "Vallaeys",
-    "text": "The homepage form confirm-then-count fix is still open: kontrolTrackLead should fire on the Formspree verdict, not before it."
+    "text": "The homepage form confirm-then-count fix remains open: kontrolTrackLead should fire on the Formspree verdict, not before it."
    },
    {
     "who": "Wiebe",
-    "text": "RSA description D1 still claims 13.3 hours of admin per week and needs updating to match current site stats."
+    "text": "RSA description D1 still claims 13.3 hours of admin per week; update it to match the current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Wed 16 Sep – Tue 22 Sep, vs the seven days before it",
+ "weeklySub": "Week of Thu 17 Sep – Wed 23 Sep, vs the seven days before it",
  "parseError": false
 }
