@@ -1,42 +1,63 @@
 {
- "dateLine": "Thursday 24 September 2026",
- "edition": "daily",
+ "dateLine": "Friday 25 September 2026",
+ "edition": "weekly",
  "committee": {
-  "sub": "Morning brief · Thursday 24 September 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Friday 25 September 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Ad spend fell to $135.11 from $185.58 and clicks to 23 from 29, with conversions still at zero. postRestartClicksSince8Sept sits at 57, well short of the 150-click stop-loss threshold."
+    "text": "Sessions fell 18% week on week to 47 from 57 and ad spend was pulled back to $126.82 from $171.23, yet conversions stayed at zero for another week. CTR actually improved to 4.2% from 3.3%, so the creative is doing its job, the funnel after the click is not."
    },
    {
     "who": "Vallaeys",
-    "text": "budgetLost30d (22.6%) remains below rankLost30d (72.3%), so the budget conversation stays closed. CTR actually improved to 4.6% from 3.5% even as impressions dropped to 495 from 824."
+    "text": "Budget lost share of 22.8% is still well under rank lost of 72.3%, so the budget conversation stays closed, quality and ad rank are the constraint, not spend. Search Console data only runs through 22 Sept, two days behind Thu 24, so this week's visibility numbers are a lagging read."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "Homepage and /ai-automation-agency.html each drew 22 sessions, but /simpro-xero-integration.html pulled 81 impressions in search and converted only 2 clicks at position 17, a message-match gap worth noting on that page."
+    "text": "/ai-automation-agency.html (20 sessions) and the homepage (19) carried almost all traffic. The branded query 'kontrol ai' ranks #1 with 4 clicks, but unbranded terms like procore xero integration and simpro connector sit at position 41 to 51 with zero clicks, so the dedicated SimPRO Xero page (5 sessions) is not yet matching what those searchers type."
    },
    {
-    "who": "Fishkin",
-    "text": "AI Assistant sessions rose to 2 from 0 over the last 7 days, all via chatgpt.com. This channel undercounts since many AI referrals land as Direct with no referrer. Organic Search also grew to 12 sessions from 7, with google/organic up to 11 from 4."
+    "who": "Dib · Fishkin",
+    "text": "Leads stayed at zero and the calculator ticked up to 1 use from 0, still no booking behind it. Direct fell to 10 from 22 and AI Assistant referrals dropped to 0 from 2, while LinkedIn showed its first session (1) since Chris started posting there, real unpaid demand is still thin."
    }
   ],
   "actions": [
    {
-    "who": "Gardner",
-    "text": "Logo and image assets plus keyword-matched RSA headlines for the currently serving ad groups are still outstanding."
+    "who": "Wiebe · Gardner",
+    "text": "Logo and image assets plus keyword-matched RSA headlines for the serving ad groups are still outstanding, get them into the account."
    },
    {
     "who": "Vallaeys",
-    "text": "The homepage form confirm-then-count fix remains open: kontrolTrackLead should fire on the Formspree verdict, not before it."
+    "text": "Fix the homepage form so kontrolTrackLead fires on the Formspree confirm rather than before it, the confirm-then-count logic is still pending."
    },
    {
     "who": "Wiebe",
-    "text": "RSA description D1 still claims 13.3 hours of admin per week; update it to match the current site stats."
+    "text": "RSA description D1 still claims 13.3 hours of admin per week, update it to match the current site stats."
    }
   ]
  },
- "weekly": [],
- "weeklySub": "Week of Thu 17 Sep – Wed 23 Sep, vs the seven days before it",
+ "weekly": [
+  [
+   "Traffic slipped again,",
+   "sessions fell 18% week on week to 47 from 57 and users dropped to 44 from 56."
+  ],
+  [
+   "Leads still at zero,",
+   "the calculator was used once this week versus zero last week, but no booking has followed."
+  ],
+  [
+   "Channels reshuffled,",
+   "Organic Search nearly doubled to 14 from 7, Direct fell to 10 from 22, AI Assistant referrals dropped to 0 from 2, and LinkedIn logged its first session (1) since Chris began posting."
+  ],
+  [
+   "Search visibility stayed narrow,",
+   "Search Console data through 22 Sept (two days behind yesterday) shows 'kontrol ai' ranking #1, while SimPRO and Procore integration queries sit between position 41 and 51 with almost no clicks."
+  ],
+  [
+   "Top content held steady,",
+   "/ai-automation-agency.html led with 20 sessions, the homepage followed with 19, and the SimPRO Xero integration page trailed on just 5."
+  ]
+ ],
+ "weeklySub": "Week of Fri 18 Sep – Thu 24 Sep, vs the seven days before it",
  "parseError": false
 }
