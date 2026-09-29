@@ -1,42 +1,42 @@
 {
- "dateLine": "Tuesday 29 September 2026",
+ "dateLine": "Wednesday 30 September 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Tuesday 29 September 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Wednesday 30 September 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Spend eased to $128.87 from $156.45 with clicks down to 22 from 25 and CPC at $5.86, yet conversions stayed at zero. Post restart clicks sit at 71 of the 150 stop loss threshold, so the account is roughly halfway there with leads still at zero."
+    "text": "Spend eased to $119.09 from $146.19 last week and CPC sits at $5.95, but conversions are still zero with 73 clicks banked since the 8 Sept restart, short of the 150-click stop-loss mark."
    },
    {
     "who": "Vallaeys",
-    "text": "Sessions fell 32 percent to 40 from 59, and Direct dropped sharply to 7 from 21. That collapse lines up with the internal traffic filter cleaning out Chris's own visits rather than any real change in unpaid interest."
+    "text": "Budget lost share (23.1%) remains below rank lost (71.9%), so the budget conversation has not opened; impression share is 10% while CTR slipped to 3.1% from 4.1% prior week."
+   },
+   {
+    "who": "Wiebe · Gardner",
+    "text": "Sessions fell 26% (39 vs 53) and calculator use dropped to 0 from 1, even though /ai-automation-agency.html still leads landing pages with 17 sessions."
    },
    {
     "who": "Fishkin",
-    "text": "AI Assistant sessions held at 2 for the second week running, all from chatgpt.com, though this almost certainly undercounts real AI referred visits that land unlabelled in Direct. LinkedIn also showed 1 session against zero prior, worth tagging properly given Chris is posting there."
-   },
-   {
-    "who": "Dib · Gardner",
-    "text": "Calculator use dropped to 0 last7 from 1 prior7, and leads remain at zero, still just Chris's own test submissions. The AI automation landing page keeps pulling the most volume at 19 sessions, but nothing downstream is converting that traffic yet."
+    "text": "AI Assistant sessions held at 2, all via chatgpt.com, though this undercounts clicks landing as Direct; Organic Search nearly halved to 6 from 12, and LinkedIn dropped to 0 from 1, so any posting Chris did there was likely untagged. Search Console data only runs through 27 Sept, two days behind yesterday's Tue 29 count."
    }
   ],
   "actions": [
    {
-    "who": "Gardner",
-    "text": "Logo and image assets plus keyword matched RSA headlines for the currently serving ad groups are still outstanding, get these built and uploaded."
+    "who": "Vallaeys",
+    "text": "Open item: logo and image assets plus keyword-matched RSA headlines are still needed for the serving ad groups."
    },
    {
-    "who": "Vallaeys",
-    "text": "Fix the homepage form so kontrolTrackLead fires on the Formspree confirm rather than before it, the confirm then count logic is still not in place."
+    "who": "Gardner",
+    "text": "Open item: fix the homepage form so kontrolTrackLead fires on the Formspree confirm rather than before it, so counts reflect real submissions."
    },
    {
     "who": "Wiebe",
-    "text": "RSA description D1 still quotes 13.3 hours of admin per week, update it to match the current site stats before it runs any longer."
+    "text": "Open item: RSA description D1 still claims 13.3 hours of admin per week and needs updating to match current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Tue 22 Sep – Mon 28 Sep, vs the seven days before it",
+ "weeklySub": "Week of Wed 23 Sep – Tue 29 Sep, vs the seven days before it",
  "parseError": false
 }
