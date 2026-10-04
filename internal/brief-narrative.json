@@ -3,38 +3,8 @@
  "edition": "daily",
  "committee": {
   "sub": "Morning brief · Monday 5 October 2026 · the committee’s read on the 7am numbers",
-  "items": [
-   {
-    "who": "Marshall",
-    "text": "Spend rose to $146.25 from $118.67 while CPC crept to $6.09 and conversions stayed at zero. Since the restart, 90 of the pre-agreed 150 stop-loss clicks have run with still no leads, so the clock keeps ticking toward that threshold."
-   },
-   {
-    "who": "Vallaeys",
-    "text": "Rank lost (73.8) still dwarfs budget lost (21.2) over the past 30 days, with impression share at just 10 percent. Until that gap closes, this is a quality/relevance constraint, not a budget one, so the budget conversation stays shut."
-   },
-   {
-    "who": "Gardner",
-    "text": "Sessions jumped 46 percent to 60 this week, yet calculator.usedLast7 fell to 0 from 1 the week before. The funnel's middle step is not converting the traffic increase into engagement."
-   },
-   {
-    "who": "Fishkin",
-    "text": "AI Assistant sessions dropped to 0 from 2, with the chatgpt.com referral that drove them gone entirely this week. LinkedIn referral also went to 0 from 1, worth checking whether recent posts were tagged."
-   }
-  ],
-  "actions": [
-   {
-    "who": "Wiebe",
-    "text": "Logo and image assets plus keyword-matched RSA headlines for the currently serving ad groups are still outstanding, action when capacity allows."
-   },
-   {
-    "who": "Vallaeys",
-    "text": "The homepage form still fires kontrolTrackLead before the Formspree verdict rather than after it confirms. Fix the confirm-then-count logic so lead counts reflect genuine submissions."
-   },
-   {
-    "who": "Wiebe",
-    "text": "RSA description D1 still claims 13.3 hours of admin per week. Update the copy to match current site stats before it runs further."
-   }
-  ]
+  "items": [],
+  "actions": []
  },
  "weekly": [],
  "weeklySub": "Week of Mon 28 Sep – Sun 4 Oct, vs the seven days before it",
