@@ -1,42 +1,42 @@
 {
- "dateLine": "Sunday 4 October 2026",
+ "dateLine": "Monday 5 October 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Sunday 4 October 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Monday 5 October 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Spend last7 is $139.84 versus $110.95 prior7, up with clicks at 23 versus 20, yet conversions last7 sit at zero. Postrestart clicks since 8 Sept are at 87 of the 150 stoploss threshold, so this is one to keep watching, not yet a trigger."
+    "text": "Spend rose to $146.25 from $118.67 while CPC crept to $6.09 and conversions stayed at zero. Since the restart, 90 of the pre-agreed 150 stop-loss clicks have run with still no leads, so the clock keeps ticking toward that threshold."
    },
    {
     "who": "Vallaeys",
-    "text": "Rank lost 30d is 74.1 against budget lost 30d of 21, so rank loss still dwarfs budget loss and the budget conversation stays closed. Impression share 30d is only 10 percent."
+    "text": "Rank lost (73.8) still dwarfs budget lost (21.2) over the past 30 days, with impression share at just 10 percent. Until that gap closes, this is a quality/relevance constraint, not a budget one, so the budget conversation stays shut."
    },
    {
     "who": "Gardner",
-    "text": "Sessions last7 rose to 56 from 44 prior7, but calculator usedLast7 is 0 against usedPrior7 of 1, so the uplift in traffic is not reaching the calculator. The homepage at / took 35 of the 56 sessions."
+    "text": "Sessions jumped 46 percent to 60 this week, yet calculator.usedLast7 fell to 0 from 1 the week before. The funnel's middle step is not converting the traffic increase into engagement."
    },
    {
     "who": "Fishkin",
-    "text": "AI Assistant sessions last7 are 1, from chatgpt.com, and that undercounts since many AI referrals land with no referrer in Direct, which jumped to 31 sessions from 11 prior7. LinkedIn sessions fell to 0 from 1 despite Chris continuing to post there, worth checking if links are untagged."
+    "text": "AI Assistant sessions dropped to 0 from 2, with the chatgpt.com referral that drove them gone entirely this week. LinkedIn referral also went to 0 from 1, worth checking whether recent posts were tagged."
    }
   ],
   "actions": [
    {
-    "who": "Gardner",
-    "text": "Logo and image assets plus keyword-matched RSA headlines are still outstanding for the serving ad groups. Get these prepared so the live ad groups have proper creative support."
+    "who": "Wiebe",
+    "text": "Logo and image assets plus keyword-matched RSA headlines for the currently serving ad groups are still outstanding, action when capacity allows."
    },
    {
     "who": "Vallaeys",
-    "text": "Fix the homepage form so kontrolTrackLead fires on the Formspree verdict rather than before it. This confirm-then-count change is still open."
+    "text": "The homepage form still fires kontrolTrackLead before the Formspree verdict rather than after it confirms. Fix the confirm-then-count logic so lead counts reflect genuine submissions."
    },
    {
     "who": "Wiebe",
-    "text": "RSA description D1 still claims 13.3 hours of admin per week. Update this line to match the current site stats."
+    "text": "RSA description D1 still claims 13.3 hours of admin per week. Update the copy to match current site stats before it runs further."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Sun 27 Sep – Sat 3 Oct, vs the seven days before it",
+ "weeklySub": "Week of Mon 28 Sep – Sun 4 Oct, vs the seven days before it",
  "parseError": false
 }
