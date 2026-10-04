@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free 60-Minute Workflow Review | Kontrol AI</title>
+<meta name="description" content="Free 60-minute workflow review for trade and field-service businesses. Find the admin worth automating, with the person who builds it. No obligation.">
+<!-- Paid-traffic landing page: kept out of the index so it never competes with
+     the homepage or the agency page in organic search. Not in sitemap.xml. -->
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://kontrolai.com.au/free-workflow-review.html">
+<link rel="stylesheet" href="assets/article.css">
+<script src="assets/analytics.js"></script>
+<style>
+  /* Landing-page-only additions on top of article.css. */
+  .lp-bar { justify-content: space-between; }
+  .lp-bar .nav-logo { pointer-events: none; }
+
+  .page h1 { font-size: clamp(36px, 5.6vw, 58px); margin-top: 18px; }
+  .lp-sub { font-size: 19px !important; color: var(--text) !important; line-height: 1.6 !important; margin-top: 22px !important; }
+
+  .lp-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-top: 30px; }
+  .lp-actions .btn-primary { margin-top: 0; }
+  .page a.btn-ghost {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--teal); border: 1px solid var(--teal-dim); padding: 13px 22px; text-decoration: none;
+  }
+  .page a.btn-ghost:hover { border-color: var(--teal); background: var(--teal-faint); }
+  .lp-reassure { font-family: 'JetBrains Mono', monospace; font-size: 11px !important; letter-spacing: 0.04em; color: var(--text-dim) !important; margin-top: 16px !important; }
+
+  /* Live production numbers, read from the homepage at load time so this page
+     never carries its own copy of them. Hidden until they arrive. */
+  .lp-stats { margin-top: 44px; border: 1px solid var(--rule); background: var(--card-bg); }
+  .lp-stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .lp-stat { padding: 22px 24px; border-right: 1px solid var(--rule); }
+  .lp-stat:last-child { border-right: 0; }
+  .lp-stat-num { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 40px; color: var(--teal); line-height: 1; }
+  .lp-stat-label { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-mid); margin-top: 10px; }
+  .lp-stats-source { font-size: 13px !important; margin: 0 !important; padding: 14px 24px; border-top: 1px solid var(--rule); color: var(--text-dim) !important; line-height: 1.6 !important; }
+
+  .lp-flow { list-style: none; margin-top: 28px; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+  .page .lp-flow li { padding: 16px 14px; background: var(--card-bg); border: 1px solid var(--rule); border-top: 2px solid var(--teal); font-size: 14px; line-height: 1.45; color: var(--text); margin: 0; }
+  .page .lp-flow li::before { content: none; }
+  .lp-flow li span { display: block; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--teal); margin-bottom: 8px; }
+  .page .lp-flow li.is-human { border-top-color: var(--mustard); }
+  .lp-flow li.is-human span { color: var(--mustard); }
+
+  .lp-fit { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 28px; }
+  .lp-fit > div { padding: 22px 24px; background: var(--card-bg); border: 1px solid var(--rule); }
+  .lp-fit h3 { margin-top: 0 !important; font-size: 19px !important; }
+  .lp-fit .lp-no h3 { color: var(--text-mid); }
+
+  .lp-who { display: flex; gap: 24px; align-items: flex-start; margin-top: 28px; }
+  .lp-who img { width: 112px; height: 112px; object-fit: cover; border: 1px solid var(--rule); flex: none; }
+  .lp-who p { margin-top: 0 !important; }
+
+  .lp-ask { margin-top: 28px; padding: 40px; background: var(--bg2); border: 1px solid var(--rule); }
+  .lp-ask .cta-band-title { margin: 0; }
+  .lp-form { display: grid; gap: 12px; margin-top: 22px; }
+  .lp-form label { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-mid); display: grid; gap: 6px; }
+  .lp-form input, .lp-form textarea {
+    font: 400 16px/1.5 'Barlow', sans-serif; color: var(--text); background: var(--bg); border: 1px solid var(--rule);
+    padding: 12px 14px; width: 100%; text-transform: none; letter-spacing: 0;
+  }
+  .lp-form textarea { min-height: 120px; resize: vertical; }
+  .lp-form input:focus, .lp-form textarea:focus { outline: none; border-color: var(--teal); }
+  .lp-form .lp-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .lp-form button { border: 0; cursor: pointer; justify-self: start; }
+  .lp-form-msg { font-size: 15px !important; margin-top: 4px !important; }
+  .lp-form-msg.is-error { color: #FF5C5C !important; }
+  .lp-thanks { display: none; }
+  .lp-thanks h3 { margin-top: 18px !important; color: var(--teal) !important; }
+
+  .lp-foot { padding: 28px 48px; }
+  .lp-foot .footer-inner { justify-content: center; }
+
+  @media (max-width: 768px) {
+    .lp-stats-grid { grid-template-columns: 1fr; }
+    .lp-stat { border-right: 0; border-bottom: 1px solid var(--rule); padding: 18px 20px; }
+    .lp-bar .nav-cta { font-size: 10px; padding: 9px 12px; letter-spacing: 0.06em; }
+    .lp-bar .nav-cta .lp-long { display: none; }
+    .lp-flow { grid-template-columns: 1fr; gap: 6px; }
+    .page .lp-flow li { padding: 10px 14px; display: flex; gap: 12px; align-items: baseline; }
+    .lp-flow li span { display: inline; margin: 0; }
+    .lp-fit { grid-template-columns: 1fr; }
+    .lp-ask { padding: 28px 20px; }
+    .lp-form .lp-row { grid-template-columns: 1fr; }
+    .lp-form button { width: 100%; text-align: center; }
+    .lp-who img { width: 80px; height: 80px; }
+    .lp-foot { padding: 24px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- No navigation on purpose: this page has one job. -->
+<nav class="lp-bar">
+  <span class="nav-logo">Kontrol<span> AI</span></span>
+  <a href="#book" class="nav-cta">Book<span class="lp-long"> my</span> free review</a>
+</nav>
+
+<main class="page">
+
+  <div class="page-eyebrow">
+    <div class="eyebrow-bar"></div>
+    <span class="eyebrow-text">Free 60-min workflow review · Trade &amp; field-service businesses</span>
+  </div>
+
+  <h1>Stop re-keying jobs, invoices and emails <span>between your systems.</span></h1>
+
+  <p class="lp-sub">In a free 60-minute workflow review, we map where your office admin hours go and which of those tasks a workflow could take over. You leave with a ranked list of what's worth automating first, and what isn't.</p>
+
+  <div class="lp-actions">
+    <a class="btn-primary" href="#book">Book my free review →</a>
+    <a class="btn-ghost" href="#ask">Ask a question first</a>
+  </div>
+  <p class="lp-reassure">Free · no obligation · nothing is charged before a scope is agreed</p>
+
+  <section class="lp-stats" id="lp-stats" hidden>
+    <div class="lp-stats-grid">
+      <div class="lp-stat"><div class="lp-stat-num"><span data-live="jobs"></span></div><div class="lp-stat-label">Jobs automated end to end</div></div>
+      <div class="lp-stat"><div class="lp-stat-num"><span data-live="success"></span>%</div><div class="lp-stat-label">Automation success rate</div></div>
+      <div class="lp-stat"><div class="lp-stat-num"><span data-live="hours"></span> hrs</div><div class="lp-stat-label">Admin removed to date</div></div>
+    </div>
+    <p class="lp-stats-source">Live numbers from a multi-trade contracting group running SimPRO. Refreshed daily from production data.</p>
+  </section>
+
+  <h2>What one of these automations does</h2>
+  <p>The workflow in production behind those numbers takes job requests that arrive by email and turns them into jobs in SimPRO, without anyone re-typing them:</p>
+  <ol class="lp-flow">
+    <li><span>01</span>A job request lands in the inbox</li>
+    <li><span>02</span>AI reads it: customer, site, fault, urgency</li>
+    <li><span>03</span>Matched to the right customer and site</li>
+    <li><span>04</span>Job created in SimPRO</li>
+    <li class="is-human"><span>05</span>Anything unclear goes to a person, not a guess</li>
+  </ol>
+  <p>Your version might be supplier invoices, credit requests, quotes or reporting. The review is where we work out which one pays back first.</p>
+
+  <h2>Is this for you?</h2>
+  <div class="lp-fit">
+    <div>
+      <h3>A good fit if</h3>
+      <ul>
+        <li>Someone in the office re-types details from emails or PDFs into your job or accounting software</li>
+        <li>You want it done for you, connected to the software you already use</li>
+        <li>You'd rather start with one workflow than sign up to a program</li>
+      </ul>
+    </div>
+    <div class="lp-no">
+      <h3>Probably not if</h3>
+      <ul>
+        <li>You're after a DIY tool or an app to build it yourself</li>
+        <li>You want to replace your job management system</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>What people ask before booking</h2>
+  <section class="faq-list">
+    <div class="faq-item">
+      <h3 class="faq-q">Will it work with the software we already use?</h3>
+      <p class="faq-capsule">Usually, yes. The automation sits between your systems rather than replacing them, so it is designed around what you already run: job management, accounting, email and shared inboxes.</p>
+      <p class="faq-context">If something has an API or a regular export, it can generally be connected. The review is where that gets checked against your actual systems, before anything is quoted.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-q">What happens in the 60 minutes?</h3>
+      <p class="faq-capsule">We walk through how work moves through your office today, where the hours go, and which tasks are repetitive enough to automate. No prep needed.</p>
+      <p class="faq-context">You leave with a short ranked list: which workflow to automate first, roughly what it would save, and which tasks are not worth automating. It runs as a video call, so location doesn't matter.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-q">Will it send things without us checking?</h3>
+      <p class="faq-capsule">Only if you want it to. Invoices, credits, orders and customer messages can start as drafts that your team approves.</p>
+      <p class="faq-context">Every run is logged, so any output can be traced back to the email or document that produced it. Once you trust a step, it can be switched to run on its own.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-q">What does a first build cost?</h3>
+      <p class="faq-capsule">The review is free. A build is a fixed price, agreed in writing before any work starts, and can be a single workflow.</p>
+      <p class="faq-context">The price comes out of the review, so it is attached to a defined piece of work rather than a guess. Hosting, monitoring and support run as a monthly service. If the review says a process isn't worth automating, that's what you'll be told.</p>
+    </div>
+  </section>
+
+  <h2>Who you'll be talking to</h2>
+  <div class="lp-who">
+    <img src="assets/chris-olanda.jpg" alt="Chris Olanda" width="112" height="112">
+    <p><strong>Chris Olanda, founder of Kontrol AI.</strong> The person in the review is the person who designs, builds and supports the automation. No account managers and no handoffs. Background in risk, operations and digital transformation at Macquarie Bank. Based on the Gold Coast, QLD, working with businesses Australia-wide.</p>
+  </div>
+
+  <section class="cta-band" id="book">
+    <div class="cta-band-title">Book your free review.</div>
+    <p>Pick a time that suits. 60 minutes on a video call, no obligation, and nothing to prepare.</p>
+    <div class="cal-embed"></div>
+    <p class="cal-fallback" hidden><a class="btn-primary" href="https://cal.com/kontrol-ai/workflow-review">Book your free 60-minute review →</a></p>
+  </section>
+
+  <section class="lp-ask" id="ask">
+    <div class="cta-band-title">Not ready for a call?</div>
+    <p>Tell me the admin task you keep doing by hand. I'll reply personally, usually within one business day, with whether it's worth automating.</p>
+
+    <form class="lp-form" id="ask-form" action="https://formspree.io/f/mgojnaya" method="POST" novalidate>
+      <input type="hidden" name="_subject" value="Question from the free review landing page">
+      <input type="hidden" name="source" value="free-workflow-review.html">
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
+      <label>What's the task you keep doing by hand?
+        <textarea name="task" required placeholder="e.g. We get 30 supplier invoices a week as PDFs and someone types each one into Xero."></textarea>
+      </label>
+      <label>What software do you use? <input type="text" name="software" placeholder="e.g. SimPRO, Xero, Outlook"></label>
+      <div class="lp-row">
+        <label>Name <input type="text" name="name" required autocomplete="name"></label>
+        <label>Email <input type="email" name="email" required autocomplete="email"></label>
+      </div>
+      <button type="submit" class="btn-primary">Send my question →</button>
+      <p class="lp-form-msg" id="ask-msg" role="status" aria-live="polite"></p>
+      <p class="lp-reassure">By sending this you agree to our <a href="privacy.html">Privacy Policy</a>. Your details are never shared.</p>
+    </form>
+
+    <div class="lp-thanks" id="ask-thanks">
+      <h3>Thanks, it's on its way.</h3>
+      <p>I'll reply to the email you gave, usually within one business day. If you'd like to lock in a time meanwhile, <a href="#book">pick one above</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="lp-foot">
+  <div class="footer-inner">
+    <div class="footer-copy">© 2026 Kontrol AI · CO Advisory Pty Ltd · ABN 85 693 421 788 · Gold Coast, QLD · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms</a></div>
+  </div>
+</footer>
+
+<script src="assets/booking.js" defer></script>
+
+<script>
+/* Live stats: read the numbers the daily updater writes into the homepage, so
+   this page never holds its own (stale) copy. If the fetch fails the strip
+   simply stays hidden. */
+(function () {
+  var strip = document.getElementById('lp-stats');
+  if (!strip || !window.fetch || !window.DOMParser) { return; }
+  fetch('/', { credentials: 'omit' })
+    .then(function (r) { return r.ok ? r.text() : Promise.reject(r.status); })
+    .then(function (html) {
+      var doc = new DOMParser().parseFromString(html, 'text/html');
+      var ok = true;
+      ['jobs', 'success', 'hours'].forEach(function (key) {
+        var src = doc.querySelector('[data-stat="' + key + '"]');
+        var value = src ? src.textContent.trim() : '';
+        if (!value) { ok = false; return; }
+        strip.querySelectorAll('[data-live="' + key + '"]').forEach(function (el) { el.textContent = value; });
+      });
+      if (ok) { strip.hidden = false; }
+    })
+    .catch(function () {});
+})();
+
+/* Question form: posts to Formspree in the background and only counts the
+   lead once Formspree confirms it was accepted. A filled honeypot is treated
+   as a bot and never counted. */
+(function () {
+  var form = document.getElementById('ask-form');
+  if (!form) { return; }
+  var msg = document.getElementById('ask-msg');
+  var thanks = document.getElementById('ask-thanks');
+  var button = form.querySelector('button[type="submit"]');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    msg.textContent = '';
+    msg.classList.remove('is-error');
+
+    if (!form.checkValidity()) {
+      msg.textContent = 'Please fill in the task, your name and a valid email.';
+      msg.classList.add('is-error');
+      return;
+    }
+
+    var isBot = form.elements._gotcha && form.elements._gotcha.value !== '';
+    button.disabled = true;
+    button.textContent = 'Sending…';
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    })
+      .then(function (r) {
+        if (!r.ok) { throw new Error('status ' + r.status); }
+        if (!isBot && typeof window.kontrolTrackLead === 'function') {
+          window.kontrolTrackLead('landing page question form');
+        }
+        form.style.display = 'none';
+        thanks.style.display = 'block';
+      })
+      .catch(function () {
+        button.disabled = false;
+        button.textContent = 'Send my question →';
+        msg.textContent = 'That didn\'t send. Please try again, or email ai@kontrolai.com.au directly.';
+        msg.classList.add('is-error');
+      });
+  });
+})();
+</script>
+</body>
+</html>

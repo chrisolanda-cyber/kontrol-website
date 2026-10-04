@@ -79,6 +79,40 @@ window.kontrolTrackBooking = function () {
   window.kontrolTrackLead('cal.com booking');
 };
 
+/* --------------------------------------------------------------------------
+   Microsoft Clarity: heatmaps and session recordings, so we can watch what
+   paid visitors actually do on a page. Free. Set KONTROL_CLARITY_ID to the
+   project ID from clarity.microsoft.com -> Settings -> Overview; while it is
+   the placeholder nothing loads. The *.clarity.ms origins are already allowed
+   in the CSP in vercel.json.
+   -------------------------------------------------------------------------- */
+var KONTROL_CLARITY_ID = 'ysoogeedd4';
+
+(function () {
+  if (KONTROL_CLARITY_ID.indexOf('XXX') !== -1) { return; }
+  (function (c, l, a, r, i, t, y) {
+    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+    t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+    y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+  })(window, document, 'clarity', 'script', KONTROL_CLARITY_ID);
+})();
+
+/* Funnel step between "landed" and "booked": a click on any link to the
+   booking section fires review_cta_click, and a click on any link to the
+   question form fires ask_cta_click. Intent only, never a conversion. */
+document.addEventListener('click', function (e) {
+  var link = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+  if (!link || !window.KONTROL_GA4_LIVE) { return; }
+  var href = link.getAttribute('href');
+  var name = /#(book|contact)$/.test(href) ? 'review_cta_click'
+           : /#ask$/.test(href) ? 'ask_cta_click' : null;
+  if (!name) { return; }
+  gtag('event', name, {
+    link_text: (link.textContent || '').trim().slice(0, 60),
+    page_path: location.pathname
+  });
+});
+
 /* Light-touch pathway: clicking any mailto link fires quick_question_click so
    the email rung shows up in GA4 alongside form submits and bookings. Not a
    conversion — a click only proves intent, not a sent email. */
