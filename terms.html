@@ -283,9 +283,15 @@
     nav { padding: 0 20px; height: 68px; }
     .nav-logo { font-size: 40px; }
     .doc { padding: 120px 20px 72px; }
+    .nav-cta { white-space: nowrap; }
     footer { padding: 40px 20px; }
     .footer-inner { flex-direction: column; gap: 20px; text-align: center; }
     .footer-links { flex-wrap: wrap; justify-content: center; }
+  }
+  @media (max-width: 480px) {
+    .nav-cta { font-size: 10px; padding: 8px 12px; }
+    .nav-cta .nav-long { display: none; }
+    .nav-logo { font-size: 30px; }
   }
 </style>
 </head>
@@ -294,7 +300,7 @@
 <!-- NAV -->
 <nav>
   <a href="index.html" class="nav-logo">Kontrol<span> AI</span></a>
-  <a href="index.html#contact" class="nav-cta">Book my free review</a>
+  <a href="index.html#contact" class="nav-cta">Ask<span class="nav-long"> me</span> a question</a>
 </nav>
 
 <!-- DOC -->

@@ -865,6 +865,7 @@ footer {
 
 @media (max-width: 768px) {
   nav { padding: 0 20px; height: 68px; }
+  .nav-cta { white-space: nowrap; }
   /* 38px suited the condensed face; Orbitron is far wider and wrapped here. */
   .nav-logo { font-size: 28px; }
   /* No hamburger to fall back to, so the links drop rather than collide. */
@@ -982,6 +983,8 @@ footer {
 .magnet-success a { color: var(--teal); text-decoration: none; }
 
 @media (max-width: 640px) {
+  .nav-cta { font-size: 10px; padding: 9px 12px; letter-spacing: 0.06em; }
+  .nav-cta .nav-long { display: none; }
   .magnet { padding: 28px 22px; }
   .magnet-form .btn-primary { width: 100%; text-align: center; }
 }
