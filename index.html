@@ -2086,7 +2086,8 @@
   }
 
   @media (max-width: 480px) {
-    .nav-cta { padding: 8px 14px; }
+    .nav-cta { padding: 8px 12px; white-space: nowrap; font-size: 10px; }
+    .nav-cta .nav-long { display: none; }
     .stats-grid { grid-template-columns: 1fr; }
     .pipeline-nodes { flex-wrap: wrap; gap: 6px; }
     .p-arrow { display: none; }
@@ -2111,7 +2112,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
-  <a href="#contact" class="nav-cta">Book my free review</a>
+  <a href="#contact" class="nav-cta">Ask<span class="nav-long"> me</span> a question</a>
 </nav>
 
 <!-- TICKER -->
@@ -2154,10 +2155,10 @@
         Kontrol AI designs and deploys custom AI workflows for businesses with operational complexity — connecting your systems, cutting the manual admin, and giving your team back kontrol.
       </p>
       <div class="hero-actions">
-        <a href="#book" class="btn-primary">Book your free 60-minute review</a>
+        <a href="#contact" class="btn-primary">Tell me what you want to automate →</a>
         <a href="#how" class="btn-ghost">See how it works</a>
       </div>
-      <p class="hero-reassure">No prep, no obligation and no sales pitch. You leave with a list of what's worth automating.<br>Not ready for a call? <a href="#contact">Tell me what you want to automate →</a></p>
+      <p class="hero-reassure">Describe the task and I'll tell you whether it's worth automating. No obligation, no sales pitch.<br>Ready to map it properly? <a href="#book">Book the free 60-minute review →</a></p>
     </div>
 
     <div class="hero-right">
@@ -2659,7 +2660,7 @@
       <span class="cta-book-label">// free · 60 minutes · no obligation</span>
     </div>
     <div class="cal-embed"></div>
-    <p class="cal-fallback" hidden><a class="btn-primary" href="#contact">Book your free 60-minute review →</a></p>
+    <p class="cal-fallback" hidden><a class="btn-primary" href="https://cal.com/kontrol-ai/workflow-review">Book your free 60-minute review →</a></p>
   </div>
 </section>
 
