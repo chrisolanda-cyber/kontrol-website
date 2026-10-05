@@ -3,8 +3,38 @@
  "edition": "daily",
  "committee": {
   "sub": "Morning brief · Monday 5 October 2026 · the committee’s read on the 7am numbers",
-  "items": [],
-  "actions": []
+  "items": [
+   {
+    "who": "Marshall",
+    "text": "Over the last 7 days spend rose to A$146.25 from A$118.67 while clicks were 24 vs 21, pushing cost per click to A$6.09 with zero conversions recorded. The A$600 promo credit sits untouched at A$545 as the dedicated landing page test's first full data day begins tomorrow."
+   },
+   {
+    "who": "Vallaeys",
+    "text": "Impression share sits at 10% over 30 days, with 73.8% lost to rank and only 21.3% lost to budget. Budget stays fixed per the settled test rule even though rank is the bigger constraint here."
+   },
+   {
+    "who": "Wiebe · Gardner",
+    "text": "Direct sessions jumped to 33 from 7 while the homepage pulled 35 sessions and the agency page 21, a mix worth watching once the dedicated landing page takes over all paid traffic from tomorrow."
+   },
+   {
+    "who": "Fishkin",
+    "text": "AI Assistant visits fell to 0 from 2 and Organic Search dropped to 6 from 12, while LinkedIn sessions sat at 0 despite Chris's posting, which likely means untagged links rather than no activity. Search Console data through 2 Oct (two days behind yesterday, Sun 4) shows the simpro-xero-integration page getting 119 impressions at position 11 but 0 clicks."
+   }
+  ],
+  "actions": [
+   {
+    "who": "Gardner",
+    "text": "Logo and image assets for the serving ad groups are still outstanding, get these briefed before the dedicated landing page takes all paid traffic from tomorrow."
+   },
+   {
+    "who": "Vallaeys",
+    "text": "The homepage form still fires kontrolTrackLead before the Formspree verdict, fix this to confirm-then-count so lead counts stay accurate."
+   },
+   {
+    "who": "Wiebe",
+    "text": "RSA descriptions on the non-Agency ads still quote 13.3 hours of admin per week and 99.6% success, update these to match the current site stats."
+   }
+  ]
  },
  "weekly": [],
  "weeklySub": "Week of Mon 28 Sep – Sun 4 Oct, vs the seven days before it",
