@@ -898,6 +898,33 @@ footer {
 }
 .page a.hero-cta-alt:hover { text-decoration: underline; }
 
+/* Question form band (#ask), shown above the booking calendar (#book).
+   Submitted by assets/enquiry.js. */
+.cta-band + .cta-band { margin-top: 28px; }
+.ask-form { display: grid; gap: 12px; margin-top: 22px; }
+.ask-form label {
+  display: grid; gap: 6px;
+  font-family: 'JetBrains Mono', monospace; font-size: 10.5px;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-mid);
+}
+.ask-form input, .ask-form textarea {
+  width: 100%; padding: 12px 14px;
+  font: 400 16px/1.5 'Barlow', sans-serif; letter-spacing: 0; text-transform: none;
+  color: var(--text); background: var(--bg); border: 1px solid var(--rule);
+}
+.ask-form textarea { min-height: 110px; resize: vertical; }
+.ask-form input:focus, .ask-form textarea:focus { outline: none; border-color: var(--teal); }
+.ask-form .ask-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.ask-form button { border: 0; cursor: pointer; justify-self: start; margin-top: 4px; }
+.page .ask-msg { font-size: 15px; margin-top: 4px; }
+.page .ask-msg.is-error { color: #FF5C5C; }
+.page .ask-legal { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.04em; color: var(--text-dim); margin-top: 6px; }
+.ask-thanks h3 { color: var(--teal); }
+@media (max-width: 640px) {
+  .ask-form .ask-row { grid-template-columns: 1fr; }
+  .ask-form button { width: 100%; text-align: center; }
+}
+
 /* ─── LEAD MAGNET (checklist capture — the lower-commitment path) ─── */
 .magnet {
   margin-top: 40px;
