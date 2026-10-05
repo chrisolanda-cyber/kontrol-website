@@ -32,6 +32,18 @@
       msg.classList.toggle('is-error', !!isError);
     };
 
+    var nativeSubmit = function (attr) {
+      Object.keys(attr).forEach(function (k) {
+        if (!attr[k] || form.elements['attr_' + k]) { return; }
+        var input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = 'attr_' + k;
+        input.value = attr[k];
+        form.appendChild(input);
+      });
+      HTMLFormElement.prototype.submit.call(form);
+    };
+
     form.setAttribute('novalidate', '');
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -53,6 +65,11 @@
 
       fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
         .then(function (r) {
+          // Formspree refuses background (AJAX) sends with 403 while the form has
+          // reCAPTCHA switched on. Fall back to a normal page submit so the
+          // enquiry still arrives via Formspree's own check. The lead can't be
+          // confirmed from here, so it isn't counted.
+          if (r.status === 403) { nativeSubmit(attr); return; }
           if (!r.ok) { throw new Error('status ' + r.status); }
           if (!isBot && typeof window.kontrolTrackLead === 'function') {
             window.kontrolTrackLead(source);
