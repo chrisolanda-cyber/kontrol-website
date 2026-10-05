@@ -1883,6 +1883,13 @@
     transition: border-color 0.2s;
   }
 
+  textarea.cta-input { min-height: 96px; resize: vertical; line-height: 1.5; display: block; }
+  .cta-form-msg { font-size: 13px; color: var(--text-mid); margin-top: 8px; min-height: 0; }
+  .cta-form-msg.is-error { color: #FF5C5C; font-weight: 600; }
+  .cta-thanks-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 20px; text-transform: uppercase; letter-spacing: 0.03em; color: var(--teal); }
+  .cta-thanks p { font-size: 14px; font-weight: 300; color: var(--text-mid); line-height: 1.7; margin-top: 10px; }
+  .cta-thanks a { color: var(--teal); text-decoration: none; }
+
   .cta-input:focus { border-color: var(--teal); }
   .cta-input::placeholder { color: var(--text-dim); }
 
@@ -2147,10 +2154,10 @@
         Kontrol AI designs and deploys custom AI workflows for businesses with operational complexity — connecting your systems, cutting the manual admin, and giving your team back kontrol.
       </p>
       <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Book your free 60-minute review</a>
+        <a href="#book" class="btn-primary">Book your free 60-minute review</a>
         <a href="#how" class="btn-ghost">See how it works</a>
       </div>
-      <p class="hero-reassure">No prep, no obligation and no sales pitch. You leave with a list of what's worth automating.<br>Not ready for a call? <a href="mailto:ai@kontrolai.com.au">Send a quick question →</a></p>
+      <p class="hero-reassure">No prep, no obligation and no sales pitch. You leave with a list of what's worth automating.<br>Not ready for a call? <a href="#contact">Tell me what you want to automate →</a></p>
     </div>
 
     <div class="hero-right">
@@ -2620,28 +2627,35 @@
         Take<br>
         <span>kontrol.</span>
       </h2>
-      <p class="cta-sub">Book your free 60-minute workflow review. We'll map your current workflow, identify the biggest automation wins, and you'll leave with a clear list of what's worth automating first. No prep needed, no obligation, and you'll be talking with the founder who builds the work.</p>
+      <p class="cta-sub">Start by telling me what's eating your team's time, and I'll tell you whether it's worth automating. If you already know there's a workflow worth mapping, book the free 60-minute review below. Either way you're dealing with the founder who builds the work, with no obligation and no sales pitch.</p>
     </div>
     <div class="cta-box">
-      <h3 class="cta-box-title">Book your free 60-minute review</h3>
-      <div class="cta-box-desc">Free 60-min workflow review. No prep needed. Gold Coast and national.</div>
-      <form action="https://formspree.io/f/mgojnaya" method="POST" id="contact-form">
-        <input type="hidden" name="_subject" value="New workflow review request — Kontrol AI">
+      <h3 class="cta-box-title">What would you like to automate?</h3>
+      <div class="cta-box-desc">Tell me what's being done by hand today. You don't need to know the solution, just describe the annoying part. I'll tell you whether it's worth automating.</div>
+      <form action="https://formspree.io/f/mgojnaya" method="POST" id="contact-form" data-enquiry="homepage contact form" data-thanks="contact-thanks">
+        <input type="hidden" name="_subject" value="New enquiry from the homepage, Kontrol AI">
+        <input type="hidden" name="source" value="homepage">
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
-        <input class="cta-input" type="text" name="name" placeholder="Name" required="">
-        <input class="cta-input" type="email" name="email" placeholder="Email" required="">
-        <input class="cta-input" type="text" name="business" placeholder="Business name">
-        <input class="cta-input" type="tel" name="phone" placeholder="Phone number">
-        <button type="submit" class="btn-primary" style="width:100%;text-align:center;display:block;margin-top:4px;">Request my free review →</button>
+        <textarea class="cta-input" id="contact-task" name="task" aria-label="What are you doing manually that you wish you weren't?" placeholder="What are you doing manually that you wish you weren't? e.g. We receive emailed work orders and someone creates each job in SimPRO by hand." required=""></textarea>
+        <input class="cta-input" id="contact-name" type="text" name="name" placeholder="Name" aria-label="Name" required="">
+        <input class="cta-input" id="contact-email" type="email" name="email" placeholder="Email" aria-label="Email" required="">
+        <input class="cta-input" id="contact-business" type="text" name="business" placeholder="Business name (optional)" aria-label="Business name">
+        <input class="cta-input" id="contact-phone" type="tel" name="phone" placeholder="Phone (optional)" aria-label="Phone">
+        <button type="submit" class="btn-primary" style="width:100%;text-align:center;display:block;margin-top:4px;">Send it to Chris →</button>
+        <p class="cta-form-msg" data-enquiry-msg role="status" aria-live="polite"></p>
         <p style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text-dim);margin-top:12px;line-height:1.6;">By submitting this form you agree to our <a href="privacy.html" style="color:var(--teal-dim);text-decoration:none;">Privacy Policy</a>. We don't share your information with third parties.</p>
       </form>
+      <div class="cta-thanks" id="contact-thanks" hidden>
+        <div class="cta-thanks-title">Got it. I'll take a look.</div>
+        <p>I'll review what you've described and come back to you, usually within one business day, with whether there's a genuine automation opportunity. Want to talk it through sooner? <a href="#book">Book the free review below</a>.</p>
+      </div>
       <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-dim);margin-top:16px;padding-top:16px;border-top:1px solid var(--rule);letter-spacing:0.04em;">Got a quick question first? Email <a href="mailto:ai@kontrolai.com.au" style="color:var(--teal);text-decoration:none;">ai@kontrolai.com.au</a> and it comes straight to the founder.</p>
     </div>
   </div>
 
   <div class="cta-book" id="book">
     <div class="cta-book-head">
-      <h3 class="cta-book-title">Or pick a time now</h3>
+      <h3 class="cta-book-title">Ready to go deeper? Book the free workflow review</h3>
       <span class="cta-book-label">// free · 60 minutes · no obligation</span>
     </div>
     <div class="cal-embed"></div>
@@ -2670,19 +2684,8 @@
 
 <script src="assets/booking.js" defer></script>
 
-<script>
-/* Fire the lead conversion when the contact form is submitted. The form posts
-   to Formspree and navigates away, so this is a submit-time signal rather than
-   a confirmed-delivery one — gtag sends it via the beacon transport. */
-(function () {
-  var form = document.getElementById('contact-form');
-  if (!form) { return; }
-  form.addEventListener('submit', function () {
-    if (typeof window.kontrolTrackLead === 'function') {
-      window.kontrolTrackLead('homepage contact form');
-    }
-  });
-})();
-</script>
+<!-- Contact form: background submit, lead counted only once Formspree confirms,
+     lead source attached. See assets/enquiry.js. -->
+<script src="assets/enquiry.js" defer></script>
 
 </body></html>
