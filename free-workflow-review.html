@@ -69,7 +69,6 @@
   .lp-form button { border: 0; cursor: pointer; justify-self: start; }
   .lp-form-msg { font-size: 15px !important; margin-top: 4px !important; }
   .lp-form-msg.is-error { color: #FF5C5C !important; }
-  .lp-thanks { display: none; }
   .lp-thanks h3 { margin-top: 18px !important; color: var(--teal) !important; }
 
   .lp-foot { padding: 28px 48px; }
@@ -97,7 +96,7 @@
 <!-- No navigation on purpose: this page has one job. -->
 <nav class="lp-bar">
   <span class="nav-logo">Kontrol<span> AI</span></span>
-  <a href="#book" class="nav-cta">Book<span class="lp-long"> my</span> free review</a>
+  <a href="#ask" class="nav-cta">Ask<span class="lp-long"> me</span> a question</a>
 </nav>
 
 <main class="page">
@@ -112,10 +111,10 @@
   <p class="lp-sub">Kontrol AI designs, builds and supports AI automation for Australian businesses, with the founder doing the work from first call to handover. In a free 60-minute workflow review, we map where your office admin hours go and which of those tasks a workflow could take over. You leave with a ranked list of what's worth automating first, and what isn't.</p>
 
   <div class="lp-actions">
-    <a class="btn-primary" href="#book">Book my free review →</a>
-    <a class="btn-ghost" href="#ask">Ask a question first</a>
+    <a class="btn-primary" href="#ask">Tell me what you want to automate →</a>
+    <a class="btn-ghost" href="#book">Book the free 60-min review</a>
   </div>
-  <p class="lp-reassure">Free · no obligation · nothing is charged before a scope is agreed</p>
+  <p class="lp-reassure">Describe the task and I'll tell you whether it's worth automating. Free, no obligation, no sales pitch.</p>
 
   <section class="lp-stats" id="lp-stats" hidden>
     <div class="lp-stats-grid">
@@ -186,38 +185,38 @@
     <p><strong>Chris Olanda, founder of Kontrol AI.</strong> The person in the review is the person who designs, builds and supports the automation. No account managers and no handoffs. Background in risk, operations and digital transformation at Macquarie Bank. Based on the Gold Coast, QLD, working with businesses Australia-wide.</p>
   </div>
 
-  <section class="cta-band" id="book">
-    <div class="cta-band-title">Book your free review.</div>
-    <p>Pick a time that suits. 60 minutes on a video call, no obligation, and nothing to prepare.</p>
-    <div class="cal-embed"></div>
-    <p class="cal-fallback" hidden><a class="btn-primary" href="https://cal.com/kontrol-ai/workflow-review">Book your free 60-minute review →</a></p>
-  </section>
-
   <section class="lp-ask" id="ask">
-    <div class="cta-band-title">Not ready for a call?</div>
-    <p>Tell me the admin task you keep doing by hand. I'll reply personally, usually within one business day, with whether it's worth automating.</p>
+    <div class="cta-band-title">What would you like to automate?</div>
+    <p>Tell me what's being done by hand today. You don't need to know the solution, just describe the annoying part. I'll reply personally, usually within one business day, with whether it's worth automating. If it isn't, I'll tell you that too.</p>
 
-    <form class="lp-form" id="ask-form" action="https://formspree.io/f/mgojnaya" method="POST" novalidate>
+    <form class="lp-form" id="ask-form" action="https://formspree.io/f/mgojnaya" method="POST" data-enquiry="landing page question form" data-thanks="ask-thanks">
       <input type="hidden" name="_subject" value="Question from the free review landing page">
       <input type="hidden" name="source" value="free-workflow-review.html">
       <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
-      <label>What's the task you keep doing by hand?
-        <textarea name="task" required placeholder="e.g. We get 30 supplier invoices a week as PDFs and someone types each one into Xero."></textarea>
+      <label for="ask-task">What are you doing manually that you wish you weren't?
+        <textarea id="ask-task" name="task" required placeholder="e.g. We get 30 supplier invoices a week as PDFs and someone types each one into Xero."></textarea>
       </label>
-      <label>What software do you use? <input type="text" name="software" placeholder="e.g. SimPRO, Xero, Outlook"></label>
+      <label for="ask-software">What software do you use? <input id="ask-software" type="text" name="software" placeholder="e.g. SimPRO, Xero, Outlook"></label>
       <div class="lp-row">
-        <label>Name <input type="text" name="name" required autocomplete="name"></label>
-        <label>Email <input type="email" name="email" required autocomplete="email"></label>
+        <label for="ask-name">Name <input id="ask-name" type="text" name="name" required autocomplete="name"></label>
+        <label for="ask-email">Email <input id="ask-email" type="email" name="email" required autocomplete="email"></label>
       </div>
-      <button type="submit" class="btn-primary">Send my question →</button>
-      <p class="lp-form-msg" id="ask-msg" role="status" aria-live="polite"></p>
+      <button type="submit" class="btn-primary">Send it to Chris →</button>
+      <p class="lp-form-msg" data-enquiry-msg role="status" aria-live="polite"></p>
       <p class="lp-reassure">By sending this you agree to our <a href="privacy.html">Privacy Policy</a>. Your details are never shared.</p>
     </form>
 
-    <div class="lp-thanks" id="ask-thanks">
-      <h3>Thanks, it's on its way.</h3>
-      <p>I'll reply to the email you gave, usually within one business day. If you'd like to lock in a time meanwhile, <a href="#book">pick one above</a>.</p>
+    <div class="lp-thanks" id="ask-thanks" hidden>
+      <h3>Got it. I'll take a look.</h3>
+      <p>I'll review what you've described and reply to the email you gave, usually within one business day, with whether there's a genuine automation opportunity. Want to talk it through sooner? <a href="#book">Book the free review below</a>.</p>
     </div>
+  </section>
+
+  <section class="cta-band" id="book">
+    <div class="cta-band-title">Ready to go deeper?</div>
+    <p>If you already know there's a workflow worth investigating, book the free 60-minute review and we'll map it properly. Video call, no obligation, nothing to prepare.</p>
+    <div class="cal-embed"></div>
+    <p class="cal-fallback" hidden><a class="btn-primary" href="https://cal.com/kontrol-ai/workflow-review">Book your free 60-minute review →</a></p>
   </section>
 </main>
 
@@ -251,53 +250,7 @@
     })
     .catch(function () {});
 })();
-
-/* Question form: posts to Formspree in the background and only counts the
-   lead once Formspree confirms it was accepted. A filled honeypot is treated
-   as a bot and never counted. */
-(function () {
-  var form = document.getElementById('ask-form');
-  if (!form) { return; }
-  var msg = document.getElementById('ask-msg');
-  var thanks = document.getElementById('ask-thanks');
-  var button = form.querySelector('button[type="submit"]');
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    msg.textContent = '';
-    msg.classList.remove('is-error');
-
-    if (!form.checkValidity()) {
-      msg.textContent = 'Please fill in the task, your name and a valid email.';
-      msg.classList.add('is-error');
-      return;
-    }
-
-    var isBot = form.elements._gotcha && form.elements._gotcha.value !== '';
-    button.disabled = true;
-    button.textContent = 'Sending…';
-
-    fetch(form.action, {
-      method: 'POST',
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
-    })
-      .then(function (r) {
-        if (!r.ok) { throw new Error('status ' + r.status); }
-        if (!isBot && typeof window.kontrolTrackLead === 'function') {
-          window.kontrolTrackLead('landing page question form');
-        }
-        form.style.display = 'none';
-        thanks.style.display = 'block';
-      })
-      .catch(function () {
-        button.disabled = false;
-        button.textContent = 'Send my question →';
-        msg.textContent = 'That didn\'t send. Please try again, or email ai@kontrolai.com.au directly.';
-        msg.classList.add('is-error');
-      });
-  });
-})();
 </script>
+<script src="assets/enquiry.js" defer></script>
 </body>
 </html>

@@ -80,6 +80,45 @@ window.kontrolTrackBooking = function () {
 };
 
 /* --------------------------------------------------------------------------
+   Lead source. Remembers how this visitor first reached the site (or their
+   most recent ad click): Google Ads click ID, UTM tags, landing page and the
+   referring site. Kept 90 days in this browser only, and sent with an
+   enquiry form via kontrolAttribution() (see assets/enquiry.js), so every
+   enquiry email names its own source.
+   -------------------------------------------------------------------------- */
+(function () {
+  var KEY = 'kontrol_attr';
+  var MAX_AGE = 90 * 86400000;
+  var PARAMS = ['gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+
+  var read = function () {
+    try {
+      var v = JSON.parse(localStorage.getItem(KEY) || 'null');
+      return v && (Date.now() - v.ts) < MAX_AGE ? v : null;
+    } catch (e) { return null; }
+  };
+
+  var params = new URLSearchParams(location.search);
+  var fromAd = PARAMS.some(function (k) { return params.get(k); });
+  var current = read();
+
+  if (!current || fromAd) {
+    var ref = '(none)';
+    try { if (document.referrer) { ref = new URL(document.referrer).hostname || '(none)'; } } catch (e) {}
+    current = { ts: Date.now(), landing: location.pathname, referrer: ref };
+    PARAMS.forEach(function (k) { var v = params.get(k); if (v) { current[k] = v.slice(0, 200); } });
+    try { localStorage.setItem(KEY, JSON.stringify(current)); } catch (e) {}
+  }
+
+  window.kontrolAttribution = function () {
+    var c = read() || current;
+    var out = { landing_page: c.landing, referrer: c.referrer, first_seen: new Date(c.ts).toISOString(), form_page: location.pathname };
+    PARAMS.forEach(function (k) { if (c[k]) { out[k] = c[k]; } });
+    return out;
+  };
+})();
+
+/* --------------------------------------------------------------------------
    Microsoft Clarity: heatmaps and session recordings, so we can watch what
    paid visitors actually do on a page. Free. Set KONTROL_CLARITY_ID to the
    project ID from clarity.microsoft.com -> Settings -> Overview; while it is
@@ -98,14 +137,15 @@ var KONTROL_CLARITY_ID = 'ysoogeedd4';
 })();
 
 /* Funnel step between "landed" and "booked": a click on any link to the
-   booking section fires review_cta_click, and a click on any link to the
-   question form fires ask_cta_click. Intent only, never a conversion. */
+   booking calendar (#book) fires review_cta_click, and a click on any link to
+   a question form (#ask, or #contact on the homepage) fires ask_cta_click.
+   Intent only, never a conversion. */
 document.addEventListener('click', function (e) {
   var link = e.target && e.target.closest ? e.target.closest('a[href]') : null;
   if (!link || !window.KONTROL_GA4_LIVE) { return; }
   var href = link.getAttribute('href');
-  var name = /#(book|contact)$/.test(href) ? 'review_cta_click'
-           : /#ask$/.test(href) ? 'ask_cta_click' : null;
+  var name = /#book$/.test(href) ? 'review_cta_click'
+           : /#(ask|contact)$/.test(href) ? 'ask_cta_click' : null;
   if (!name) { return; }
   gtag('event', name, {
     link_text: (link.textContent || '').trim().slice(0, 60),
