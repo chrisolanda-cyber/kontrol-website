@@ -95,7 +95,7 @@
 
 <nav>
   <a href="../index.html" class="nav-logo">Kontrol<span> AI</span></a>
-  <a href="../index.html#contact" class="nav-cta">Ask<span class="nav-long"> me</span> a question</a>
+  <a href="#ask" class="nav-cta">Ask<span class="nav-long"> me</span> a question</a>
 </nav>
 
 <main class="page">
@@ -147,10 +147,31 @@
     </div>
   </div>
 
-  <section class="cta-band" id="book">
+  <section class="cta-band" id="ask">
     <div class="cta-band-title">Want the fix, not just the number?</div>
-    <p>Tell me which area is costing you most and I'll tell you whether it's worth automating. If you'd rather go through it properly, the free 60-minute workflow review walks your actual week through these four areas: which are costing you most, which are worth automating, and which aren't. Either way you're dealing with Chris Olanda, the founder who designs and builds the work. No obligation, and nothing is charged before a scope is agreed.</p>
-    <p class="hero-cta"><a class="btn-primary" href="../index.html#contact">Tell me what you want to automate →</a><a class="hero-cta-alt" href="../index.html#book">Or book the free 60-minute review →</a></p>
+    <p>Tell me which area is costing you most and I'll tell you whether it's worth automating. Your calculator result comes with your message, so you don't need to repeat it. I'll reply personally, usually within one business day.</p>
+    <form class="ask-form" id="ask-form" action="https://formspree.io/f/mgojnaya" method="POST" data-enquiry="calculator page question form" data-thanks="ask-thanks">
+      <input type="hidden" name="_subject" value="Question from the admin time-cost calculator">
+      <input type="hidden" name="source" value="downloads/admin-time-cost-checklist.html">
+      <input type="hidden" name="calculator_result" id="calc-result-field" value="not filled in">
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
+      <label for="ask-task">What are you doing manually that you wish you weren't?
+        <textarea id="ask-task" name="task" required placeholder="e.g. Invoices get built by hand from job cards, then entered again into Xero."></textarea>
+      </label>
+      <label for="ask-software">What software do you use? <input id="ask-software" type="text" name="software" placeholder="e.g. SimPRO, Xero, Outlook"></label>
+      <div class="ask-row">
+        <label for="ask-name">Name <input id="ask-name" type="text" name="name" required autocomplete="name"></label>
+        <label for="ask-email">Email <input id="ask-email" type="email" name="email" required autocomplete="email"></label>
+      </div>
+      <button type="submit" class="btn-primary">Send it to Chris →</button>
+      <p class="ask-msg" data-enquiry-msg role="status" aria-live="polite"></p>
+      <p class="ask-legal">By sending this you agree to our <a href="../privacy.html">Privacy Policy</a>. Your details are never shared.</p>
+    </form>
+    <div class="ask-thanks" id="ask-thanks" hidden>
+      <h3>Got it. I'll take a look.</h3>
+      <p>I'll review what you've described alongside your calculator result and reply to the email you gave, usually within one business day.</p>
+    </div>
+    <p class="hero-cta"><a class="hero-cta-alt" href="../index.html#book">Rather go through it properly? Book the free 60-minute review →</a></p>
   </section>
 </main>
 
@@ -194,6 +215,15 @@
     hoursLine.textContent = hours.toLocaleString('en-AU') + ' hours a week × $' + rate.toLocaleString('en-AU') + ' × 48 working weeks';
     verdict.textContent = verdictFor(hours);
 
+    // Send the result with any enquiry from this page.
+    var resultField = document.getElementById('calc-result-field');
+    if (resultField) {
+      resultField.value = hours > 0
+        ? 'Job intake ' + val('c1') + ' · Scheduling ' + val('c2') + ' · Invoicing ' + val('c3') + ' · Reporting ' + val('c4') +
+          ' hrs/wk at $' + rate + '/hr = $' + annual.toLocaleString('en-AU') + ' a year'
+        : 'not filled in';
+    }
+
     if (!tracked && hours > 0 && window.KONTROL_GA4_LIVE) {
       tracked = true;
       gtag('event', 'calculator_used', { page_path: location.pathname });
@@ -206,6 +236,7 @@
   update();
 })();
 </script>
+<script src="../assets/enquiry.js" defer></script>
 
 </body>
 </html>
