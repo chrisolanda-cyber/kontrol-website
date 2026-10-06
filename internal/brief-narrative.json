@@ -1,38 +1,38 @@
 {
- "dateLine": "Tuesday 6 October 2026",
+ "dateLine": "Wednesday 7 October 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Tuesday 6 October 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Wednesday 7 October 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Spend held flat at $131.45 versus $128.87 prior7 on the same 22 clicks, but conversions last7 are still zero, so cost per lead can't be worked out until the landing-page test starts producing qualified enquiries."
-   },
-   {
-    "who": "Vallaeys",
-    "text": "Impression share is just 10%, with 74.4% lost to rank against only 20.6% lost to budget: rank, not budget, is the binding constraint right now, so there's nothing here that changes the fixed-budget decision during the test."
+    "text": "Spend last7 sits at $139.74 against $119.09 prior, with cpc at $6.08 and conversions still at zero; the landing-page test has only used $20.91 of the $600 promo credit, leaving $524.90 ex GST."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "CTR slipped from 3.7% to 3.2% even as impressions rose to 687 (from 601), and /free-workflow-review.html shows 7 sessions since launch with zero paid clicks logged yet in the test, too early to read anything into either number."
+    "text": "The dedicated review page has pulled 11 sessions and one ask_cta_click since launch on Tue 6, with zero review_cta_click so far; raw paid clicks for the test sit at 3 of the 25-click review window."
+   },
+   {
+    "who": "Dib",
+    "text": "generate_lead held at zero across last7 even as formStartsLast7 hit 3; no new enquiry has appeared yet to grade against the qualified rule."
    },
    {
     "who": "Fishkin",
-    "text": "AI Assistant sessions rose to 4 (from 2), claude-check the top source, worth watching since this channel undercounts: Direct jumped from 7 to 36 and likely hides further AI referrals with no referrer."
+    "text": "Organic Search sessions more than doubled to 15 from 6, the only trustworthy unpaid signal; AI Assistant sessions rose to 3 from 2 (top source claude-check), but this almost certainly undercounts given Direct jumped to 34 from 13."
    }
   ],
   "actions": [
    {
-    "who": "Gardner",
-    "text": "Logo and image assets for the currently serving ad groups (Agency, Job Intake) are still outstanding, this remains open."
+    "who": "Marshall",
+    "text": "Logo and image assets for the currently serving ad groups are still outstanding; sort these while spend is modest."
    },
    {
     "who": "Wiebe",
-    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success, these need updating to match current site stats."
+    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success; update these to match the current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Tue 29 Sep – Mon 5 Oct, vs the seven days before it",
+ "weeklySub": "Week of Wed 30 Sep – Tue 6 Oct, vs the seven days before it",
  "parseError": false
 }
