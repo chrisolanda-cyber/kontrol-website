@@ -1,38 +1,42 @@
 {
- "dateLine": "Wednesday 7 October 2026",
+ "dateLine": "Thursday 8 October 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Wednesday 7 October 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Thursday 8 October 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Spend last7 sits at $139.74 against $119.09 prior, with cpc at $6.08 and conversions still at zero; the landing-page test has only used $20.91 of the $600 promo credit, leaving $524.90 ex GST."
+    "text": "Ad spend rose to A$148.43 across 24 clicks last 7 days (prior A$116.33 on 19 clicks), with cost per click at A$6.18 matching the test's expected rate, but conversions last7 sit at zero."
+   },
+   {
+    "who": "Vallaeys",
+    "text": "The landing-page test has logged 7 raw paid clicks and A$48.25 of ex-GST spend since 6 Oct, with one raw ask_cta_click and zero review_cta_click; these are raw counts only, Chris still needs to grade them against the qualified rule in the test log."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "The dedicated review page has pulled 11 sessions and one ask_cta_click since launch on Tue 6, with zero review_cta_click so far; raw paid clicks for the test sit at 3 of the 25-click review window."
+    "text": "/free-workflow-review.html has taken 15 sessions since launch and sits inside the first review window (clicks 1 to 25), so headline and CTA changes are still allowed if the search-term and Clarity review on the next 3 clicks flags anything."
    },
    {
     "who": "Dib",
-    "text": "generate_lead held at zero across last7 even as formStartsLast7 hit 3; no new enquiry has appeared yet to grade against the qualified rule."
+    "text": "Form starts last7 were 3 against 0 completed generate_lead events, so interest is not converting to even an unverified enquiry this week; the one genuine enquiry on record remains the 23 Sept wholesale food contact."
    },
    {
     "who": "Fishkin",
-    "text": "Organic Search sessions more than doubled to 15 from 6, the only trustworthy unpaid signal; AI Assistant sessions rose to 3 from 2 (top source claude-check), but this almost certainly undercounts given Direct jumped to 34 from 13."
+    "text": "AI Assistant sessions doubled to 4 last7 (prior 2), led by claude-check, while Organic Search climbed to 17 sessions from 6, the more trustworthy unpaid signal; Search Console data only runs through 4 Oct so it is lagging behind yesterday (Wed 7)."
    }
   ],
   "actions": [
    {
-    "who": "Marshall",
-    "text": "Logo and image assets for the currently serving ad groups are still outstanding; sort these while spend is modest."
+    "who": "Gardner",
+    "text": "Logo and image assets for the serving ad groups (Agency, Job Intake) are still outstanding, sort these when time allows."
    },
    {
     "who": "Wiebe",
-    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success; update these to match the current site stats."
+    "text": "RSA descriptions on the non-Agency ads still quote 13.3 hours of admin per week and 99.6% success; update these to match current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Wed 30 Sep – Tue 6 Oct, vs the seven days before it",
+ "weeklySub": "Week of Thu 1 Oct – Wed 7 Oct, vs the seven days before it",
  "parseError": false
 }
