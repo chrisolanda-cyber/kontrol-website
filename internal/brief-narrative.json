@@ -1,42 +1,63 @@
 {
- "dateLine": "Thursday 8 October 2026",
- "edition": "daily",
+ "dateLine": "Friday 9 October 2026",
+ "edition": "weekly",
  "committee": {
-  "sub": "Morning brief · Thursday 8 October 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Friday 9 October 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Ad spend rose to A$148.43 across 24 clicks last 7 days (prior A$116.33 on 19 clicks), with cost per click at A$6.18 matching the test's expected rate, but conversions last7 sit at zero."
+    "text": "Weekly ad spend rose to A$147.52 from A$124.68 on 24 clicks at a CPC of A$6.15, with conversionsLast7 still at zero."
    },
    {
     "who": "Vallaeys",
-    "text": "The landing-page test has logged 7 raw paid clicks and A$48.25 of ex-GST spend since 6 Oct, with one raw ask_cta_click and zero review_cta_click; these are raw counts only, Chris still needs to grade them against the qualified rule in the test log."
+    "text": "Impression share sits at just 10% over 30 days, with rank lost at 73.8 points well ahead of budget lost at 20.9, so quality or ad strength looks like the bigger cap on reach than budget right now."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "/free-workflow-review.html has taken 15 sessions since launch and sits inside the first review window (clicks 1 to 25), so headline and CTA changes are still allowed if the search-term and Clarity review on the next 3 clicks flags anything."
-   },
-   {
-    "who": "Dib",
-    "text": "Form starts last7 were 3 against 0 completed generate_lead events, so interest is not converting to even an unverified enquiry this week; the one genuine enquiry on record remains the 23 Sept wholesale food contact."
+    "text": "Of the first 11 landing page test clicks, 2 ask_cta_click events have fired and zero review_cta_click, while /free-workflow-review.html matched the homepage on sessions this week (20 each)."
    },
    {
     "who": "Fishkin",
-    "text": "AI Assistant sessions doubled to 4 last7 (prior 2), led by claude-check, while Organic Search climbed to 17 sessions from 6, the more trustworthy unpaid signal; Search Console data only runs through 4 Oct so it is lagging behind yesterday (Wed 7)."
+    "text": "AI Assistant sessions rose to 4 from 1 this week, led by claude-check, though this undercounts true AI referral traffic; LinkedIn held at zero despite Chris's posting there."
    }
   ],
   "actions": [
    {
+    "who": "Vallaeys",
+    "text": "Paid clicks on the landing page test have crossed 10 (now 11 raw). Review search terms and Clarity recordings now and log any exclusions in the test log."
+   },
+   {
     "who": "Gardner",
-    "text": "Logo and image assets for the serving ad groups (Agency, Job Intake) are still outstanding, sort these when time allows."
+    "text": "Logo and image assets for the serving ad groups are still outstanding, get these finalised."
    },
    {
     "who": "Wiebe",
-    "text": "RSA descriptions on the non-Agency ads still quote 13.3 hours of admin per week and 99.6% success; update these to match current site stats."
+    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success. Update them to match current site stats."
    }
   ]
  },
- "weekly": [],
- "weeklySub": "Week of Thu 1 Oct – Wed 7 Oct, vs the seven days before it",
+ "weekly": [
+  [
+   "Landing page test ticking along,",
+   "11 raw paid clicks and A$71.36 spent since 6 Oct, with A$474.45 of the A$600 credit left and no qualified enquiries logged yet."
+  ],
+  [
+   "Sessions up for the week,",
+   "last7 sessions rose to 64 from 53 (up 21%), though Thu 8 sat at 7 versus 11 on the same weekday last week."
+  ],
+  [
+   "No new leads to report,",
+   "generate_lead stayed at zero again this week, with 3 form starts not yet converting; any future enquiry still needs grading against the qualified rule."
+  ],
+  [
+   "AI Assistant visits climbing,",
+   "sessions from AI referrers rose to 4 from 1, led by claude-check, though this likely undercounts since many AI clicks land as Direct."
+  ],
+  [
+   "Search visibility still thin,",
+   "Search Console data (through 6 Oct) shows just 7 clicks from 196 impressions over 8 days, with SimPRO-related queries still ranking in the 30s and 40s."
+  ]
+ ],
+ "weeklySub": "Week of Fri 2 Oct – Thu 8 Oct, vs the seven days before it",
  "parseError": false
 }
