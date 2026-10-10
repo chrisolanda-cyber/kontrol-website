@@ -1,42 +1,42 @@
 {
- "dateLine": "Saturday 10 October 2026",
+ "dateLine": "Sunday 11 October 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Saturday 10 October 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Sunday 11 October 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Spend held near $144 across 23 clicks this week at $6.26 CPC, matching the test's roughly $6 estimate, and the landing-page test still shows 14 raw paid clicks since 6 Oct with zero qualified enquiries."
+    "text": "Raw landing-page clicks sit at 17 against A$106.75 spent, about A$6.28 per click, in line with the roughly A$6 test estimate, while last7 conversions stayed at 0."
    },
    {
     "who": "Vallaeys",
-    "text": "CTR eased to 2.4% from 2.8% even as impressions grew to 976, impression share sits at only 10%, and rank lost (72%) still runs well ahead of budget lost (22.6%), so the budget-stays-fixed rule is not in play yet."
+    "text": "Click-through rate fell to 2.2% from 3.1% even as impressions rose to 1,030 from 733 and clicks held flat at 23, worth watching before drawing conclusions."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "The dedicated review page pulled 23 of the week's sessions and logged 3 ask_cta_click events but no review_cta_click, with raw paid clicks at 14 since the test started on 6 Oct."
+    "text": "Of the 25 sessions logged on /free-workflow-review.html since the test began, only 3 ask_cta_click events have fired and zero review_cta_click events, so the raw ask-form interest still needs grading against the qualified rule."
    },
    {
     "who": "Fishkin",
-    "text": "AI Assistant sessions rose to 4 from 1, led by claude-check, while Direct fell to 18 from 29 and should not be read as organic demand; Organic Search is the only trustworthy unpaid signal this week at 17 sessions."
+    "text": "AI Assistant sessions rose to 4 from 1 last7, led by claude-check, but this still undercounts true AI referral since many such clicks land in Direct, which itself fell to 16 from 31 sessions."
    }
   ],
   "actions": [
    {
-    "who": "Marshall",
-    "text": "Raw paid clicks on the landing-page test passed 10 (now 14 since 6 Oct). Review search terms and Clarity recordings now and log exclusions before the next batch."
+    "who": "Vallaeys",
+    "text": "Raw paid clicks on the landing page have crossed 10 (now 17), review search terms and Clarity recordings now and log any exclusions in the test log."
    },
    {
-    "who": "Chris",
-    "text": "Logo and image assets are still outstanding for the serving ad groups (Agency and Job Intake)."
+    "who": "Gardner",
+    "text": "Standing item: logo and image assets for the serving ad groups are still outstanding."
    },
    {
     "who": "Wiebe",
-    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success. Update them to current site stats."
+    "text": "Standing item: RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success and need updating to current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Sat 3 Oct – Fri 9 Oct, vs the seven days before it",
+ "weeklySub": "Week of Sun 4 Oct – Sat 10 Oct, vs the seven days before it",
  "parseError": false
 }
