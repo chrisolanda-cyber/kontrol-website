@@ -1,42 +1,42 @@
 {
- "dateLine": "Sunday 11 October 2026",
+ "dateLine": "Monday 12 October 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Sunday 11 October 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Monday 12 October 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Raw landing-page clicks sit at 17 against A$106.75 spent, about A$6.28 per click, in line with the roughly A$6 test estimate, while last7 conversions stayed at 0."
+    "text": "The landing-page test has spent $111.90 ex-GST across 18 raw paid clicks (cost per click $6.17 over the last 7 days) with zero conversions recorded yet, leaving $433.91 of the promo credit before it expires 1 Dec."
    },
    {
     "who": "Vallaeys",
-    "text": "Click-through rate fell to 2.2% from 3.1% even as impressions rose to 1,030 from 733 and clicks held flat at 23, worth watching before drawing conclusions."
+    "text": "Click-through rate fell to 1.9% this week from 3.9% even though impressions nearly doubled (1,084 vs 615 prior week), a mechanics shift worth watching as clicks build toward the 25-click freeze point."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "Of the 25 sessions logged on /free-workflow-review.html since the test began, only 3 ask_cta_click events have fired and zero review_cta_click events, so the raw ask-form interest still needs grading against the qualified rule."
+    "text": "The dedicated page has logged 18 raw paid clicks and 3 ask_cta_click events but no review_cta_click and no generate_lead yet, so it is still inside the pre-freeze review window with no qualified signal either way."
    },
    {
     "who": "Fishkin",
-    "text": "AI Assistant sessions rose to 4 from 1 last7, led by claude-check, but this still undercounts true AI referral since many such clicks land in Direct, which itself fell to 16 from 31 sessions."
+    "text": "AI Assistant sessions rose to 4 this week (from 0), with claude-check the top source, a genuine answer-engine signal; Organic Search also strengthened to 18 sessions (from 6), while Direct fell from 33 to 14 and should not be read as new demand."
    }
   ],
   "actions": [
    {
     "who": "Vallaeys",
-    "text": "Raw paid clicks on the landing page have crossed 10 (now 17), review search terms and Clarity recordings now and log any exclusions in the test log."
+    "text": "Review search terms and Clarity recordings for the 18 raw paid clicks logged so far (inside the 10-20 checkpoint window) and log any exclusions now while edits are still allowed."
    },
    {
     "who": "Gardner",
-    "text": "Standing item: logo and image assets for the serving ad groups are still outstanding."
+    "text": "Standing: logo and image assets are still outstanding for the serving Agency and Job Intake ad groups."
    },
    {
     "who": "Wiebe",
-    "text": "Standing item: RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success and need updating to current site stats."
+    "text": "Standing: RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success; update these to match current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Sun 4 Oct – Sat 10 Oct, vs the seven days before it",
+ "weeklySub": "Week of Mon 5 Oct – Sun 11 Oct, vs the seven days before it",
  "parseError": false
 }
