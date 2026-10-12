@@ -1,42 +1,42 @@
 {
- "dateLine": "Monday 12 October 2026",
+ "dateLine": "Tuesday 13 October 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Monday 12 October 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Tuesday 13 October 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "The landing-page test has spent $111.90 ex-GST across 18 raw paid clicks (cost per click $6.17 over the last 7 days) with zero conversions recorded yet, leaving $433.91 of the promo credit before it expires 1 Dec."
+    "text": "Ads spend rose to A$147.95 across 24 clicks in the last 7 days (prior A$131.45 on 22 clicks), with CPC at A$6.16 and zero conversions logged yet."
    },
    {
     "who": "Vallaeys",
-    "text": "Click-through rate fell to 1.9% this week from 3.9% even though impressions nearly doubled (1,084 vs 615 prior week), a mechanics shift worth watching as clicks build toward the 25-click freeze point."
+    "text": "Rank lost (72%) continues to dwarf budget lost (22.6%) over the last 30 days, so impression share is capped by ad rank, not budget: the fixed-spend rule through the test still holds."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "The dedicated page has logged 18 raw paid clicks and 3 ask_cta_click events but no review_cta_click and no generate_lead yet, so it is still inside the pre-freeze review window with no qualified signal either way."
+    "text": "24 of roughly 89 test clicks are in, with 4 ask_cta_click events against 25 sessions on /free-workflow-review.html: the ask-first form is getting attention but no qualified enquiry has followed yet."
    },
    {
     "who": "Fishkin",
-    "text": "AI Assistant sessions rose to 4 this week (from 0), with claude-check the top source, a genuine answer-engine signal; Organic Search also strengthened to 18 sessions (from 6), while Direct fell from 33 to 14 and should not be read as new demand."
+    "text": "AI Assistant sessions fell to 1 in the last 7 days (from 3), still sourced from chatgpt.com: real signal but undercounted, especially with Direct dropping sharply from 36 to 10 sessions in the same period."
    }
   ],
   "actions": [
    {
-    "who": "Vallaeys",
-    "text": "Review search terms and Clarity recordings for the 18 raw paid clicks logged so far (inside the 10-20 checkpoint window) and log any exclusions now while edits are still allowed."
+    "who": "Vallaeys · Gardner",
+    "text": "Paid clicks on the test have crossed 20 (now 24 of the pre-agreed ~89): review search terms and Clarity recordings now and log any exclusions before the freeze hits at click 25."
    },
    {
     "who": "Gardner",
-    "text": "Standing: logo and image assets are still outstanding for the serving Agency and Job Intake ad groups."
+    "text": "Logo and image assets for the serving ad groups are still outstanding."
    },
    {
     "who": "Wiebe",
-    "text": "Standing: RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success; update these to match current site stats."
+    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success and need updating to match current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Mon 5 Oct – Sun 11 Oct, vs the seven days before it",
+ "weeklySub": "Week of Tue 6 Oct – Mon 12 Oct, vs the seven days before it",
  "parseError": false
 }
