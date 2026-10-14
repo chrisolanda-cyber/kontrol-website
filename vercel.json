@@ -1,4 +1,16 @@
 {
+  "redirects": [
+    {
+      "source": "/free-workflow-review.html",
+      "destination": "/automate.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/free-workflow-review",
+      "destination": "/automate.html",
+      "statusCode": 301
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
