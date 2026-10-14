@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free 60-Minute Workflow Review | Kontrol AI</title>
-<meta name="description" content="Free 60-minute workflow review for trade and field-service businesses. Find the admin worth automating, with the person who builds it. No obligation.">
+<title>Tell Me What You Want to Automate | Kontrol AI</title>
+<meta name="description" content="Trade and field-service businesses: tell me what your office re-types by hand and get a straight answer, from the person who builds it, on whether it is worth automating. No obligation.">
 <!-- Paid-traffic landing page: kept out of the index so it never competes with
      the homepage or the agency page in organic search. Not in sitemap.xml. -->
 <meta name="robots" content="noindex, follow">
@@ -103,16 +103,15 @@
 
   <div class="page-eyebrow">
     <div class="eyebrow-bar"></div>
-    <span class="eyebrow-text">AI automation agency, built like a practice · Free 60-min workflow review</span>
+    <span class="eyebrow-text">AI automation agency, built like a practice · Tell me what you want to automate</span>
   </div>
 
   <h1>Stop re-keying jobs, invoices and emails <span>between your systems.</span></h1>
 
-  <p class="lp-sub">Kontrol AI designs, builds and supports AI automation for Australian businesses, with the founder doing the work from first call to handover. In a free 60-minute workflow review, we map where your office admin hours go and which of those tasks a workflow could take over. You leave with a ranked list of what's worth automating first, and what isn't.</p>
+  <p class="lp-sub">Kontrol AI designs, builds and supports AI automation for Australian businesses, with the founder doing the work from first call to handover. Tell me what your office is doing by hand and I'll reply personally, usually within one business day, with whether it's worth automating. If it is, you get a fixed-price quote, agreed in writing before any work starts. If it isn't, I'll tell you that too.</p>
 
   <div class="lp-actions">
     <a class="btn-primary" href="#ask">Tell me what you want to automate →</a>
-    <a class="btn-ghost" href="#book">Book the free 60-min review</a>
   </div>
   <p class="lp-reassure">Describe the task and I'll tell you whether it's worth automating. Free, no obligation, no sales pitch.</p>
 
@@ -134,7 +133,34 @@
     <li><span>04</span>Job created in SimPRO</li>
     <li class="is-human"><span>05</span>Anything unclear goes to a person, not a guess</li>
   </ol>
-  <p>Your version might be supplier invoices, credit requests, quotes or reporting. The review is where we work out which one pays back first.</p>
+  <p>Your version might be supplier invoices, credit requests, quotes or reporting. Tell me which one is eating your office's week and I'll tell you whether it's worth automating first.</p>
+
+  <section class="lp-ask" id="ask">
+    <div class="cta-band-title">What would you like to automate?</div>
+    <p>Tell me what's being done by hand today. You don't need to know the solution, just describe the annoying part. I'll reply personally, usually within one business day, with whether it's worth automating. If it isn't, I'll tell you that too.</p>
+
+    <form class="lp-form" id="ask-form" action="https://formspree.io/f/mgojnaya" method="POST" data-enquiry="landing page question form" data-thanks="ask-thanks">
+      <input type="hidden" name="_subject" value="Question from the ads landing page">
+      <input type="hidden" name="source" value="free-workflow-review.html">
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
+      <label for="ask-task">What are you doing manually that you wish you weren't?
+        <textarea id="ask-task" name="task" required placeholder="e.g. We get 30 supplier invoices a week as PDFs and someone types each one into Xero."></textarea>
+      </label>
+      <label for="ask-software">What software do you use? <input id="ask-software" type="text" name="software" placeholder="e.g. SimPRO, Xero, Outlook"></label>
+      <div class="lp-row">
+        <label for="ask-name">Name <input id="ask-name" type="text" name="name" required autocomplete="name"></label>
+        <label for="ask-email">Email <input id="ask-email" type="email" name="email" required autocomplete="email"></label>
+      </div>
+      <button type="submit" class="btn-primary">Send it to Chris →</button>
+      <p class="lp-form-msg" data-enquiry-msg role="status" aria-live="polite"></p>
+      <p class="lp-reassure">By sending this you agree to our <a href="privacy.html">Privacy Policy</a>. Your details are never shared.</p>
+    </form>
+
+    <div class="lp-thanks" id="ask-thanks" hidden>
+      <h3>Got it. I'll take a look.</h3>
+      <p>I'll review what you've described and reply to the email you gave, usually within one business day, with whether there's a genuine automation opportunity.</p>
+    </div>
+  </section>
 
   <h2>Is this for you?</h2>
   <div class="lp-fit">
@@ -155,17 +181,17 @@
     </div>
   </div>
 
-  <h2>What people ask before booking</h2>
+  <h2>What people ask before getting in touch</h2>
   <section class="faq-list">
     <div class="faq-item">
       <h3 class="faq-q">Will it work with the software we already use?</h3>
       <p class="faq-capsule">Usually, yes. The automation sits between your systems rather than replacing them, so it is designed around what you already run: job management, accounting, email and shared inboxes.</p>
-      <p class="faq-context">If something has an API or a regular export, it can generally be connected. The review is where that gets checked against your actual systems, before anything is quoted.</p>
+      <p class="faq-context">If something has an API or a regular export, it can generally be connected. That gets checked against your actual systems during scoping, before anything is quoted.</p>
     </div>
     <div class="faq-item">
-      <h3 class="faq-q">What happens in the 60 minutes?</h3>
-      <p class="faq-capsule">We walk through how work moves through your office today, where the hours go, and which tasks are repetitive enough to automate. No prep needed.</p>
-      <p class="faq-context">You leave with a short ranked list: which workflow to automate first, roughly what it would save, and which tasks are not worth automating. It runs as a video call, so location doesn't matter.</p>
+      <h3 class="faq-q">What happens after I send the form?</h3>
+      <p class="faq-capsule">I read what you've described and reply personally, usually within one business day, with whether it's worth automating. No prep needed: describe the annoying part in your own words.</p>
+      <p class="faq-context">If it is worth automating, the next step is a scoping conversation about how that work moves through your office today, which ends in a fixed-price quote agreed in writing before any work starts. If it isn't, that's what you'll be told.</p>
     </div>
     <div class="faq-item">
       <h3 class="faq-q">Will it send things without us checking?</h3>
@@ -174,50 +200,17 @@
     </div>
     <div class="faq-item">
       <h3 class="faq-q">What does a first build cost?</h3>
-      <p class="faq-capsule">The review is free. A build is a fixed price, agreed in writing before any work starts, and can be a single workflow.</p>
-      <p class="faq-context">The price comes out of the review, so it is attached to a defined piece of work rather than a guess. Hosting, monitoring and support run as a monthly service. If the review says a process isn't worth automating, that's what you'll be told.</p>
+      <p class="faq-capsule">Asking costs nothing. A build is a fixed price, agreed in writing before any work starts, and can be a single workflow.</p>
+      <p class="faq-context">The price comes out of scoping, so it is attached to a defined piece of work rather than a guess. Hosting, monitoring and support run as a monthly service. If a process isn't worth automating, that's what you'll be told.</p>
     </div>
   </section>
 
   <h2>Who you'll be talking to</h2>
   <div class="lp-who">
     <img src="assets/chris-olanda.jpg" alt="Chris Olanda" width="112" height="112">
-    <p><strong>Chris Olanda, founder of Kontrol AI.</strong> The person in the review is the person who designs, builds and supports the automation. No account managers and no handoffs. Background in risk, operations and digital transformation at Macquarie Bank. Based on the Gold Coast, QLD, working with businesses Australia-wide.</p>
+    <p><strong>Chris Olanda, founder of Kontrol AI.</strong> The person who reads your message is the person who designs, builds and supports the automation. No account managers and no handoffs. Background in risk, operations and digital transformation at Macquarie Bank. Based on the Gold Coast, QLD, working with businesses Australia-wide.</p>
   </div>
 
-  <section class="lp-ask" id="ask">
-    <div class="cta-band-title">What would you like to automate?</div>
-    <p>Tell me what's being done by hand today. You don't need to know the solution, just describe the annoying part. I'll reply personally, usually within one business day, with whether it's worth automating. If it isn't, I'll tell you that too.</p>
-
-    <form class="lp-form" id="ask-form" action="https://formspree.io/f/mgojnaya" method="POST" data-enquiry="landing page question form" data-thanks="ask-thanks">
-      <input type="hidden" name="_subject" value="Question from the free review landing page">
-      <input type="hidden" name="source" value="free-workflow-review.html">
-      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
-      <label for="ask-task">What are you doing manually that you wish you weren't?
-        <textarea id="ask-task" name="task" required placeholder="e.g. We get 30 supplier invoices a week as PDFs and someone types each one into Xero."></textarea>
-      </label>
-      <label for="ask-software">What software do you use? <input id="ask-software" type="text" name="software" placeholder="e.g. SimPRO, Xero, Outlook"></label>
-      <div class="lp-row">
-        <label for="ask-name">Name <input id="ask-name" type="text" name="name" required autocomplete="name"></label>
-        <label for="ask-email">Email <input id="ask-email" type="email" name="email" required autocomplete="email"></label>
-      </div>
-      <button type="submit" class="btn-primary">Send it to Chris →</button>
-      <p class="lp-form-msg" data-enquiry-msg role="status" aria-live="polite"></p>
-      <p class="lp-reassure">By sending this you agree to our <a href="privacy.html">Privacy Policy</a>. Your details are never shared.</p>
-    </form>
-
-    <div class="lp-thanks" id="ask-thanks" hidden>
-      <h3>Got it. I'll take a look.</h3>
-      <p>I'll review what you've described and reply to the email you gave, usually within one business day, with whether there's a genuine automation opportunity. Want to talk it through sooner? <a href="#book">Book the free review below</a>.</p>
-    </div>
-  </section>
-
-  <section class="cta-band" id="book">
-    <div class="cta-band-title">Ready to go deeper?</div>
-    <p>If you already know there's a workflow worth investigating, book the free 60-minute review and we'll map it properly. Video call, no obligation, nothing to prepare.</p>
-    <div class="cal-embed"></div>
-    <p class="cal-fallback" hidden><a class="btn-primary" href="https://cal.com/kontrol-ai/workflow-review">Book your free 60-minute review →</a></p>
-  </section>
 </main>
 
 <footer class="lp-foot">
@@ -226,7 +219,6 @@
   </div>
 </footer>
 
-<script src="assets/booking.js" defer></script>
 
 <script>
 /* Live stats: read the numbers the daily updater writes into the homepage, so

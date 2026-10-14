@@ -1025,3 +1025,15 @@ footer {
   .magnet { padding: 28px 22px; }
   .magnet-form .btn-primary { width: 100%; text-align: center; }
 }
+
+/* Mobile menu row (Oct 2026). Services, About and FAQ now live on their own pages,
+   so phones need the links: they sit in a fixed strip under the nav bar instead of
+   disappearing. body padding keeps page content clear of the strip. */
+@media (max-width: 820px) {
+  .nav-links { display: flex !important; position: fixed; top: 80px; left: 0; right: 0; z-index: 99; justify-content: center; gap: 22px; margin: 0; padding: 10px 16px; background: rgba(10,14,17,0.96); border-bottom: 1px solid var(--rule); }
+  .nav-links a { font-size: 11px; }
+  body { padding-top: 38px; }
+}
+@media (max-width: 768px) {
+  .nav-links { top: 68px; }
+}
