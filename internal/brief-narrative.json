@@ -1,42 +1,48 @@
 {
- "dateLine": "Wednesday 14 October 2026",
+ "dateLine": "Thursday 15 October 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Wednesday 14 October 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Thursday 15 October 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Spend climbed to A$153.44 over the last 7 days from A$139.74 prior, on 26 clicks at a A$5.90 CPC, while conversionsLast7 still sits at zero."
+    "text": "The landing-page test has used 32 raw clicks and A$193.60 ex GST of the A$600 credit, leaving A$352.21 remaining; with conversionsLast7 at 0, cost per qualified enquiry still can't be worked out until Chris grades the test log."
    },
    {
     "who": "Vallaeys",
-    "text": "Impression share is 10% over 30 days, and rank lost (73.4%) is well ahead of budget lost (21.2%), suggesting the ceiling is ad strength or targeting rather than budget; spend stays fixed until the test concludes."
+    "text": "Impression share sits at 10%, with 73% of impressions lost to rank against only 21.6% lost to budget, so rank is the binding constraint, not budget (no change proposed while the test is running)."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "The landing page has reached 29 raw paid clicks since 6 Oct, past the click-25 freeze point, with 6 ask_cta_click events logged and zero review_cta_click or qualified enquiries so far."
+    "text": "ask_cta_click has fired 7 times since the test started and /free-workflow-review.html has drawn 23 sessions, but totalPaidClicks has reached 32, so the page is past the 25-click freeze point and the copy and CTAs are locked unless something breaks."
    },
    {
     "who": "Fishkin",
-    "text": "AI Assistant sessions fell to 0 last7 from 4 prior7, and Organic Search slipped to 12 from 17; Direct dropped from 37 to 3, which is mostly the untracked/AI-click bucket rather than evidence of real unpaid demand."
+    "text": "Organic Search sessions fell from 18 to 14 and AI Assistant visits dropped to 0 from 4 last period with no top source recorded, so the one trustworthy unpaid signal is softening this week."
    }
   ],
   "actions": [
    {
+    "who": "Vallaeys · Gardner",
+    "text": "Note that landingPageTest.totalPaidClicks has passed 25 (now 32); the page stays frozen, no further headline, offer or CTA edits unless something is broken."
+   },
+   {
+    "who": "Gardner",
+    "text": "Chase the outstanding logo and image assets for the Agency and Job Intake ad groups."
+   },
+   {
     "who": "Wiebe",
-    "text": "Total paid clicks on the landing page have passed 25 (now 29 since 6 Oct), so the headline, offer and calls to action stay frozen unless something is broken."
-   },
-   {
-    "who": "Chris",
-    "text": "Standing item: logo and image assets are still needed for the serving ad groups."
-   },
-   {
-    "who": "Chris",
-    "text": "Standing item: RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success and need updating to current site stats."
+    "text": "Update the RSA descriptions on the non-Agency ads, they still claim 13.3 hours of admin per week and 99.6% success; refresh to the current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Wed 7 Oct – Tue 13 Oct, vs the seven days before it",
+ "weeklySub": "Week of Thu 8 Oct – Wed 14 Oct, vs the seven days before it",
+ "adsChanges": {
+  "status": "ok",
+  "externalLast24h": 0,
+  "externalLast7d": 0,
+  "recent": []
+ },
  "parseError": false
 }
