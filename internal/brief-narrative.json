@@ -1,43 +1,64 @@
 {
- "dateLine": "Thursday 15 October 2026",
- "edition": "daily",
+ "dateLine": "Friday 16 October 2026",
+ "edition": "weekly",
  "committee": {
-  "sub": "Morning brief · Thursday 15 October 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Friday 16 October 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "The landing-page test has used 32 raw clicks and A$193.60 ex GST of the A$600 credit, leaving A$352.21 remaining; with conversionsLast7 at 0, cost per qualified enquiry still can't be worked out until Chris grades the test log."
+    "text": "Ad spend held steady at A$146.15 for 25 clicks this week (A$147.52 for 24 clicks prior), cost per click A$5.85, but conversionsLast7 is still 0 in Ads reporting. Landing page test spend sits at A$217.51 ex GST with A$328.30 of the A$600 credit remaining."
    },
    {
     "who": "Vallaeys",
-    "text": "Impression share sits at 10%, with 73% of impressions lost to rank against only 21.6% lost to budget, so rank is the binding constraint, not budget (no change proposed while the test is running)."
+    "text": "landingPageTest.totalPaidClicks has reached 36 since 6 Oct, past the 25-click point where the page is meant to be frozen. The outside-change check came back clean this week (externalLast24h and externalLast7d both 0), so nothing外部 to flag against the test numbers. Impression share sits at 10% with 72.8% lost to rank and 21.7% lost to budget, budget loss is not exceeding rank loss so no change is due."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "ask_cta_click has fired 7 times since the test started and /free-workflow-review.html has drawn 23 sessions, but totalPaidClicks has reached 32, so the page is past the 25-click freeze point and the copy and CTAs are locked unless something breaks."
+    "text": "The dedicated page /free-workflow-review.html drew 19 sessions this week against 10 for the homepage, and logged 8 ask_cta_click events out of the 36 raw paid clicks tracked since launch. These are raw counts only, Chris still needs to grade them against the relevant and qualified test rule."
    },
    {
-    "who": "Fishkin",
-    "text": "Organic Search sessions fell from 18 to 14 and AI Assistant visits dropped to 0 from 4 last period with no top source recorded, so the one trustworthy unpaid signal is softening this week."
+    "who": "Dib",
+    "text": "generate_lead sat at 0 for the week again and calculator usage fell to 0 from 1 prior week. Sessions are down 33% week on week (43 vs 64) and visitors fell to 36 from 51, so capture activity is thin across the board right now."
    }
   ],
   "actions": [
    {
-    "who": "Vallaeys · Gardner",
-    "text": "Note that landingPageTest.totalPaidClicks has passed 25 (now 32); the page stays frozen, no further headline, offer or CTA edits unless something is broken."
+    "who": "Vallaeys",
+    "text": "totalPaidClicks has crossed 25 (now 36), so the page headline, offer and CTAs stay frozen unless something is broken. No further copy edits until the test concludes."
    },
    {
     "who": "Gardner",
-    "text": "Chase the outstanding logo and image assets for the Agency and Job Intake ad groups."
+    "text": "Standing item: logo and image assets for the serving ad groups (Agency, Job Intake) are still outstanding."
    },
    {
     "who": "Wiebe",
-    "text": "Update the RSA descriptions on the non-Agency ads, they still claim 13.3 hours of admin per week and 99.6% success; refresh to the current site stats."
+    "text": "Standing item: RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success. These need updating to match current site stats."
    }
   ]
  },
- "weekly": [],
- "weeklySub": "Week of Thu 8 Oct – Wed 14 Oct, vs the seven days before it",
+ "weekly": [
+  [
+   "Landing page test sits at 36 raw clicks since 6 Oct,",
+   "A$217.51 spent ex GST against the A$600 credit, A$328.30 remaining, with 8 ask_cta_click events logged and zero qualified or booked prospects confirmed yet in Chris's test log."
+  ],
+  [
+   "Traffic eased back this week,",
+   "sessions fell 33% to 43 from 64, with Thu 15 (yesterday) at 9 sessions against 7 on the same weekday last week, Thu 8."
+  ],
+  [
+   "Leads stayed flat at zero,",
+   "no generate_lead events fired this week or last, and calculator use dropped to 0 from 1, so there is no new unverified enquiry to grade."
+  ],
+  [
+   "Channels shifted away from unpaid signals,",
+   "Direct dropped sharply to 6 sessions from 19, Organic Search eased to 15 from 18, AI Assistant fell to 0 sessions from 4 with no top source recorded, and LinkedIn remained at zero despite Chris's posting."
+  ],
+  [
+   "Search visibility stayed thin,",
+   "Search Console data through Tue 13 (two days behind yesterday) shows just 8 clicks from 231 impressions over 8 days, with \"kontrol ai\" the strongest query at position 2."
+  ]
+ ],
+ "weeklySub": "Week of Fri 9 Oct – Thu 15 Oct, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
