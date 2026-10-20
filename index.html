@@ -216,6 +216,31 @@
   </div>
 </section>
 
+<!-- EXPLAINER VIDEO: self-hosted (CSP default-src 'self'), muted autoplay loop, see assets/explainer.js -->
+<section class="explainer" aria-labelledby="explainer-title">
+  <div class="explainer-inner">
+    <div class="explainer-head">
+      <div class="hero-eyebrow">
+        <div class="eyebrow-bar"></div>
+        <span class="eyebrow-text">How an automation works</span>
+      </div>
+      <h2 class="explainer-title" id="explainer-title">Email in. <span>Work order out.</span></h2>
+      <p class="explainer-sub">A job request lands in the inbox. The job is created, the trade and the site are understood, the right contractor for that area is selected, and the work order is generated and sent. Nobody retypes a thing.</p>
+    </div>
+    <figure class="explainer-frame">
+      <video class="explainer-video" id="explainer-video" muted loop playsinline preload="none"
+             poster="assets/video/email-to-work-order-poster.jpg" width="1920" height="1080"
+             aria-label="Animation: an emailed job request becomes a job, is matched to a contractor by trade and area, and a work order is generated and sent">
+        <source src="assets/video/email-to-work-order.mp4" type="video/mp4">
+      </video>
+      <button type="button" class="explainer-sound" id="explainer-sound" aria-pressed="false">
+        <span class="explainer-sound-icon" aria-hidden="true"></span><span class="explainer-sound-label">Sound on</span>
+      </button>
+      <figcaption class="explainer-caption">// example workflow · sample data</figcaption>
+    </figure>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section class="cta-section cta-section--home" id="contact">
   <div class="cta-inner">
@@ -296,5 +321,6 @@
 <!-- Contact form: background submit, lead counted only once Formspree confirms,
      lead source attached. See assets/enquiry.js. -->
 <script src="assets/enquiry.js" defer></script>
+<script src="assets/explainer.js" defer></script>
 
 </body></html>
