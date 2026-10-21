@@ -1,43 +1,43 @@
 {
- "dateLine": "Wednesday 21 October 2026",
+ "dateLine": "Thursday 22 October 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Wednesday 21 October 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Thursday 22 October 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Paid spend eased to A$123.39 across 19 clicks this week from A$153.44 and 26 clicks last week, nudging CPC up to A$6.49. The landing-page test sits at 48 raw paid clicks against the A$600 credit, with A$248.07 remaining."
+    "text": "Ad spend eased to $124.53 over the last 7 days from $145.35 prior, with clicks down to 19 from 25, holding CPC at $6.55 against the $7 cap. Landing page test spend sits at $318.13 of the $600 credit, leaving $227.68 before the pause/continue decision."
    },
    {
-    "who": "Vallaeys",
-    "text": "No external Google Ads changes in the last 24h or 7d (status ok), so test numbers are not contaminated by outside edits. Search Console only runs through 18 Oct, two days behind yesterday (Tue 20), so organic figures lag. Rank lost to Ad Rank (73.5%) still exceeds budget lost (20.7%), worth watching though budget stays fixed until the test concludes."
+    "who": "Wiebe · Gardner",
+    "text": "Total paid clicks on the landing page test reached 51, well past the 25-click freeze point, so headline, offer and CTAs stay locked unless something breaks. Ask_cta_click sits at 10 since the 6 Oct start with zero review_cta_click, so the question form is drawing interest but nobody has pushed through to a booking yet."
+   },
+   {
+    "who": "Dib",
+    "text": "Leads stayed at zero for both the last 7 days and the prior 7, so there is no new unverified enquiry to grade. The one genuine enquiry from 23 Sept remains the only live case against the qualified-enquiry rule."
    },
    {
     "who": "Fishkin",
-    "text": "AI Assistant sessions rose to 2 this week from 0, all via chatgpt.com, the first visible sign of the answer-engine work, though this almost certainly undercounts true AI referrals landing in Direct. Direct itself jumped to 26 sessions from 3, which is not evidence of unpaid demand. Organic Search held flat at 12 sessions, still the only trustworthy unpaid signal."
-   },
-   {
-    "who": "Gardner",
-    "text": "The dedicated landing page has logged 48 raw paid clicks and 10 ask_cta_click (question-form) events since the test began 6 Oct, with zero review bookings so far. Past click 25 the page is now frozen (headline, offer and CTAs locked) unless something breaks."
+    "text": "AI Assistant sessions moved from 0 to 3 over the last 7 days, all via chatgpt.com, worth watching as it undercounts (many AI clicks land in Direct, which itself jumped from 6 to 30 and is not evidence of unpaid demand). Organic Search fell from 14 to 9 and remains the only trustworthy unpaid signal."
    }
   ],
   "actions": [
    {
     "who": "Gardner",
-    "text": "Landing-page test has passed 25 raw paid clicks (48 total), so the page stays frozen: no changes to headline, offer or CTAs unless something is broken."
+    "text": "Landing page has passed 25 raw clicks (51 total since 6 Oct), so headline, offer and CTAs stay frozen unless something breaks. Keep logging search term exclusions only, no copy edits."
    },
    {
-    "who": "Dib",
-    "text": "Standing item: logo and image assets for the serving ad groups (Agency, Job Intake) are still outstanding."
+    "who": "Chris",
+    "text": "Logo and image assets for the serving ad groups (Agency) are still outstanding."
    },
    {
-    "who": "Wiebe",
-    "text": "Standing item: RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success and need updating to current site stats."
+    "who": "Chris",
+    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours/week admin and 99.6% success and need updating to the current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Wed 14 Oct – Tue 20 Oct, vs the seven days before it",
+ "weeklySub": "Week of Thu 15 Oct – Wed 21 Oct, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
