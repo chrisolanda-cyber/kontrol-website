@@ -1,64 +1,43 @@
 {
- "dateLine": "Friday 23 October 2026",
- "edition": "weekly",
+ "dateLine": "Saturday 24 October 2026",
+ "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Friday 23 October 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Saturday 24 October 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "The landing page test has run up 55 raw paid clicks for $345.80 ex GST since 6 Oct, with $200.01 of the $600 credit left and zero qualified enquiries logged against it, so cost per qualified enquiry can't yet be checked against the A$480 pause rule as clicks head toward the 75-click red-flag mark."
+    "text": "Weekly ad spend eased to A$129.20 from A$140.62, with clicks down to 19 from 24, holding at A$6.80 per click, in line with the A$7 cap."
    },
    {
     "who": "Vallaeys",
-    "text": "No external account changes this week (externalLast24h and externalLast7d both at 0, status ok), so the test numbers aren't contaminated by outside edits; impression share sits at 10% with 74.2% of impressions lost to rank, well above the 19.7% lost to budget, so the budget-versus-rank trigger hasn't fired."
+    "text": "No external account changes were logged in the last 24 hours or 7 days (adsChanges status: ok), so none of the landing page test's 57 raw clicks or 10 ask_cta_click events need discounting for outside interference."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "Since the page launch, ask_cta_click sits at 10 and review_cta_click at 0, so visitors are only taking the lighter question-form step; with 55 total paid clicks already past the 25-click mark, headline, offer and CTAs stay frozen while the homepage (31 sessions) is still pulling more entries than /automate.html (18 sessions)."
+    "text": "The dedicated landing page has logged 10 ask_cta_click events against 57 raw paid clicks since 6 October, with zero review_cta_click or calculator_used recorded; the click count is well past the 25-click mark, so the headline, offer and CTAs stay frozen unless something breaks."
    },
    {
     "who": "Fishkin",
-    "text": "AI Assistant sessions moved from 0 to 3 this week, all via chatgpt.com, worth watching given the answer-engine work, but it likely undercounts given Direct jumped from 6 to 36 and may be absorbing more untagged AI clicks; the only trustworthy unpaid signal, Organic Search, actually fell from 15 to 9 sessions."
+    "text": "Organic Search sessions fell to 7 from 17 while Direct jumped to 28 from 15, which is not evidence of unpaid demand; AI Assistant sessions ticked up to 2 from 1, all via chatgpt.com, though this likely undercounts true AI referral traffic."
    }
   ],
   "actions": [
    {
     "who": "Gardner",
-    "text": "Paid clicks are at 55, well past the 25-click checkpoint, so leave the headline, offer and CTAs frozen unless something breaks. Watch the count as it closes in on the 75-click red-flag threshold with zero qualified enquiries so far."
+    "text": "The test has passed 25 raw clicks (57 so far), so the page headline, offer and CTAs remain frozen unless something is broken."
    },
    {
-    "who": "Chris",
-    "text": "Sort the logo and image assets for the Agency ad group, the one still taking essentially all the paid clicks."
+    "who": "Marshall",
+    "text": "Logo and image assets for the serving ad groups are still outstanding and need to be supplied."
    },
    {
-    "who": "Chris",
-    "text": "Update the RSA descriptions on the non-Agency ads (Job Intake, SimPRO): they still claim 13.3 hours of admin saved per week and 99.6% success, which no longer matches the current site stats."
+    "who": "Wiebe",
+    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success; update them to match current site stats."
    }
   ]
  },
- "weekly": [
-  [
-   "Landing page test ticking along",
-   "55 raw paid clicks and $345.80 ex GST spent since 6 Oct, with $200.01 of the $600 credit left and zero qualified enquiries logged yet, so the page stays frozen past its 25-click checkpoint as it heads toward the 75-click red-flag mark."
-  ],
-  [
-   "Sessions kept climbing",
-   "last 7 days hit 69 sessions against 43 the week before, up 60%, with Thu 22's 13 sessions well ahead of the 9 recorded on the same weekday the previous week, Thu 15."
-  ],
-  [
-   "No qualified leads to report",
-   "generate_lead sat at zero again this week and the test log still shows no qualified enquiries against the 10 ask_cta_click form starts recorded since the landing page launched."
-  ],
-  [
-   "Direct and AI Assistant traffic both jumped",
-   "Direct rose from 6 to 36 sessions and AI Assistant sessions went from 0 to 3, all via chatgpt.com, though Direct likely hides further AI referrals with no referrer rather than genuine organic demand, while Organic Search itself fell from 15 to 9 sessions."
-  ],
-  [
-   "Search Console still lagging",
-   "data only runs through Tue 20 Oct, two days behind, with just 6 clicks from 245 impressions over 8 days and the branded term kontrol the only query ranking well, at position 1."
-  ]
- ],
- "weeklySub": "Week of Fri 16 Oct – Thu 22 Oct, vs the seven days before it",
+ "weekly": [],
+ "weeklySub": "Week of Sat 17 Oct – Fri 23 Oct, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
