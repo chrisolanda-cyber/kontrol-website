@@ -1,43 +1,43 @@
 {
- "dateLine": "Saturday 24 October 2026",
+ "dateLine": "Sunday 25 October 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Saturday 24 October 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Sunday 25 October 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Weekly ad spend eased to A$129.20 from A$140.62, with clicks down to 19 from 24, holding at A$6.80 per click, in line with the A$7 cap."
-   },
-   {
-    "who": "Vallaeys",
-    "text": "No external account changes were logged in the last 24 hours or 7 days (adsChanges status: ok), so none of the landing page test's 57 raw clicks or 10 ask_cta_click events need discounting for outside interference."
+    "text": "Paid clicks cost A$6.78 each last7 (18 clicks, A$122.11 spend) with zero conversions, and across the whole landing-page test 58 raw paid clicks have produced zero qualified or even unverified enquiries against A$366.44 spent of the A$600 credit (A$179.37 remaining)."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "The dedicated landing page has logged 10 ask_cta_click events against 57 raw paid clicks since 6 October, with zero review_cta_click or calculator_used recorded; the click count is well past the 25-click mark, so the headline, offer and CTAs stay frozen unless something breaks."
+    "text": "The landing page has logged 10 raw ask_cta_click events from 58 raw paid clicks since 6 Oct, but zero review_cta_click bookings, so the primary action is drawing some engagement while the deeper booking step shows nothing yet."
    },
    {
     "who": "Fishkin",
-    "text": "Organic Search sessions fell to 7 from 17 while Direct jumped to 28 from 15, which is not evidence of unpaid demand; AI Assistant sessions ticked up to 2 from 1, all via chatgpt.com, though this likely undercounts true AI referral traffic."
+    "text": "AI Assistant sessions ticked up to 2 last7 from 1 prior7, led by chatgpt.com, though this likely undercounts given Direct jumped from 15 to 28 sessions; meanwhile Organic Search, the only trustworthy unpaid signal, fell sharply from 18 to 5 sessions."
+   },
+   {
+    "who": "Dib",
+    "text": "Seven days produced zero leads and zero form starts (formStartsLast7 0) despite 53 visitors, so visits are not converting into any enquiry, verified or not."
    }
   ],
   "actions": [
    {
     "who": "Gardner",
-    "text": "The test has passed 25 raw clicks (57 so far), so the page headline, offer and CTAs remain frozen unless something is broken."
-   },
-   {
-    "who": "Marshall",
-    "text": "Logo and image assets for the serving ad groups are still outstanding and need to be supplied."
+    "text": "The landing page has passed 25 raw paid clicks (58 so far), so the headline, offer and calls to action stay frozen unless something breaks."
    },
    {
     "who": "Wiebe",
-    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success; update them to match current site stats."
+    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin a week and 99.6% success: update the copy to match current site stats."
+   },
+   {
+    "who": "Gardner",
+    "text": "Logo and image assets for the serving ad groups (Agency) are still outstanding and should be added."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Sat 17 Oct – Fri 23 Oct, vs the seven days before it",
+ "weeklySub": "Week of Sun 18 Oct – Sat 24 Oct, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
