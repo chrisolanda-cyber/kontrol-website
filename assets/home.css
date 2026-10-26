@@ -1924,3 +1924,11 @@
   .explainer { padding: 64px 20px; }
   .explainer-sound { right: 10px; bottom: 44px; padding: 8px 12px; font-size: 12px; }
 }
+
+/* Contact sits last in the menu in rust so it reads as the way to get in touch,
+   not just another page. Same destination as the page's Ask button. */
+.nav-links a.nav-contact { color: var(--rust); }
+.nav-links a.nav-contact:hover { color: #f27a4f; }
+@media (max-width: 380px) {
+  .nav-links { gap: 10px; }
+}

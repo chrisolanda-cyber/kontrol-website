@@ -1057,3 +1057,11 @@ footer {
   .nav-links { gap: 14px; }
   .nav-links a { font-size: 10px; letter-spacing: 0.06em; }
 }
+
+/* Contact sits last in the menu in rust so it reads as the way to get in touch,
+   not just another page. Same destination as the page's Ask button. */
+.nav-links a.nav-contact { color: var(--rust); }
+.nav-links a.nav-contact:hover { color: #f27a4f; }
+@media (max-width: 380px) {
+  .nav-links { gap: 10px; }
+}
