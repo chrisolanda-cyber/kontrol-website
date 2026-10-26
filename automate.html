@@ -14,9 +14,6 @@
 <style>
   /* Landing-page-only additions on top of article.css. */
   .lp-bar { justify-content: space-between; }
-  /* Button frozen by the ad test rule: stays teal "Ask me a question" until the test ends. */
-  .lp-bar .nav-cta { background: var(--teal); border-color: var(--teal); color: var(--bg); }
-  .lp-bar .nav-cta:hover { background: #7ee6df; border-color: #7ee6df; }
 
   .page h1 { font-size: clamp(36px, 5.6vw, 58px); margin-top: 18px; }
   .lp-sub { font-size: 19px !important; color: var(--text) !important; line-height: 1.6 !important; margin-top: 22px !important; }
@@ -59,6 +56,7 @@
 
   .lp-ask { margin-top: 28px; padding: 40px; background: var(--bg2); border: 1px solid var(--rule); }
   .lp-ask .cta-band-title { margin: 0; }
+  .lp-ask .contact-opt .lp-form { margin-top: 0; }
   .lp-form { display: grid; gap: 12px; margin-top: 22px; }
   .lp-form label { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-mid); display: grid; gap: 6px; }
   .lp-form input, .lp-form textarea {
@@ -80,7 +78,6 @@
     .lp-stats-grid { grid-template-columns: 1fr; }
     .lp-stat { border-right: 0; border-bottom: 1px solid var(--rule); padding: 18px 20px; }
     .lp-bar .nav-cta { font-size: 10px; padding: 9px 12px; letter-spacing: 0.06em; }
-    .lp-bar .nav-cta .lp-long { display: none; }
     .lp-flow { grid-template-columns: 1fr; gap: 6px; }
     .page .lp-flow li { padding: 10px 14px; display: flex; gap: 12px; align-items: baseline; }
     .lp-flow li span { display: inline; margin: 0; }
@@ -105,7 +102,7 @@
     <li><a href="about.html">About</a></li>
     <li><a href="faq.html">FAQ</a></li>
   </ul>
-  <a href="#ask" class="nav-cta">Ask<span class="lp-long"> me</span> a question</a>
+  <a href="#ask" class="nav-cta">Contact</a>
 </nav>
 
 <main class="page">
@@ -127,7 +124,7 @@
   <section class="lp-stats" id="lp-stats" hidden>
     <div class="lp-stats-grid">
       <div class="lp-stat"><div class="lp-stat-num"><span data-live="jobs"></span></div><div class="lp-stat-label">Jobs automated end to end</div></div>
-      <div class="lp-stat"><div class="lp-stat-num"><span data-live="success"></span>%</div><div class="lp-stat-label">Automation success rate</div></div>
+      <div class="lp-stat"><div class="lp-stat-num"><span data-live="dupes"></span></div><div class="lp-stat-label">Duplicate jobs stopped</div></div>
       <div class="lp-stat"><div class="lp-stat-num"><span data-live="hours"></span> hrs</div><div class="lp-stat-label">Admin removed to date</div></div>
     </div>
     <p class="lp-stats-source">Live numbers from a multi-trade contracting group running SimPRO. Refreshed daily from production data.</p>
@@ -145,14 +142,20 @@
   <p>Your version might be supplier invoices, credit requests, quotes or reporting. Tell me which one is eating your office's week and I'll tell you whether it's worth automating first.</p>
 
   <section class="lp-ask" id="ask">
-    <div class="cta-band-title">What would you like to automate?</div>
-    <p>Tell me what's being done by hand today. You don't need to know the solution, just describe the annoying part. I'll reply personally, usually within one business day, with whether it's worth automating. If it isn't, I'll tell you that too.</p>
-
+    <div class="cta-band-title">Contact</div>
+    <p>Two ways to reach me. Both come straight to me, Chris, and I reply personally, usually within one business day.</p>
+    <div class="contact-opts">
+    <div class="contact-opt contact-opt-email">
+      <div class="contact-opt-label">Email</div>
+      <a class="contact-email-big" href="mailto:ai@kontrolai.com.au">ai@kontrolai.com.au</a>
+    </div>
+    <div class="contact-opt">
+      <div class="contact-opt-label">Contact form</div>
     <form class="lp-form" id="ask-form" action="https://formspree.io/f/mgojnaya" method="POST" data-enquiry="landing page question form" data-thanks="ask-thanks">
       <input type="hidden" name="_subject" value="Question from the ads landing page">
       <input type="hidden" name="source" value="automate.html">
       <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
-      <label for="ask-task">What are you doing manually that you wish you weren't?
+      <label for="ask-task"><span class="ask-hint">Describe what's done by hand today. You don't need the solution. I'll tell you whether it's worth automating, and if it isn't, I'll say so.</span>
         <textarea id="ask-task" name="task" required placeholder="e.g. We get 30 supplier invoices a week as PDFs and someone types each one into Xero."></textarea>
       </label>
       <label for="ask-software">What software do you use? <input id="ask-software" type="text" name="software" placeholder="e.g. SimPRO, Xero, Outlook"></label>
@@ -168,6 +171,8 @@
     <div class="lp-thanks" id="ask-thanks" hidden>
       <h3>Got it. I'll take a look.</h3>
       <p>I'll review what you've described and reply to the email you gave, usually within one business day, with whether there's a genuine automation opportunity.</p>
+    </div>
+    </div>
     </div>
   </section>
 
@@ -241,7 +246,7 @@
     .then(function (html) {
       var doc = new DOMParser().parseFromString(html, 'text/html');
       var ok = true;
-      ['jobs', 'success', 'hours'].forEach(function (key) {
+      ['jobs', 'dupes', 'hours'].forEach(function (key) {
         var src = doc.querySelector('[data-stat="' + key + '"]');
         var value = src ? src.textContent.trim() : '';
         if (!value) { ok = false; return; }
