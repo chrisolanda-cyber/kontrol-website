@@ -1851,6 +1851,12 @@
   .nav-links { top: 68px; }
 }
 
+/* Five links plus Trades only just fit a 375px phone; tighten on narrow screens. */
+@media (max-width: 420px) {
+  .nav-links { gap: 14px; }
+  .nav-links a { font-size: 10px; letter-spacing: 0.06em; }
+}
+
 /* ---------- Explainer video (homepage) ---------- */
 .explainer { padding: 96px 48px; border-top: 1px solid var(--rule); }
 .explainer-inner { max-width: 1200px; margin: 0 auto; }
