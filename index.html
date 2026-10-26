@@ -183,19 +183,22 @@
         <div class="stats-label">// actuals from live client pipelines</div>
         <div class="stats-grid">
           <div class="stat-cell">
-            <div class="stat-num"><span data-stat="hours">134</span><span class="stat-unit" style="margin-left:3px;">hrs</span></div>
+            <div class="stat-num"><span data-stat="hours">238</span><span class="stat-unit" style="margin-left:3px;">hrs</span></div>
             <div class="stat-label">Admin removed to date</div>
           </div>
           <div class="stat-cell">
-            <div class="stat-num"><span data-stat="jobs">1,400</span></div>
+            <div class="stat-num"><span data-stat="jobs">1,469</span></div>
             <div class="stat-label">Jobs automated end to end</div>
           </div>
           <div class="stat-cell">
-            <div class="stat-num"><span data-stat="success">97</span><span class="stat-unit">%</span></div>
-            <div class="stat-label">Automation success rate</div>
+            <div class="stat-num"><span data-stat="dupes">308</span></div>
+            <div class="stat-label">Duplicate jobs stopped</div>
+            <!-- Not shown: the daily updater still writes the success rate here, and
+                 automate.html reads it for its own stats strip. -->
+            <span data-stat="success" hidden>97</span>
           </div>
           <div class="stat-cell">
-            <div class="stat-num"><span data-stat="runs">2,562</span></div>
+            <div class="stat-num"><span data-stat="runs">2,898</span></div>
             <div class="stat-label">Automation runs</div>
           </div>
         </div>
