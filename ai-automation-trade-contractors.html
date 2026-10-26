@@ -159,6 +159,18 @@
   .flow-branch { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; margin-top: 28px; }
   .flow-branch .node { grid-column: 3 / span 2; min-height: 0; }
   .flow-branch .node::before { content: ""; position: absolute; left: 24px; top: -28px; height: 27px; border-left: 1px dashed var(--mustard); }
+  /* Diagram videos: 16:9 on desktop (broken out wider so the text stays legible), 4:5 on phones.
+     The static flow stays in the page as the accessible description, shown only for reduced motion. */
+  .flow-video { margin-top: 8px; }
+  @media (min-width: 1000px) { .flow-video { position: relative; left: 50%; width: min(1180px, calc(100vw - 96px)); transform: translateX(-50%); } }
+  .fv { display: block; width: 100%; height: auto; background: #0a0e11; border: 1px solid var(--rule); }
+  .fv-tall { display: none; }
+  .flow-static { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+  @media (max-width: 760px) { .fv-wide { display: none; } .fv-tall { display: block; } }
+  @media (prefers-reduced-motion: reduce) {
+    .flow-video { display: none; }
+    .flow-static { position: static; width: auto; height: auto; overflow: visible; clip: auto; clip-path: none; white-space: normal; }
+  }
   .flow-fig figcaption { margin-top: 18px; font-size: 14px; font-weight: 300; color: var(--text-mid); }
 
   /* ---------- Mock margin dashboard ----------
@@ -301,20 +313,27 @@
     <li><span class="pain-n">03</span><strong>Guessing margins</strong>You know you're busy. Not which jobs paid.</li>
   </ul>
 
-  <!-- 01 JOB ORIGINATION. Static flow for now; swap for the trades-job-origination
-       video (16x9 + 4x5, see automation-video/STORYBOARD-trades-diagrams.md) when it lands.
-       Keep this markup as the reduced-motion fallback. -->
+  <!-- 01 JOB ORIGINATION. Looping video (automation-video/src/TradesFlow.tsx); the static
+       flow below it is the screen-reader text and the reduced-motion fallback. -->
   <section class="flow-sec" aria-labelledby="flow1-h">
     <div class="flow-kicker">01 · Job requests</div>
     <h2 id="flow1-h">Email in. Job created.</h2>
-    <figure class="flow-fig" data-video="trades-job-origination">
+    <figure class="flow-fig">
+      <div class="flow-video">
+        <video class="fv fv-wide" muted loop playsinline preload="none" width="1600" height="900" aria-hidden="true"
+               poster="assets/video/trades-job-origination-16x9-poster.jpg"><source src="assets/video/trades-job-origination-16x9.mp4" type="video/mp4"></video>
+        <video class="fv fv-tall" muted loop playsinline preload="none" width="1080" height="1350" aria-hidden="true"
+               poster="assets/video/trades-job-origination-4x5-poster.jpg"><source src="assets/video/trades-job-origination-4x5.mp4" type="video/mp4"></video>
+      </div>
+      <div class="flow-static" role="img" aria-label="Diagram: a job request email is read by AI, matched to the customer and site, and created as a job in your job software. Anything unclear goes to your office to confirm.">
       <ol class="flow">
         <li class="node"><span class="node-label">Inbox</span><span class="node-body">A job request email arrives</span></li>
         <li class="node ai"><span class="node-label">AI reads</span><span class="node-body">Customer, site, fault, urgency</span></li>
         <li class="node ai"><span class="node-label">Matched</span><span class="node-body">Customer and site found on file</span></li>
-        <li class="node"><span class="node-label">Job created</span><span class="node-body">In SimPRO. Nothing typed by hand</span></li>
+        <li class="node"><span class="node-label">Job created</span><span class="node-body">In your job software. Nothing typed by hand</span></li>
       </ol>
       <div class="flow-branch flow-branch-3"><div class="node person"><span class="node-label">To a person</span><span class="node-body">Anything unclear goes to the office with the email attached. No guessing.</span></div></div>
+      </div>
       <figcaption>Every run is logged, so any job can be traced back to the email that created it.</figcaption>
     </figure>
   </section>
@@ -323,7 +342,14 @@
   <section class="flow-sec" aria-labelledby="flow2-h">
     <div class="flow-kicker">02 · Supplier invoices</div>
     <h2 id="flow2-h">Invoice in. Checked against the PO.</h2>
-    <figure class="flow-fig" data-video="trades-invoice-recon">
+    <figure class="flow-fig">
+      <div class="flow-video">
+        <video class="fv fv-wide" muted loop playsinline preload="none" width="1600" height="900" aria-hidden="true"
+               poster="assets/video/trades-invoice-recon-16x9-poster.jpg"><source src="assets/video/trades-invoice-recon-16x9.mp4" type="video/mp4"></video>
+        <video class="fv fv-tall" muted loop playsinline preload="none" width="1080" height="1350" aria-hidden="true"
+               poster="assets/video/trades-invoice-recon-4x5-poster.jpg"><source src="assets/video/trades-invoice-recon-4x5.mp4" type="video/mp4"></video>
+      </div>
+      <div class="flow-static" role="img" aria-label="Diagram: a supplier invoice is read by AI, matched to the purchase order, checked line by line, and queued for approval. Lines not on the PO go to a person.">
       <ol class="flow">
         <li class="node"><span class="node-label">Supplier invoice</span><span class="node-body">PDF lands in the accounts inbox</span></li>
         <li class="node ai"><span class="node-label">AI reads</span><span class="node-body">PO number, job, every line, total</span></li>
@@ -331,6 +357,7 @@
         <li class="node"><span class="node-label">Ready to approve</span><span class="node-body">Matching invoices queued for sign-off</span></li>
       </ol>
       <div class="flow-branch flow-branch-3"><div class="node person"><span class="node-label">To a person</span><span class="node-body">A line that isn't on the PO, like freight nobody agreed to, gets flagged.</span></div></div>
+      </div>
       <figcaption>Nothing is approved on its own unless you want it to be.</figcaption>
     </figure>
   </section>
@@ -785,6 +812,7 @@
 </footer>
 
 <script src="assets/enquiry.js" defer></script>
+<script src="assets/trades-video.js" defer></script>
 <script>
   // Margin board job-type filter: dims the other series, keeps the floor line.
   (function () {
