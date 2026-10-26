@@ -127,14 +127,15 @@
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">Kontrol<span> AI</span></a>
+  <a href="/" class="nav-logo">Kontrol<span> AI</span></a>
   <ul class="nav-links">
     <li><a href="services.html">Services</a></li>
+    <li><a href="ai-automation-trade-contractors.html">Trades</a></li>
     <li><a href="custom-business-dashboards.html">Dashboards</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="faq.html">FAQ</a></li>
   </ul>
-  <a href="#ask" class="nav-cta">Ask<span class="nav-long"> me</span> a question</a>
+  <a href="#ask" class="nav-cta">Contact</a>
 </nav>
 
 <main class="page">
@@ -230,27 +231,36 @@
   </div>
 
   <section class="cta-band" id="ask">
-    <div class="cta-band-title">What would you like to automate?</div>
-    <p>Tell me what's being done by hand today. You don't need to know the solution, just describe the annoying part. I'll reply personally, usually within one business day, with whether it's worth automating. If it isn't, I'll tell you that too.</p>
-    <form class="ask-form" id="ask-form" action="https://formspree.io/f/mgojnaya" method="POST" data-enquiry="SimPRO and Xero page question form" data-thanks="ask-thanks">
-      <input type="hidden" name="_subject" value="Question from the SimPRO and Xero page">
-      <input type="hidden" name="source" value="simpro-xero-integration.html">
-      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
-      <label for="ask-task">What are you doing manually that you wish you weren't?
-        <textarea id="ask-task" name="task" required placeholder="e.g. Every invoice in SimPRO gets re-keyed into Xero by hand."></textarea>
-      </label>
-      <label for="ask-software">What software do you use? <input id="ask-software" type="text" name="software" placeholder="e.g. SimPRO, Xero, Outlook"></label>
-      <div class="ask-row">
-        <label for="ask-name">Name <input id="ask-name" type="text" name="name" required autocomplete="name"></label>
-        <label for="ask-email">Email <input id="ask-email" type="email" name="email" required autocomplete="email"></label>
+    <div class="cta-band-title">Contact</div>
+    <p>Two ways to reach me. Both come straight to me, Chris, and I reply personally, usually within one business day.</p>
+    <div class="contact-opts">
+    <div class="contact-opt contact-opt-email">
+      <div class="contact-opt-label">Email</div>
+      <a class="contact-email-big" href="mailto:ai@kontrolai.com.au">ai@kontrolai.com.au</a>
+    </div>
+    <div class="contact-opt">
+      <div class="contact-opt-label">Contact form</div>
+      <form class="ask-form" id="ask-form" action="https://formspree.io/f/mgojnaya" method="POST" data-enquiry="SimPRO and Xero page question form" data-thanks="ask-thanks">
+        <input type="hidden" name="_subject" value="Question from the SimPRO and Xero page">
+        <input type="hidden" name="source" value="simpro-xero-integration.html">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
+        <label for="ask-task"><span class="ask-hint">Describe what's done by hand today. You don't need the solution. I'll tell you whether it's worth automating, and if it isn't, I'll say so.</span>
+          <textarea id="ask-task" name="task" required placeholder="e.g. Every invoice in SimPRO gets re-keyed into Xero by hand."></textarea>
+        </label>
+        <label for="ask-software">What software do you use? <input id="ask-software" type="text" name="software" placeholder="e.g. SimPRO, Xero, Outlook"></label>
+        <div class="ask-row">
+          <label for="ask-name">Name <input id="ask-name" type="text" name="name" required autocomplete="name"></label>
+          <label for="ask-email">Email <input id="ask-email" type="email" name="email" required autocomplete="email"></label>
+        </div>
+        <button type="submit" class="btn-primary">Send it to Chris →</button>
+        <p class="ask-msg" data-enquiry-msg role="status" aria-live="polite"></p>
+        <p class="ask-legal">By sending this you agree to our <a href="privacy.html">Privacy Policy</a>. Your details are never shared.</p>
+      </form>
+      <div class="ask-thanks" id="ask-thanks" hidden>
+        <h3>Got it. I'll take a look.</h3>
+        <p>I'll review what you've described and reply to the email you gave, usually within one business day, with whether there's a genuine automation opportunity.</p>
       </div>
-      <button type="submit" class="btn-primary">Send it to Chris →</button>
-      <p class="ask-msg" data-enquiry-msg role="status" aria-live="polite"></p>
-      <p class="ask-legal">By sending this you agree to our <a href="privacy.html">Privacy Policy</a>. Your details are never shared.</p>
-    </form>
-    <div class="ask-thanks" id="ask-thanks" hidden>
-      <h3>Got it. I'll take a look.</h3>
-      <p>I'll review what you've described and reply to the email you gave, usually within one business day, with whether there's a genuine automation opportunity.</p>
+    </div>
     </div>
   </section>
 

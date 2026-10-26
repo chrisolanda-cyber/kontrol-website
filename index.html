@@ -141,14 +141,15 @@
 <body>
 
 <nav>
-  <a href="#" class="nav-logo">Kontrol<span> AI</span></a>
+  <a href="/" class="nav-logo">Kontrol<span> AI</span></a>
   <ul class="nav-links">
     <li><a href="services.html">Services</a></li>
+    <li><a href="ai-automation-trade-contractors.html">Trades</a></li>
     <li><a href="custom-business-dashboards.html">Dashboards</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="faq.html">FAQ</a></li>
   </ul>
-  <a href="#contact" class="nav-cta">Ask<span class="nav-long"> me</span> a question</a>
+  <a href="#contact" class="nav-cta">Contact</a>
 </nav>
 
 <!-- HERO -->
@@ -168,7 +169,7 @@
         Kontrol AI builds custom AI workflows that connect the systems you already run and take the manual admin off your team's desk.
       </p>
       <div class="hero-contact">
-        <div class="hero-contact-label">// get in touch</div>
+        <div class="hero-contact-label">// contact</div>
         <a class="hero-email" href="mailto:ai@kontrolai.com.au">ai@kontrolai.com.au</a>
         <p class="hero-contact-note">Email me or use the form below. It comes straight to me, Chris, and I reply personally, usually within one business day.</p>
       </div>
@@ -190,8 +191,11 @@
             <div class="stat-label">Jobs automated end to end</div>
           </div>
           <div class="stat-cell">
-            <div class="stat-num"><span data-stat="success">97</span><span class="stat-unit">%</span></div>
-            <div class="stat-label">Automation success rate</div>
+            <div class="stat-num"><span data-stat="dupes">308</span></div>
+            <div class="stat-label">Duplicate jobs stopped</div>
+            <!-- Not shown: the daily updater still writes the success rate here, and
+                 automate.html reads it for its own stats strip. -->
+            <span hidden><span data-stat="success">97</span></span>
           </div>
           <div class="stat-cell">
             <div class="stat-num"><span data-stat="runs">2,898</span></div>
@@ -245,23 +249,21 @@
 <section class="cta-section cta-section--home" id="contact">
   <div class="cta-inner">
     <div>
-      <div class="hero-eyebrow">
-        <div class="eyebrow-bar"></div>
-        <span class="eyebrow-text">Contact</span>
+      <h2 class="cta-headline">Contact</h2>
+      <p class="cta-sub">Two ways to reach me. Both come straight to me, Chris, and I reply personally, usually within one business day.</p>
+      <div class="contact-opt contact-opt-email">
+        <div class="contact-opt-label">Email</div>
+        <a class="contact-email-big" href="mailto:ai@kontrolai.com.au">ai@kontrolai.com.au</a>
       </div>
-      <h2 class="cta-headline">
-        What would you like<br>
-        <span>to automate?</span>
-      </h2>
-      <p class="cta-sub">Tell me what's being done by hand today. You don't need to know the solution, just describe the annoying part. I'll tell you whether it's worth automating, and if it isn't, I'll tell you that too.</p>
-      <p class="contact-email-line">Prefer email? <a href="mailto:ai@kontrolai.com.au">ai@kontrolai.com.au</a></p>
     </div>
     <div class="cta-box">
+      <div class="contact-opt-label">Contact form</div>
       <form action="https://formspree.io/f/mgojnaya" method="POST" id="contact-form" data-enquiry="homepage contact form" data-thanks="contact-thanks">
         <input type="hidden" name="_subject" value="New enquiry from the homepage, Kontrol AI">
         <input type="hidden" name="source" value="homepage">
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
-        <textarea class="cta-input" id="contact-task" name="task" aria-label="What are you doing manually that you wish you weren't?" placeholder="What are you doing manually that you wish you weren't? e.g. We receive emailed work orders and someone creates each job in SimPRO by hand." required=""></textarea>
+        <label for="contact-task" class="cta-hint">Describe what's done by hand today. You don't need the solution. I'll tell you whether it's worth automating, and if it isn't, I'll say so.</label>
+        <textarea class="cta-input" id="contact-task" name="task" placeholder="e.g. We receive emailed work orders and someone creates each job in SimPRO by hand." required=""></textarea>
         <div class="cta-row">
           <input class="cta-input" id="contact-name" type="text" name="name" placeholder="Name" aria-label="Name" required="">
           <input class="cta-input" id="contact-email" type="email" name="email" placeholder="Email" aria-label="Email" required="">
