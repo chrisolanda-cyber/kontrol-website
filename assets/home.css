@@ -1925,10 +1925,19 @@
   .explainer-sound { right: 10px; bottom: 44px; padding: 8px 12px; font-size: 12px; }
 }
 
-/* Contact sits last in the menu in rust so it reads as the way to get in touch,
-   not just another page. Same destination as the page's Ask button. */
-.nav-links a.nav-contact { color: var(--rust); }
-.nav-links a.nav-contact:hover { color: #f27a4f; }
 @media (max-width: 380px) {
   .nav-links { gap: 10px; }
 }
+/* Header button is the one contact point: "Contact" in rust (Oct 2026). Goes to the
+   page's own form, or the homepage form on pages without one. */
+.nav-cta { background: var(--rust); border-color: var(--rust); color: #0a0e11; }
+.nav-cta:hover { background: #f27a4f; border-color: #f27a4f; color: #0a0e11; }
+
+/* Contact block (Oct 2026): two labelled options, Email and Contact form. */
+.contact-opt-label { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--teal); margin-bottom: 12px; }
+.contact-email-big { display: inline-block; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: clamp(28px, 4vw, 40px); letter-spacing: 0.01em; color: var(--text); text-decoration: none; border-bottom: 2px solid var(--teal); line-height: 1.15; overflow-wrap: anywhere; }
+.contact-email-big:hover { color: var(--teal); }
+.contact-opt-note { font-size: 14px; color: var(--text-mid); margin-top: 10px; }
+.cta-section--home .contact-opt-email { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--rule); }
+.cta-q { display: block; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 26px; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.15; color: var(--text); margin-bottom: 14px; }
+.cta-hint { display: block; font-family: 'Barlow', sans-serif; font-weight: 300; font-size: 14px; text-transform: none; letter-spacing: 0; color: var(--text-mid); line-height: 1.5; margin-top: 6px; }
