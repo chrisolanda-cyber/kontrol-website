@@ -1,39 +1,43 @@
 {
- "dateLine": "Wednesday 28 October 2026",
+ "dateLine": "Thursday 29 October 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Wednesday 28 October 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Thursday 29 October 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Paid spend held steady at A$118.45 over the last 7 days (17 clicks, cpc A$6.97), and the landing-page test sits at 65 raw paid clicks with A$129.62 of the A$600 credit left. The A$7 cap and national settings stay fixed while the test runs."
+    "text": "Weekly ad spend is A$135.68 (up from A$124.53) for 18 clicks at a cost per click of A$7.54, with zero conversions logged in Google Ads over the same seven days; across the landing-page test, A$453.81 ex-GST has been spent against A$92 of credit remaining for 69 raw paid clicks, and no qualified enquiry has been confirmed yet."
    },
    {
     "who": "Vallaeys",
-    "text": "No external Ads changes showed up in the last 24 hours or 7 days, so the account history is clean for now. Impression share is 10% with 75% lost to rank versus 18.5% lost to budget, confirming budget isn't the binding constraint while the test continues."
+    "text": "Click-through rate fell from 4.1% to 2.7% week on week even though impressions rose from 465 to 657; impression share sits at 10% with 76.1% of impressions lost to rank over the last 30 days, a gap that stays open under the fixed-budget test rule."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "Since the test started, ask_cta_click (the question form) has fired 17 times against 65 raw paid clicks, but review_cta_click (the Cal.com booking) still sits at zero. The primary ask-first route is getting engagement the deeper booking step isn't yet."
+    "text": "Of the 69 raw paid clicks captured since the landing page went live, 17 have triggered ask_cta_click (the question form) while review_cta_click and generate_lead both sit at zero; the page is well past the 25-click mark so headline, offer and CTAs remain frozen."
    },
    {
     "who": "Fishkin",
-    "text": "AI Assistant sessions sit at 1 for the last 7 days (down from 2), with chatgpt.com the named source; remember this channel undercounts, many AI clicks land in Direct with no referrer. Organic Search also slid from 12 to 8 sessions, and total sessions fell 21% week on week (53 vs 67), so Organic remains the only unpaid signal worth trusting and it's heading the wrong way."
+    "text": "AI Assistant sessions dropped to zero in the last 7 days from 3 prior, with the chatgpt.com/ai-assistant pair falling from 3 to 0 sessions; Organic Search held flat at 9 sessions both periods and remains the only trustworthy unpaid signal, while Search Console data only runs through 26 Oct, two days before yesterday's figure (Wed 28)."
    }
   ],
   "actions": [
    {
-    "who": "Gardner",
-    "text": "Logo and image assets for the currently serving ad groups (Agency, Job Intake) are still outstanding and need sorting."
+    "who": "Wiebe · Gardner",
+    "text": "Raw paid clicks on the landing page now stand at 69, well past the 25-click checkpoint, so headline, offer and calls to action stay frozen unless something breaks."
    },
    {
-    "who": "Wiebe",
-    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success; update them to match the current site stats."
+    "who": "Chris",
+    "text": "Logo and image assets are still outstanding for the serving ad groups (Agency and Job Intake); get these sourced."
+   },
+   {
+    "who": "Chris",
+    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success; update these to match current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Wed 21 Oct – Tue 27 Oct, vs the seven days before it",
+ "weeklySub": "Week of Thu 22 Oct – Wed 28 Oct, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
