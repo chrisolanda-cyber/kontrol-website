@@ -1,43 +1,60 @@
 {
- "dateLine": "Thursday 29 October 2026",
- "edition": "daily",
+ "dateLine": "Friday 30 October 2026",
+ "edition": "weekly",
  "committee": {
-  "sub": "Morning brief · Thursday 29 October 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Friday 30 October 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Weekly ad spend is A$135.68 (up from A$124.53) for 18 clicks at a cost per click of A$7.54, with zero conversions logged in Google Ads over the same seven days; across the landing-page test, A$453.81 ex-GST has been spent against A$92 of credit remaining for 69 raw paid clicks, and no qualified enquiry has been confirmed yet."
+    "text": "Raw landing-page clicks sit at 72 since 6 Oct for $481.28 ex GST spent, near the roughly $6 per click test estimate, with $64.53 of the $600 credit left and zero qualified enquiries logged yet against that spend."
    },
    {
     "who": "Vallaeys",
-    "text": "Click-through rate fell from 4.1% to 2.7% week on week even though impressions rose from 465 to 657; impression share sits at 10% with 76.1% of impressions lost to rank over the last 30 days, a gap that stays open under the fixed-budget test rule."
+    "text": "The change check came back clean this week, externalLast24h and externalLast7d both at 0, so nothing outside Chris's own edits is contaminating the test numbers right now. Impression share sits at 10% over 30 days with rank lost at 75.8% well above budget lost at 17.5%, so the ceiling is mostly auction rank, not spend, and that stays off the table while the test runs."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "Of the 69 raw paid clicks captured since the landing page went live, 17 have triggered ask_cta_click (the question form) while review_cta_click and generate_lead both sit at zero; the page is well past the 25-click mark so headline, offer and CTAs remain frozen."
+    "text": "The page has been frozen since click 25 as planned. Of the 72 raw clicks since start, ask_cta_click shows 17 raw clicks on the primary question-form action versus 0 on review_cta_click, so visitors are engaging the lighter first step but not yet the deeper booking option."
    },
    {
     "who": "Fishkin",
-    "text": "AI Assistant sessions dropped to zero in the last 7 days from 3 prior, with the chatgpt.com/ai-assistant pair falling from 3 to 0 sessions; Organic Search held flat at 9 sessions both periods and remains the only trustworthy unpaid signal, while Search Console data only runs through 26 Oct, two days before yesterday's figure (Wed 28)."
+    "text": "AI Assistant sessions fell to 0 this week from 3 last week, and the chatgpt.com / ai-assistant source/medium pair also dropped to 0 from 3. Organic Search held flat at 9 sessions both weeks, still the only unpaid signal worth trusting since Direct (22, down from 36) is mostly Chris and untracked referrers."
    }
   ],
   "actions": [
    {
-    "who": "Wiebe · Gardner",
-    "text": "Raw paid clicks on the landing page now stand at 69, well past the 25-click checkpoint, so headline, offer and calls to action stay frozen unless something breaks."
+    "who": "Wiebe",
+    "text": "Update the RSA descriptions on the non-Agency ads: they still claim 13.3 hours of admin per week and 99.6% success, and need refreshing to match current site stats."
    },
    {
-    "who": "Chris",
-    "text": "Logo and image assets are still outstanding for the serving ad groups (Agency and Job Intake); get these sourced."
-   },
-   {
-    "who": "Chris",
-    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success; update these to match current site stats."
+    "who": "Gardner",
+    "text": "Logo and image assets are still outstanding for the serving ad groups; get these sorted when time allows."
    }
   ]
  },
- "weekly": [],
- "weeklySub": "Week of Thu 22 Oct – Wed 28 Oct, vs the seven days before it",
+ "weekly": [
+  [
+   "Landing-page test still mid-run,",
+   " 72 raw clicks logged since 6 Oct for $481.28 ex GST, $64.53 of the $600 credit left, and zero qualified enquiries recorded against 17 raw ask_cta_click events and 0 review_cta_click events."
+  ],
+  [
+   "Sessions trended down,",
+   " 55 last 7 days versus 69 the week before, a 20% fall, with visitors down from 66 to 43."
+  ],
+  [
+   "Leads stayed flat at zero,",
+   " no generate_lead events and no form starts in the last 7 days; the one genuine enquiry from 23 Sept remains the only real candidate on record, still unverified against the qualified rule."
+  ],
+  [
+   "Channel mix shifted,",
+   " Paid Search rose from 19 to 23 sessions while Direct fell from 36 to 22 (not evidence of organic demand), LinkedIn stayed at 0 despite Chris posting there, and AI Assistant sessions dropped to 0 from 3, with the chatgpt.com referral also disappearing this week."
+  ],
+  [
+   "Search visibility stayed thin,",
+   " Search Console (through 27 Oct, lagging by two days) shows only 5 clicks from 176 impressions over 8 days, with the top page /simpro-xero-integration.html getting 75 impressions but 0 clicks at position 8."
+  ]
+ ],
+ "weeklySub": "Week of Fri 23 Oct – Thu 29 Oct, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
