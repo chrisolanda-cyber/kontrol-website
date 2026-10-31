@@ -1,39 +1,43 @@
 {
- "dateLine": "Saturday 31 October 2026",
+ "dateLine": "Sunday 1 November 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Saturday 31 October 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Sunday 1 November 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Average CPC is A$8.12 over the last 7 days (16 clicks, A$129.98 spend) with zero conversions, while the landing page test sits at 73 raw clicks, approaching the 75-click checkpoint."
+    "text": "The landing-page test has now logged 75 raw paid clicks and spend of $507.80 ex GST, while weekly ad spend rose to $141.36 from $122.11 even though clicks held flat at 17 versus 18 and conversions stayed at zero."
    },
    {
     "who": "Vallaeys",
-    "text": "30-day impression share is 10%, with 75.7% lost to rank versus 17.3% lost to budget; no external account changes were recorded in the last 24 hours or 7 days (status ok)."
+    "text": "Rank lost impression share sits far above budget lost (77.2 versus 15.8) with impression share at only 10%, so the ceiling right now is ad rank, not budget; no outside account edits were logged in the last 7 or 24 hours, so this reading is clean."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "Since the test started, ask_cta_click has fired 17 times against 73 raw paid clicks, while review_cta_click and generate_lead both sit at zero; the page has been frozen since click 25."
+    "text": "Of the 75 raw clicks on the test, 17 triggered the ask_cta_click (the short question form), with zero review_cta_click bookings; the page has been frozen since click 25 so this split reflects the locked copy and layout."
    },
    {
     "who": "Fishkin",
-    "text": "AI Assistant sessions fell to zero this week from 2 last week with no top source logged, while Organic Search rose to 11 sessions from 7, still the only trustworthy unpaid signal."
+    "text": "Organic Search sessions more than doubled (11 versus 5 prior), the only unpaid signal worth trusting, while AI Assistant sessions fell to 0 from 2 and the chatgpt.com referral disappeared from source/medium; Search Console (data through 29 Oct, so it lags) shows just 5 clicks on 190 impressions over 8 days, with 'kontrol' and 'kontrol ai' among top queries."
    }
   ],
   "actions": [
    {
-    "who": "Chris",
-    "text": "Update the logo and image assets for the currently serving ad groups (Agency and Job Intake)."
+    "who": "Dib",
+    "text": "Chris: raw paid clicks on the landing-page test have reached 75 with eventsSinceStart.generate_lead still at zero; check the test log now, if relevant clicks are 75+ with zero qualified enquiries the red flag is live and needs a decision before more spend goes out."
    },
    {
-    "who": "Chris",
-    "text": "Revise the RSA descriptions on the non-Agency ads that still claim 13.3 hours of admin saved per week and 99.6% success, align them with current site stats."
+    "who": "Gardner",
+    "text": "Open item: logo and image assets are still needed for the serving ad groups (Agency, Job Intake)."
+   },
+   {
+    "who": "Wiebe",
+    "text": "Open item: RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success and need updating to match current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Sat 24 Oct – Fri 30 Oct, vs the seven days before it",
+ "weeklySub": "Week of Sun 25 Oct – Sat 31 Oct, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
