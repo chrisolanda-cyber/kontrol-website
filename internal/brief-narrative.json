@@ -1,43 +1,47 @@
 {
- "dateLine": "Sunday 1 November 2026",
+ "dateLine": "Monday 2 November 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Sunday 1 November 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Monday 2 November 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "The landing-page test has now logged 75 raw paid clicks and spend of $507.80 ex GST, while weekly ad spend rose to $141.36 from $122.11 even though clicks held flat at 17 versus 18 and conversions stayed at zero."
+    "text": "Paid spend rose to A$139.58 from A$122.11 over the last 7 days while clicks slipped to 16 from 18, pushing CPC up to A$8.72. No conversions recorded in that window."
    },
    {
     "who": "Vallaeys",
-    "text": "Rank lost impression share sits far above budget lost (77.2 versus 15.8) with impression share at only 10%, so the ceiling right now is ad rank, not budget; no outside account edits were logged in the last 7 or 24 hours, so this reading is clean."
+    "text": "The landing-page test has reached 77 raw paid clicks, past the 75-click checkpoint, with A$526.86 spent and only A$18.95 of the A$600 credit left ex-GST. These are raw click figures only, the relevant and qualified counts live in Chris's test log."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "Of the 75 raw clicks on the test, 17 triggered the ask_cta_click (the short question form), with zero review_cta_click bookings; the page has been frozen since click 25 so this split reflects the locked copy and layout."
+    "text": "Ask_cta_click has fired 18 times against 77 raw clicks since the test started. The page has been frozen since click 25, so no further headline or CTA changes should be made unless something is broken."
    },
    {
     "who": "Fishkin",
-    "text": "Organic Search sessions more than doubled (11 versus 5 prior), the only unpaid signal worth trusting, while AI Assistant sessions fell to 0 from 2 and the chatgpt.com referral disappeared from source/medium; Search Console (data through 29 Oct, so it lags) shows just 5 clicks on 190 impressions over 8 days, with 'kontrol' and 'kontrol ai' among top queries."
+    "text": "Organic Search sessions climbed to 11 from 5, still the only trustworthy unpaid signal. Search Console (data through 30 Oct, so two days behind yesterday) shows just 5 clicks from 192 impressions, with 'kontrol ai' ranking first for a single click. AI Assistant sessions sat at zero against 2 the prior week, likely undercounted into Direct rather than genuinely absent."
    }
   ],
   "actions": [
    {
-    "who": "Dib",
-    "text": "Chris: raw paid clicks on the landing-page test have reached 75 with eventsSinceStart.generate_lead still at zero; check the test log now, if relevant clicks are 75+ with zero qualified enquiries the red flag is live and needs a decision before more spend goes out."
+    "who": "Vallaeys",
+    "text": "Raw paid clicks on the test have hit 77, past the 75-click checkpoint. Check the test log now: if relevant clicks are 75 or more with zero qualified enquiries, the red flag applies."
+   },
+   {
+    "who": "Marshall",
+    "text": "Credit remaining has dropped to A$18.95 ex-GST, under the A$30 threshold. Apply the pause rule: keep paid search running only if cost per qualified enquiry is A$480 or less and at least one qualified prospect has booked a review."
    },
    {
     "who": "Gardner",
-    "text": "Open item: logo and image assets are still needed for the serving ad groups (Agency, Job Intake)."
+    "text": "Logo and image assets for the serving ad groups are still outstanding, action this when ready."
    },
    {
     "who": "Wiebe",
-    "text": "Open item: RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success and need updating to match current site stats."
+    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success. These need updating to the current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Sun 25 Oct – Sat 31 Oct, vs the seven days before it",
+ "weeklySub": "Week of Mon 26 Oct – Sun 1 Nov, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
