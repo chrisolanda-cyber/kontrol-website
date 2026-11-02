@@ -1,47 +1,47 @@
 {
- "dateLine": "Monday 2 November 2026",
+ "dateLine": "Tuesday 3 November 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Monday 2 November 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Tuesday 3 November 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Paid spend rose to A$139.58 from A$122.11 over the last 7 days while clicks slipped to 16 from 18, pushing CPC up to A$8.72. No conversions recorded in that window."
+    "text": "Landing page test clicks now sit at 80, past the 75-click checkpoint, with zero generate_lead and zero review_cta_click events logged since start. The A$600 credit is fully drawn (creditRemainingExGst A$0), so both the red-flag check and the pause-or-continue decision are due once Chris confirms the qualified count."
    },
    {
     "who": "Vallaeys",
-    "text": "The landing-page test has reached 77 raw paid clicks, past the 75-click checkpoint, with A$526.86 spent and only A$18.95 of the A$600 credit left ex-GST. These are raw click figures only, the relevant and qualified counts live in Chris's test log."
+    "text": "No external edits show in the change history (externalLast24h 0, externalLast7d 0, status ok), so the test numbers stay clean of outside interference. CTR improved to 2.9% from 2.4% even as impressions fell to 581 from 698."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "Ask_cta_click has fired 18 times against 77 raw clicks since the test started. The page has been frozen since click 25, so no further headline or CTA changes should be made unless something is broken."
+    "text": "ask_cta_click sits at 18 since the test started versus 0 review_cta_click and 0 generate_lead, so the short question form is getting clicks but nothing is progressing to the deeper booking step or a lead."
    },
    {
     "who": "Fishkin",
-    "text": "Organic Search sessions climbed to 11 from 5, still the only trustworthy unpaid signal. Search Console (data through 30 Oct, so two days behind yesterday) shows just 5 clicks from 192 impressions, with 'kontrol ai' ranking first for a single click. AI Assistant sessions sat at zero against 2 the prior week, likely undercounted into Direct rather than genuinely absent."
+    "text": "Organic Search held flat at 8 sessions both weeks, still the only trustworthy unpaid signal, while AI Assistant sessions dropped to 0 from 1 and Direct (23, down from 28) still cannot be read as unpaid demand. Search Console data only runs through 31 Oct, so it lags yesterday (Mon 2) by about two days."
    }
   ],
   "actions": [
    {
-    "who": "Vallaeys",
-    "text": "Raw paid clicks on the test have hit 77, past the 75-click checkpoint. Check the test log now: if relevant clicks are 75 or more with zero qualified enquiries, the red flag applies."
+    "who": "Marshall",
+    "text": "Chris must check the test log now: raw paid clicks have reached 80, past the 75-click flag point, with zero qualified enquiries recorded in analytics. If the log confirms 75+ relevant clicks with still zero qualified, log the red flag."
    },
    {
     "who": "Marshall",
-    "text": "Credit remaining has dropped to A$18.95 ex-GST, under the A$30 threshold. Apply the pause rule: keep paid search running only if cost per qualified enquiry is A$480 or less and at least one qualified prospect has booked a review."
+    "text": "Credit is exhausted (creditRemainingExGst A$0): apply the rule now, pause paid search unless cost per qualified enquiry is A$480 or less and at least one qualified prospect has booked a review."
    },
    {
     "who": "Gardner",
-    "text": "Logo and image assets for the serving ad groups are still outstanding, action this when ready."
+    "text": "Standing item: logo and image assets for the serving ad groups are still needed."
    },
    {
     "who": "Wiebe",
-    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success. These need updating to the current site stats."
+    "text": "Standing item: RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success; update them to match current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Mon 26 Oct – Sun 1 Nov, vs the seven days before it",
+ "weeklySub": "Week of Tue 27 Oct – Mon 2 Nov, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
