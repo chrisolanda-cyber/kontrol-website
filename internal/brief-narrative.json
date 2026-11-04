@@ -1,51 +1,55 @@
 {
- "dateLine": "Wednesday 4 November 2026",
+ "dateLine": "Thursday 5 November 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Wednesday 4 November 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Thursday 5 November 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Spend last 7 days is up to A$153.47 from A$118.45 while clicks held flat at 17, pushing CPC to A$9.03; the A$600 test credit is now at A$0 remaining. Impression share sits at 10% with 75.8% lost to rank versus only 16.8% lost to budget, so rank is the limiter right now, not spend."
+    "text": "The A$600 promo credit is now exhausted (creditRemainingExGst $0) after 85 raw paid clicks, averaging about $6.97 ex-GST each (spendExGst $592.60), with ads.conversionsLast7 still at 0."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "Since the landing page test started, raw ask_cta_click sits at 19 against zero review_cta_click (bookings) and 3 quick_question_click, out of 82 raw paid clicks logged. The page passed click 25 a while back so headline, offer and CTAs stay frozen unless something is broken."
+    "text": "On the test landing page the ask-first CTA has drawn 19 clicks since launch versus zero review bookings (review_cta_click 0), matching the question-first design; raw paid clicks have now reached 85, past the 75-click checkpoint, with qualified counts still held in Chris's manual log."
    },
    {
     "who": "Dib",
-    "text": "generate_lead fired once this week (Tue 3), with 1 form start recorded in the same period. This is an unverified enquiry candidate only, not demand, and needs grading against the qualified rule (real business, repeatable admin process, named system) before it counts for anything."
+    "text": "One new unverified enquiry came through this week (generate_lead 1, formStartsLast7 1), separate from the 23 September wholesale food enquiry, and needs grading against the qualified rule (real business, repeatable admin, named system)."
    },
    {
     "who": "Fishkin",
-    "text": "Sessions fell to 48 from 53 (-9%) over the last 7 days, and yesterday (Tue 3) logged just 2 sessions against 9 on the same weekday last week (Tue 27). Direct dropped to 18 from 25 but that is mostly Chris and untracked referrers, not unpaid demand; Organic Search held steady at 8. AI Assistant sessions are at 0 this week (was 1), so no source to name, though this channel undercounts by nature. Search Console data runs through Sun 1, about two days behind yesterday."
+    "text": "Organic Search sessions fell to 6 this week from 9 prior, and Search Console data only runs through 2 Nov, two days behind yesterday, where the top page (/simpro-xero-integration.html) drew 110 impressions but just 1 click at position 15, with core SimPRO queries still ranking at positions 61 and 90; AI Assistant referrals remain at zero for the second week running."
    }
   ],
   "actions": [
    {
-    "who": "Marshall",
-    "text": "Raw paid clicks on the landing page test have reached 82, past the 75 mark: have Chris check the test log now, since 75-plus relevant clicks with zero qualified enquiries trips the red flag."
+    "who": "Dib",
+    "text": "Raw paid clicks have reached 85, past the 75-click checkpoint: check the test log now, if relevant clicks are 75 or more with zero qualified enquiries the red flag applies."
    },
    {
     "who": "Marshall",
-    "text": "Credit remaining is now A$0. Apply the pause rule: continue paid search only if cost per qualified enquiry is A$480 or less and at least one qualified prospect has booked a review, and review_cta_click is still 0, so this needs resolving before any further spend."
+    "text": "The A$600 promo credit is fully spent (creditRemainingExGst $0): pause paid search unless cost per qualified enquiry is A$480 or less and at least one qualified prospect has booked a review."
    },
    {
     "who": "Dib",
-    "text": "One generate_lead has fired since the last check: open the Formspree/Cal.com email, confirm its source, and grade it in the test log against the qualified rule."
+    "text": "Check the Formspree and Cal.com email for this week's unverified enquiry (generate_lead 1) to confirm its source and grade it against the qualified rule in the test log."
    },
    {
-    "who": "Vallaeys",
-    "text": "Standing item: logo and image assets are still needed for the serving ad groups (Agency, Job Intake)."
+    "who": "Gardner",
+    "text": "The landing page is past click 25 and stays frozen on headline, offer and CTAs unless something is broken."
+   },
+   {
+    "who": "Gardner",
+    "text": "Logo and image assets for the serving ad groups (Agency, Job Intake) are still outstanding."
    },
    {
     "who": "Wiebe",
-    "text": "Standing item: RSA descriptions on the non-Agency ads still claim 13.3 hours saved per week and 99.6% success; these need updating to match current site stats."
+    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success; these need updating to match current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Wed 28 Oct – Tue 3 Nov, vs the seven days before it",
+ "weeklySub": "Week of Thu 29 Oct – Wed 4 Nov, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
