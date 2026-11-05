@@ -1,55 +1,76 @@
 {
- "dateLine": "Thursday 5 November 2026",
- "edition": "daily",
+ "dateLine": "Friday 6 November 2026",
+ "edition": "weekly",
  "committee": {
-  "sub": "Morning brief · Thursday 5 November 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Friday 6 November 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "The A$600 promo credit is now exhausted (creditRemainingExGst $0) after 85 raw paid clicks, averaging about $6.97 ex-GST each (spendExGst $592.60), with ads.conversionsLast7 still at 0."
+    "text": "The A$600 test credit is now fully drawn (creditRemainingExGst A$0) after 88 raw paid clicks and A$612.88 ex-GST spent, so the pause rule is live: paid search should pause unless cost per qualified enquiry is A$480 or less and at least one qualified prospect has booked, and review_cta_click still sits at 0."
+   },
+   {
+    "who": "Vallaeys",
+    "text": "Impression share is 10% over 30 days with 74.2% lost to rank versus only 18.4% lost to budget, so rank/quality looks like the bigger constraint right now, not budget (which stays fixed while the test runs)."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "On the test landing page the ask-first CTA has drawn 19 clicks since launch versus zero review bookings (review_cta_click 0), matching the question-first design; raw paid clicks have now reached 85, past the 75-click checkpoint, with qualified counts still held in Chris's manual log."
+    "text": "Of the 88 raw clicks since the test began, ask_cta_click sits at 18 and quick_question_click at 3 but review_cta_click is still 0; the page passed the 25-click mark long ago so headline, offer and CTAs stay frozen unless something breaks."
    },
    {
     "who": "Dib",
-    "text": "One new unverified enquiry came through this week (generate_lead 1, formStartsLast7 1), separate from the 23 September wholesale food enquiry, and needs grading against the qualified rule (real business, repeatable admin, named system)."
-   },
-   {
-    "who": "Fishkin",
-    "text": "Organic Search sessions fell to 6 this week from 9 prior, and Search Console data only runs through 2 Nov, two days behind yesterday, where the top page (/simpro-xero-integration.html) drew 110 impressions but just 1 click at position 15, with core SimPRO queries still ranking at positions 61 and 90; AI Assistant referrals remain at zero for the second week running."
+    "text": "One new generate_lead fired this week (Tue 3 Nov), the first since the genuine 23 Sept enquiry; with totalPaidClicks at 88 the test has crossed the 75-click red-flag threshold, so Chris needs to check the test log for qualified counts against this raw figure."
    }
   ],
   "actions": [
    {
-    "who": "Dib",
-    "text": "Raw paid clicks have reached 85, past the 75-click checkpoint: check the test log now, if relevant clicks are 75 or more with zero qualified enquiries the red flag applies."
-   },
-   {
     "who": "Marshall",
-    "text": "The A$600 promo credit is fully spent (creditRemainingExGst $0): pause paid search unless cost per qualified enquiry is A$480 or less and at least one qualified prospect has booked a review."
+    "text": "Credit remaining is A$0, the decision point is due now: pause paid search unless cost per qualified enquiry is A$480 or under and at least one qualified prospect has booked a review."
    },
    {
     "who": "Dib",
-    "text": "Check the Formspree and Cal.com email for this week's unverified enquiry (generate_lead 1) to confirm its source and grade it against the qualified rule in the test log."
+    "text": "totalPaidClicks has reached 88, past the 75-click flag; check the test log now and if relevant clicks are 75 or more with zero qualified enquiries, treat the campaign as red-flagged."
+   },
+   {
+    "who": "Dib",
+    "text": "One generate_lead fired this week; check the Formspree/Cal.com email for its recorded source and grade it against the qualified rule in the test log, it is not yet counted as demand."
+   },
+   {
+    "who": "Wiebe · Gardner",
+    "text": "The page is well past click 25, so the headline, offer and calls to action stay frozen unless something is actually broken."
    },
    {
     "who": "Gardner",
-    "text": "The landing page is past click 25 and stays frozen on headline, offer and CTAs unless something is broken."
-   },
-   {
-    "who": "Gardner",
-    "text": "Logo and image assets for the serving ad groups (Agency, Job Intake) are still outstanding."
+    "text": "Open item: logo and image assets for the serving ad groups are still outstanding."
    },
    {
     "who": "Wiebe",
-    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success; these need updating to match current site stats."
+    "text": "Open item: RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success and need updating to current site stats."
    }
   ]
  },
- "weekly": [],
- "weeklySub": "Week of Thu 29 Oct – Wed 4 Nov, vs the seven days before it",
+ "weekly": [
+  [
+   "Test credit fully spent",
+   "the A$600 promo credit is now exhausted (A$612.88 ex-GST spent, A$0 remaining) after 88 raw paid clicks, with zero review bookings recorded and a test-log check now due."
+  ],
+  [
+   "Sessions down sharply",
+   "last 7 days had 37 sessions against 55 the week before, a 33% drop, with Thu 5 at 7 sessions versus 13 on the same weekday the prior week (Thu 29)."
+  ],
+  [
+   "One new enquiry, still unverified",
+   "a single generate_lead fired on Tue 3 Nov and must be checked against its Formspree/Cal.com source data and graded, it is not evidence of demand on its own."
+  ],
+  [
+   "Paid and direct traffic both eased",
+   "Paid Search fell to 16 sessions from 24 and Direct to 14 from 22, while AI Assistant traffic stayed at zero for a second straight week."
+  ],
+  [
+   "Organic signal softened",
+   "Organic Search sessions slipped to 6 from 8, and Search Console data (through 3 Nov, so a couple of days behind) shows just 3 clicks from 221 impressions over 8 days, with the top page /simpro-xero-integration.html getting 1 click from 118 impressions."
+  ]
+ ],
+ "weeklySub": "Week of Fri 30 Oct – Thu 5 Nov, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
