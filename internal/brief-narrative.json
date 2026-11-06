@@ -1,76 +1,51 @@
 {
- "dateLine": "Friday 6 November 2026",
- "edition": "weekly",
+ "dateLine": "Saturday 7 November 2026",
+ "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Friday 6 November 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Saturday 7 November 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "The A$600 test credit is now fully drawn (creditRemainingExGst A$0) after 88 raw paid clicks and A$612.88 ex-GST spent, so the pause rule is live: paid search should pause unless cost per qualified enquiry is A$480 or less and at least one qualified prospect has booked, and review_cta_click still sits at 0."
+    "text": "Weekly ad spend rose to A$152.68 from A$129.98 while clicks grew to 19 from 16, pushing CPC to A$8.04; the A$600 landing page test credit is now fully spent (creditRemainingExGst A$0) after 92 raw paid clicks."
    },
    {
     "who": "Vallaeys",
-    "text": "Impression share is 10% over 30 days with 74.2% lost to rank versus only 18.4% lost to budget, so rank/quality looks like the bigger constraint right now, not budget (which stays fixed while the test runs)."
+    "text": "No external Google Ads changes were logged in the last 24 hours or 7 days, so the test figures are not contaminated; Search Console data only runs through 4 Nov (a two-day lag) with 2 clicks from 231 impressions, and the 74.5% rank-lost share still dwarfs the 18.2% budget-lost share, though budget stays fixed for now."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "Of the 88 raw clicks since the test began, ask_cta_click sits at 18 and quick_question_click at 3 but review_cta_click is still 0; the page passed the 25-click mark long ago so headline, offer and CTAs stay frozen unless something breaks."
+    "text": "On the frozen landing page (clicks long past 25), ask_cta_click sits at 18 since the test started versus review_cta_click at 0: the shallow question form is getting used but nobody has booked the deeper 60 minute review yet."
    },
    {
     "who": "Dib",
-    "text": "One new generate_lead fired this week (Tue 3 Nov), the first since the genuine 23 Sept enquiry; with totalPaidClicks at 88 the test has crossed the 75-click red-flag threshold, so Chris needs to check the test log for qualified counts against this raw figure."
+    "text": "Two generate_lead events have fired on the landing page test, matching leads.last7=2 and formStartsLast7=2: these are unverified enquiry candidates still needing grading against the real business, repeatable process and named system rule."
    }
   ],
   "actions": [
    {
+    "who": "Gardner",
+    "text": "Total raw paid clicks have reached 92, past the 75-click check: review the test log now, if relevant clicks are 75 or more with zero qualified enquiries the red flag fires. The page stays frozen (headline, offer, CTAs) since click 25."
+   },
+   {
     "who": "Marshall",
-    "text": "Credit remaining is A$0, the decision point is due now: pause paid search unless cost per qualified enquiry is A$480 or under and at least one qualified prospect has booked a review."
+    "text": "The A$600 test credit is now at A$0: apply the pause rule, keep paid search running only if cost per qualified enquiry is A$480 or under and at least one qualified prospect has booked a review."
    },
    {
     "who": "Dib",
-    "text": "totalPaidClicks has reached 88, past the 75-click flag; check the test log now and if relevant clicks are 75 or more with zero qualified enquiries, treat the campaign as red-flagged."
-   },
-   {
-    "who": "Dib",
-    "text": "One generate_lead fired this week; check the Formspree/Cal.com email for its recorded source and grade it against the qualified rule in the test log, it is not yet counted as demand."
-   },
-   {
-    "who": "Wiebe · Gardner",
-    "text": "The page is well past click 25, so the headline, offer and calls to action stay frozen unless something is actually broken."
+    "text": "generate_lead has fired twice since the test began: check the Formspree and Cal.com emails for source and grade each in the test log against the qualified rule."
    },
    {
     "who": "Gardner",
-    "text": "Open item: logo and image assets for the serving ad groups are still outstanding."
+    "text": "Logo and image assets for the serving ad groups (Agency) are still outstanding."
    },
    {
     "who": "Wiebe",
-    "text": "Open item: RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success and need updating to current site stats."
+    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success: update them to match current site stats."
    }
   ]
  },
- "weekly": [
-  [
-   "Test credit fully spent",
-   "the A$600 promo credit is now exhausted (A$612.88 ex-GST spent, A$0 remaining) after 88 raw paid clicks, with zero review bookings recorded and a test-log check now due."
-  ],
-  [
-   "Sessions down sharply",
-   "last 7 days had 37 sessions against 55 the week before, a 33% drop, with Thu 5 at 7 sessions versus 13 on the same weekday the prior week (Thu 29)."
-  ],
-  [
-   "One new enquiry, still unverified",
-   "a single generate_lead fired on Tue 3 Nov and must be checked against its Formspree/Cal.com source data and graded, it is not evidence of demand on its own."
-  ],
-  [
-   "Paid and direct traffic both eased",
-   "Paid Search fell to 16 sessions from 24 and Direct to 14 from 22, while AI Assistant traffic stayed at zero for a second straight week."
-  ],
-  [
-   "Organic signal softened",
-   "Organic Search sessions slipped to 6 from 8, and Search Console data (through 3 Nov, so a couple of days behind) shows just 3 clicks from 221 impressions over 8 days, with the top page /simpro-xero-integration.html getting 1 click from 118 impressions."
-  ]
- ],
- "weeklySub": "Week of Fri 30 Oct – Thu 5 Nov, vs the seven days before it",
+ "weekly": [],
+ "weeklySub": "Week of Sat 31 Oct – Fri 6 Nov, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
