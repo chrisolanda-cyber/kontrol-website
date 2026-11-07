@@ -1,51 +1,51 @@
 {
- "dateLine": "Saturday 7 November 2026",
+ "dateLine": "Sunday 8 November 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Saturday 7 November 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Sunday 8 November 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Weekly ad spend rose to A$152.68 from A$129.98 while clicks grew to 19 from 16, pushing CPC to A$8.04; the A$600 landing page test credit is now fully spent (creditRemainingExGst A$0) after 92 raw paid clicks."
-   },
-   {
-    "who": "Vallaeys",
-    "text": "No external Google Ads changes were logged in the last 24 hours or 7 days, so the test figures are not contaminated; Search Console data only runs through 4 Nov (a two-day lag) with 2 clicks from 231 impressions, and the 74.5% rank-lost share still dwarfs the 18.2% budget-lost share, though budget stays fixed for now."
+    "text": "The $600 promo credit is now fully drawn (creditRemainingExGst $0) against $657.37 ex GST spent on 94 raw paid clicks since the landing page test started 6 Oct, while rank-based impression loss (76%) still dwarfs budget-based loss (16.4%), so the A$7 CPC cap is not the limiting factor here."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "On the frozen landing page (clicks long past 25), ask_cta_click sits at 18 since the test started versus review_cta_click at 0: the shallow question form is getting used but nobody has booked the deeper 60 minute review yet."
+    "text": "With the page frozen past click 25, engagement stays lopsided: ask_cta_click sits at 17 against quick_question_click at 3 and review_cta_click at 0, so the lighter ask-first action is doing all the work and nobody has tried to book the review yet."
    },
    {
     "who": "Dib",
-    "text": "Two generate_lead events have fired on the landing page test, matching leads.last7=2 and formStartsLast7=2: these are unverified enquiry candidates still needing grading against the real business, repeatable process and named system rule."
+    "text": "Two unverified enquiries have come through (generate_lead eventsSinceStart 2, leads last7 2 versus 0 prior, formStartsLast7 2 matching) but none are confirmed qualified, so these still need grading against the business-plus-process-plus-named-system rule before counting as demand."
+   },
+   {
+    "who": "Fishkin",
+    "text": "Organic Search sessions fell to 5 from 11 last week, with google/organic down to 3 from 11, AI Assistant visits sat at 0 for both this week and last, and Search Console only runs through 5 Nov, two days behind yesterday, so there is no fresh unpaid or AEO signal to point to."
    }
   ],
   "actions": [
    {
-    "who": "Gardner",
-    "text": "Total raw paid clicks have reached 92, past the 75-click check: review the test log now, if relevant clicks are 75 or more with zero qualified enquiries the red flag fires. The page stays frozen (headline, offer, CTAs) since click 25."
+    "who": "Marshall",
+    "text": "Credit remaining has hit $0 of the $600 test budget, so the pause rule is now live: hold paid search unless cost per qualified enquiry is $480 or under and at least one qualified prospect has booked a review. Check the test log before any further spend."
    },
    {
     "who": "Marshall",
-    "text": "The A$600 test credit is now at A$0: apply the pause rule, keep paid search running only if cost per qualified enquiry is A$480 or under and at least one qualified prospect has booked a review."
+    "text": "Raw paid clicks have reached 94, past the 75-click checkpoint. Chris needs to check the test log now: if relevant clicks are 75 or more with zero qualified enquiries, the red flag fires."
    },
    {
     "who": "Dib",
-    "text": "generate_lead has fired twice since the test began: check the Formspree and Cal.com emails for source and grade each in the test log against the qualified rule."
+    "text": "Two generate_lead events are logged since the test started. Check the Formspree and Cal.com confirmation emails for source and grade each one against the qualified rule in the test log."
    },
    {
     "who": "Gardner",
-    "text": "Logo and image assets for the serving ad groups (Agency) are still outstanding."
+    "text": "Logo and image assets for the serving ad groups (Agency, Job Intake) remain outstanding."
    },
    {
     "who": "Wiebe",
-    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success: update them to match current site stats."
+    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin saved per week and 99.6% success. These need updating to match current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Sat 31 Oct – Fri 6 Nov, vs the seven days before it",
+ "weeklySub": "Week of Sun 1 Nov – Sat 7 Nov, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
