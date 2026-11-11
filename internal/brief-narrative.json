@@ -1,51 +1,55 @@
 {
- "dateLine": "Wednesday 11 November 2026",
+ "dateLine": "Thursday 12 November 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Wednesday 11 November 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Thursday 12 November 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Raw paid clicks for the landing page test sit at 103, past the 75-click checkpoint, while creditRemainingExGst has hit A$0 and review_cta_click is still 0 since the test started on 6 Oct."
-   },
-   {
-    "who": "Vallaeys",
-    "text": "30-day impression share is only 10%, with 77.2% lost to rank against 14.5% lost to budget, and no external Google Ads changes were logged in the last 24 hours or 7 days, so the test numbers stay clean."
-   },
-   {
-    "who": "Wiebe · Gardner",
-    "text": "On the test page, ask_cta_click has reached 19 since start versus review_cta_click at 0, so visitors are using the quick question form (quick_question_click at 4) but nobody has taken the deeper booking step yet."
+    "text": "The A$600 test credit is now fully drawn down (creditRemainingExGst A$0, spendExGst A$748.21 against 107 raw paid clicks), so the pause-or-continue decision is due: with review_cta_click still at 0 bookings, the standing rule says pause unless cost per qualified enquiry is A$480 or less and at least one qualified prospect has booked."
    },
    {
     "who": "Dib",
-    "text": "generate_lead shows 2 events since the test began against formStartsLast7 of 2 and leads.last7 of 1, each one an unverified enquiry Chris still needs to check against the qualified rule, not a confirmed lead count."
+    "text": "Two generate_lead events have fired since the test started versus 20 ask_cta_click and 0 review_cta_click: these are unverified enquiry candidates only, and Chris needs to check the Formspree/Cal.com emails and grade them against the qualified rule before anyone calls them demand."
+   },
+   {
+    "who": "Wiebe · Gardner",
+    "text": "Raw paid clicks have reached 107, well past both the click-25 freeze and the 75-click checkpoint, with zero review_cta_click bookings recorded: the test log needs checking, since 75+ relevant clicks with zero qualified enquiries is the trigger for a red flag."
+   },
+   {
+    "who": "Fishkin",
+    "text": "Organic Search is the one unpaid signal worth trusting, up to 14 sessions from 6 (google/organic 12 vs 6), but Search Console shows only the brand term 'kontrol ai' sitting at position 3 while most other queries sit past position 20 (business dashboard pos 39, simpro integration pos 94); AI Assistant sessions stayed at 0 for a second straight week."
    }
   ],
   "actions": [
    {
     "who": "Marshall",
-    "text": "Raw paid clicks have reached 103, past the 75-click flag: Chris should check the test log now, and if relevant clicks are 75 or more with zero qualified enquiries the campaign is red-flagged."
-   },
-   {
-    "who": "Marshall",
-    "text": "Credit remaining has dropped to A$0, triggering the decision point: pause paid search unless cost per qualified enquiry is A$480 or less and at least one qualified prospect has booked a review, and review_cta_click is still at 0 so that condition is not yet met."
+    "text": "Credit remaining is A$0, so the decision point is due: pause paid search unless cost per qualified enquiry is A$480 or less and at least one qualified prospect has booked a review, checked against the test log."
    },
    {
     "who": "Dib",
-    "text": "generate_lead is at 2 since the test started: check the Formspree and Cal.com confirmation emails for source details and grade each one in the test log against the qualified rule."
+    "text": "Raw paid clicks have hit 107, past the 75-click checkpoint: check the test log now to confirm whether qualified enquiries are still zero, which would trip the red flag."
    },
    {
-    "who": "Gardner",
-    "text": "Logo and image assets for the currently serving ad groups are still an open item."
+    "who": "Dib",
+    "text": "Two generate_lead events have fired since the test started: check the Formspree and Cal.com emails for source details and grade each one against the qualified rule in the test log."
    },
    {
     "who": "Wiebe",
-    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success and need updating to match current site stats."
+    "text": "The page has been frozen since click 25 and remains so at 107 clicks: no changes to headline, offer or calls to action unless the page is broken."
+   },
+   {
+    "who": "Gardner",
+    "text": "Logo and image assets for the serving ad groups are still outstanding."
+   },
+   {
+    "who": "Wiebe",
+    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success: these need updating to current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Wed 4 Nov – Tue 10 Nov, vs the seven days before it",
+ "weeklySub": "Week of Thu 5 Nov – Wed 11 Nov, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
