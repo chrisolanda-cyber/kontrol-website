@@ -1,51 +1,51 @@
 {
- "dateLine": "Saturday 14 November 2026",
+ "dateLine": "Sunday 15 November 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Saturday 14 November 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Sunday 15 November 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "The landing-page test credit is now at $0 (creditRemainingExGst), so the decision rule applies: pause paid search unless cost per qualified enquiry is $480 or less and at least one qualified prospect has booked. With review_cta_click still at 0 since the test started, no booking exists yet, which lines up with campaignStatus showing PAUSED."
+    "text": "Spend fell to $97.11 from $149.57 and clicks to 14 from 19, with CPC at $6.94; the test credit is now fully spent (creditRemainingExGst $0) and campaignStatus shows PAUSED."
    },
    {
-    "who": "Gardner · Wiebe",
-    "text": "Since the test began, ask_cta_click sits at 19 against review_cta_click at 0 and quick_question_click at 5, so the low-commitment question form keeps being the preferred action on the frozen page."
+    "who": "Vallaeys",
+    "text": "With credit at $0, the decision rule applies: review_cta_click sits at 0 since start, so no qualified prospect has booked, meaning the pause stands as written. totalPaidClicks has reached 108, well past the 75-click checkpoint for a red flag review."
    },
    {
-    "who": "Dib",
-    "text": "Three generate_lead events have fired since the test started (eventsSinceStart.generate_lead=3), with sitewide leads at 1 this week versus 2 the week before. These are unverified enquiry candidates, not demand, until graded against the qualified rule."
+    "who": "Wiebe · Gardner",
+    "text": "Engagement on the question form continues (ask_cta_click 16, quick_question_click 4 since start) but review_cta_click is still 0; the page passed click 25 long ago, so copy stays frozen unless something is broken."
    },
    {
     "who": "Fishkin",
-    "text": "Organic Search sessions roughly doubled (12 versus 5 prior week) while AI Assistant visits stayed at zero. Search Console data (through 10 Nov, so two days behind) shows the query kontrol ai sitting at position 1 with a click, the only verified unpaid signal this week."
+    "text": "Organic Search sessions rose to 10 from 5 and the branded query 'kontrol ai' shows position 1 with 2 clicks from 3 impressions; aiVisits is still 0 for the week, so no answer-engine signal to report yet. Overall sessions are down to 42 from 49 (-14%), with Saturday 14 at just 1 session versus 8 on the same weekday last week."
    }
   ],
   "actions": [
    {
-    "who": "Marshall",
-    "text": "Credit remaining has fallen to $0, triggering the pause-or-continue decision: pause unless cost per qualified enquiry is $480 or less and at least one qualified prospect has booked a review. Confirm this against the test log before any restart."
+    "who": "Vallaeys",
+    "text": "Credit remaining is now $0, so the pre-agreed decision point is live. Apply the rule as written: keep paid search paused unless cost per qualified enquiry is $480 or less and at least one qualified prospect has booked, and right now review_cta_click is 0."
    },
    {
     "who": "Marshall",
-    "text": "Raw paid clicks have reached 108, well past the 75-click checkpoint: check the test log now for relevant and qualified counts, since 75+ relevant clicks with zero qualified enquiries fires the red flag. The page stays frozen past click 25, no copy or CTA changes unless something is broken."
+    "text": "Chris should check the test log now: raw totalPaidClicks has hit 108, well past the 75-click threshold. If relevant clicks are 75+ with zero qualified enquiries logged, the red flag fires."
    },
    {
     "who": "Dib",
-    "text": "Check the Formspree and Cal.com emails behind the three generate_lead events logged since the test started, confirm the traffic source for each, and grade them against the qualified rule (real business, repeatable admin process, named system) in the test log."
-   },
-   {
-    "who": "Gardner",
-    "text": "Logo and image assets for the serving ad groups (Agency, Job Intake) are still outstanding."
+    "text": "generate_lead shows 2 since the test started. Check the Formspree and Cal.com emails for source detail and grade each against the qualified rule (real business, repeatable admin process, named system) in the test log."
    },
    {
     "who": "Wiebe",
-    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success: update them to match current site stats."
+    "text": "The RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success. These need updating to match current site stats."
+   },
+   {
+    "who": "Gardner",
+    "text": "Logo and image assets for the currently serving ad groups are still an open item."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Sat 7 Nov – Fri 13 Nov, vs the seven days before it",
+ "weeklySub": "Week of Sun 8 Nov – Sat 14 Nov, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
