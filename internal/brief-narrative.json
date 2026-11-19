@@ -1,55 +1,72 @@
 {
- "dateLine": "Thursday 19 November 2026",
- "edition": "daily",
+ "dateLine": "Friday 20 November 2026",
+ "edition": "weekly",
  "committee": {
-  "sub": "Morning brief · Thursday 19 November 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Friday 20 November 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Ads spend collapsed from $155.61 to $6.27 over the last 7 days as the credit ran dry (creditRemainingExGst is now $0) and campaignStatus shows PAUSED; the test has burned $754.48 ex-GST across 108 raw paid clicks since 6 Oct."
+    "text": "The A$600 credit is fully drawn (creditRemainingExGst at $0) against spendExGst of $754.48, and the Kontrol Search National campaign now sits PAUSED with spendLast7 at $0 versus $141.60 the week before."
    },
    {
     "who": "Vallaeys",
-    "text": "No external account changes in the last 24h or 7 days, so the test numbers are not contaminated by outside edits; impressionShare30d has dropped to 10% with rankLost30d at 75.8%, consistent with spend drying up rather than any mechanics problem."
-   },
-   {
-    "who": "Wiebe · Gardner",
-    "text": "Raw paid clicks sit at 108, well past the click-25 freeze point, with ask_cta_click at 17 against review_cta_click still at zero: plenty of people engage the short question form but none have progressed to booking the review."
+    "text": "Raw paid clicks on the landing page test reached 108, well past the 75-click checkpoint, with review_cta_click still at 0 since the test started on 6 Oct, meaning no booked review has been logged against the rule."
    },
    {
     "who": "Dib",
-    "text": "eventsSinceStart shows generate_lead at 3, on top of the one genuine enquiry from 23 Sept; none of these are confirmed qualified yet and each needs grading in the test log against the real-business-plus-repeatable-process-plus-named-system rule."
+    "text": "generate_lead has fired 3 times since the test started but 0 in the last 7 days (down from 2 the week before); these remain unverified enquiries that still need grading against the real business, repeatable process and named system rule."
+   },
+   {
+    "who": "Fishkin",
+    "text": "Organic Search is the only trustworthy unpaid signal and it fell to 5 sessions from 14, while Paid Search dropped to 1 from 19 and AI Assistant sessions stayed at 0; search impressions8d sat at 280 with just 7 clicks through 17 Nov, and top queries like \"business automation for tradies\" and \"simpro integration\" sit at positions 58 and 65."
    }
   ],
   "actions": [
    {
     "who": "Marshall",
-    "text": "Chris should check the test log now: raw paid clicks have reached 108, well past the 75 trigger; if relevant clicks are 75 or more with zero qualified enquiries, the red flag is confirmed."
+    "text": "Credit is exhausted and the campaign has paused itself; confirm this matches the decision rule since review_cta_click is 0, meaning no qualified prospect has booked and the pause should stand until that changes."
    },
    {
-    "who": "Marshall",
-    "text": "creditRemainingExGst is at $0, so apply the decision rule: pause paid search unless cost per qualified enquiry is $480 or less and at least one qualified prospect has booked a review; with review_cta_click still at zero, the pause stands."
+    "who": "Vallaeys",
+    "text": "With raw clicks at 108, the page stays frozen past click 25; check the test log now to see whether qualified enquiries are still at zero, which would make the 75-click red flag active."
    },
    {
     "who": "Dib",
-    "text": "generate_lead has fired 3 times since the test started. Check the Formspree and Cal.com emails for each one's source and grade them against the qualified rule before counting any as real demand."
+    "text": "Three generate_lead events have fired since the test started; pull the Formspree and Cal.com emails to check source attribution on each and log them against the qualified rule in the test log."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "The landing page remains frozen past click 25, now well past it at 108 raw clicks: no headline, offer or CTA changes unless something is broken."
-   },
-   {
-    "who": "Marshall",
-    "text": "Standing item: logo and image assets for the serving ad groups are still outstanding."
+    "text": "Logo and image assets for the serving ad groups are still outstanding."
    },
    {
     "who": "Wiebe",
-    "text": "Standing item: RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success and need updating to current site stats."
+    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success and need updating to current site stats."
    }
   ]
  },
- "weekly": [],
- "weeklySub": "Week of Thu 12 Nov – Wed 18 Nov, vs the seven days before it",
+ "weekly": [
+  [
+   "Landing-page test credit is exhausted,",
+   "108 raw clicks logged since 6 Oct, spend at $754.48 ex GST against the A$600 credit, and the campaign has now paused."
+  ],
+  [
+   "Sessions fell sharply this week,",
+   "17 sessions versus 63 the week before, a 73% drop, with Thu 19 at 3 sessions against 7 on the same weekday last week (Thu 12)."
+  ],
+  [
+   "No new qualified leads confirmed,",
+   "generate_lead has fired 3 times since the test started but none in the last 7 days (down from 2 the prior week), and these remain unverified enquiries for Chris to grade."
+  ],
+  [
+   "Paid Search traffic collapsed,",
+   "1 session this week versus 19 prior, while Organic Search held the only trustworthy unpaid signal at 5 versus 14, and AI Assistant traffic stayed at 0."
+  ],
+  [
+   "Search visibility stayed weak,",
+   "280 impressions and 7 clicks over the 8 days through 17 Nov (lagged by about two days), with queries like \"business automation for tradies\" and \"simpro integration\" still sitting at positions 58 and 65."
+  ]
+ ],
+ "weeklySub": "Week of Fri 13 Nov – Thu 19 Nov, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
