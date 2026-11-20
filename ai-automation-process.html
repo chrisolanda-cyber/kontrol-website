@@ -51,7 +51,7 @@
       "publisher": {
         "@id": "https://kontrolai.com.au/#organization"
       },
-      "dateModified": "2026-08-03"
+      "dateModified": "2026-10-30"
     },
     {
       "@type": "BreadcrumbList",
@@ -99,7 +99,7 @@
           "name": "How long does a typical automation project take?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Scope and access set the timeline, not build effort — waiting on system credentials, or a decision about an edge case, is what stretches a project. Larger programs are released one workflow at a time rather than as one big launch. A dashboard is the fast case — it reads from systems rather than writing into them, so there is less that can go wrong and less to test. An automation that writes into SimPRO, Xero or a CRM takes longer, because the work that matters is testing it against real data and deciding what should happen to the jobs that do not fit the pattern. The honest answer is that a fixed-price scope comes out of the scoping conversation with a timeframe attached to it, rather than a number quoted before anyone has seen the process."
+            "text": "The first workflow is usually live within 2 to 3 weeks of a signed scope. Scope and access set the timeline more than build effort, and larger programs go live one workflow at a time. Waiting on system credentials, or a decision about an edge case, is what stretches a project. A dashboard is the fast case, usually live within a week: it reads from systems rather than writing into them, so there is less that can go wrong and less to test. An automation that writes into SimPRO, Xero or a CRM takes longer, because the work that matters is testing it against real data and deciding what should happen to the jobs that do not fit the pattern. The fixed-price scope that comes out of the scoping conversation states the timeframe for that build, rather than a number quoted before anyone has seen the process."
           }
         },
         {
@@ -107,7 +107,7 @@
           "name": "What do I need to have in place before automating?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A process that happens roughly the same way each time, the systems it runs through, and someone who can answer questions about the exceptions. You do not need clean data or documented procedures to start. The common blocker isn't technology, it's a process that genuinely differs every time — usually a sign the decision should stay with a human. Messy is fine; inconsistent by design is not. Practically, you will need administrator access to the systems being connected so permissioned credentials can be issued, and about an hour from whoever knows how the work actually gets done, which is often not the business owner."
+            "text": "A process that happens roughly the same way each time, the systems it runs through, and someone who can answer questions about the exceptions. You do not need clean data or documented procedures to start. The common blocker isn't technology, it's a process that genuinely differs every time, which usually means the decision should stay with a human. Messy is fine; inconsistent by design is not. Practically, you will need administrator access to the systems being connected so permissioned credentials can be issued, and about an hour from whoever knows how the work actually gets done, which is often not the business owner."
           }
         },
         {
@@ -115,7 +115,7 @@
           "name": "What happens if the automation breaks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "It raises an alert rather than failing quietly. A failed run notifies a person with the original input attached, the work falls back to the manual process it replaced, and nothing is lost — the job waits rather than disappearing. Silent failure is the real risk with automation, not failure itself, so monitoring is part of the build rather than an extra. Every run is logged, so a problem can be traced to the input that caused it instead of guessed at. Kontrol AI's pipelines log every run, surface failures as exceptions for a human to handle, and publish their current success rate and run counts on the home page, refreshed daily from production data. Support arrangements are agreed at handover, so there is a known path when something does need fixing."
+            "text": "It raises an alert rather than failing quietly. A failed run notifies a person with the original input attached, the work falls back to the manual process it replaced, and nothing is lost: the job waits rather than disappearing. Silent failure is the real risk with automation, not failure itself, so monitoring is part of the build rather than an extra. Every run is logged, so a problem can be traced to the input that caused it instead of guessed at. Kontrol AI's pipelines log every run, surface failures as exceptions for a human to handle, and publish their current success rate and run counts on the home page, refreshed daily from production data. Support arrangements are agreed at handover, so there is a known path when something does need fixing."
           }
         },
         {
@@ -123,7 +123,7 @@
           "name": "Who owns the automations after the project ends?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You do. The workflows are built on n8n, a standard and widely used automation platform, documented at handover and able to be picked up by another developer at any time. Nothing is locked inside a proprietary system. This is worth asking any automation consultant directly, because building inside a closed platform the client cannot access or export is a well-documented industry pattern. Handover here means the working system, documentation of how it is built, and a walkthrough for whoever looks after it internally. Ongoing support is available but optional. The real test of ownership is whether the automation would keep running if you walked away — and it would."
+            "text": "You do. The workflows are built on n8n, a standard and widely used automation platform, documented at handover and able to be picked up by another developer at any time. Nothing is locked inside a proprietary system. This is worth asking any automation consultant directly, because building inside a closed platform the client cannot access or export is a well-documented industry pattern. Handover here means the working system, documentation of how it is built, and a walkthrough for whoever looks after it internally. Ongoing support is available but optional. The real test of ownership is whether the automation would keep running if you walked away, and it would."
           }
         },
         {
@@ -164,9 +164,9 @@
 
   <h1>How an AI automation project <span>actually works</span></h1>
 
-  <p class="answer">It starts with you describing the task by form or email and getting a straight answer on whether it is worth automating. If it is, there are four steps: a scoping conversation that maps how the work moves today and ends in a fixed-price quote, a design built around the systems you already run, the build and testing against your real data, then handover with documentation and a walkthrough. Nothing is charged before a scope is agreed, and an engagement can start with one workflow rather than a whole program.</p>
+  <p class="answer">It starts with you describing the task by form or email and getting a straight answer on whether it is worth automating. If it is, there are four steps: a scoping conversation that maps how the work moves today and ends in a fixed-price quote, a design built around the systems you already run, the build and testing against your real data, then handover with documentation and a walkthrough. Nothing is charged before a scope is agreed, and an engagement can start with one workflow rather than a whole program. Builds start from A$2,200 ex GST, and the first workflow is usually live within 2 to 3 weeks of a signed scope.</p>
 
-  <div class="page-meta">// written by Chris Olanda, founder of Kontrol AI · last reviewed August 2026</div>
+  <div class="page-meta">// written by Chris Olanda, founder of Kontrol AI · last reviewed October 2026</div>
 
   <h2>What happens after I get in touch?</h2>
   <p>You describe the task you want gone, using the question form below or by emailing <a href="mailto:ai@kontrolai.com.au">ai@kontrolai.com.au</a>. You don't need to know the solution, just the annoying part. Chris replies personally, usually within one business day, with whether it is worth automating. If it isn't, you'll be told that too.</p>
@@ -174,23 +174,23 @@
   <p>Where there is more than one candidate, scoping also gives a view on which one pays back first. Some of the answers are deliberately negative: processes that differ every time, or that hinge on a judgment call, are usually a sign the decision should stay with a person. Knowing what <strong>not</strong> to automate is most of the value of scoping it properly.</p>
 
   <h2>What does the design step produce?</h2>
-  <p>A map of the workflow — the trigger, each step, which system it writes to, and what happens when something does not fit the pattern. That last part is the one that gets skipped and the one that causes trouble later.</p>
+  <p>A map of the workflow: the trigger, each step, which system it writes to, and what happens when something does not fit the pattern. That last part is the one that gets skipped and the one that causes trouble later.</p>
   <p>The design is built around the software you already run: SimPRO, ServiceM8, Xero, MYOB, Microsoft 365, a CRM. Automation sits between systems rather than inside them, so replacing a platform is rarely part of the answer.</p>
 
   <h2>What do you need from me?</h2>
   <ul>
     <li><strong>Administrator access</strong> to the systems being connected, so permissioned credentials can be issued for the workflow rather than a person's own login being shared.</li>
-    <li><strong>About an hour</strong> from whoever actually knows how the work gets done — often not the business owner.</li>
+    <li><strong>About an hour</strong> from whoever actually knows how the work gets done, often not the business owner.</li>
     <li><strong>Decisions on the exceptions.</strong> What should happen to the job that arrives without a site address, or the invoice that does not match the quote. These are business calls, not technical ones.</li>
   </ul>
   <p>You do not need clean data or documented procedures to start. Messy is normal and workable. A process that genuinely differs every time is the real blocker.</p>
 
   <h2>How is the automation tested before it goes live?</h2>
-  <p>Against real data, not sample data. The pattern that matters is how the workflow behaves on the unusual input rather than the ordinary one — a well-built workflow acts automatically when it is confident and routes anything ambiguous to a person with the original message attached.</p>
+  <p>Against real data, not sample data. The pattern that matters is how the workflow behaves on the unusual input rather than the ordinary one. A well-built workflow acts automatically when it is confident and routes anything ambiguous to a person with the original message attached.</p>
   <p>Confidence thresholds start conservative and are tightened only after the workflow has been watched against live traffic. Every run is logged, so any output can be traced back to the input that produced it. Kontrol AI's live client pipelines run at a measured success rate, published on the home page and refreshed daily from production data, with the remainder surfaced as exceptions rather than hidden.</p>
 
   <h2>What does handover include?</h2>
-  <p>The working system, documentation of how it is built, and a walkthrough for whoever looks after it internally. The workflows run on n8n — a standard, widely used automation platform — so another developer can pick them up at any time. Nothing is locked inside a proprietary system you cannot access or export.</p>
+  <p>The working system, documentation of how it is built, and a walkthrough for whoever looks after it internally. The workflows run on n8n (a standard, widely used automation platform), so another developer can pick them up at any time. Nothing is locked inside a proprietary system you cannot access or export.</p>
   <p>Ongoing support is available and optional, agreed at handover rather than assumed. The real test of ownership is whether the automation would keep running if you walked away, and it would.</p>
 
   <section class="faq-block">
@@ -207,26 +207,26 @@
 
       <div class="faq-item">
         <h3 class="faq-q">How long does a typical automation project take?</h3>
-        <p class="faq-capsule">Scope and access set the timeline, not build effort — waiting on system credentials, or a decision about an edge case, is what stretches a project. Larger programs are released one workflow at a time rather than as one big launch.</p>
-        <p class="faq-context">A dashboard is the fast case — it reads from systems rather than writing into them, so there is less that can go wrong and less to test. An automation that writes into SimPRO, Xero or a CRM takes longer, because the work that matters is testing it against real data and deciding what should happen to the jobs that do not fit the pattern. The honest answer is that a fixed-price scope comes out of the scoping conversation with a timeframe attached to it, rather than a number quoted before anyone has seen the process.</p>
+        <p class="faq-capsule">The first workflow is usually live within 2 to 3 weeks of a signed scope. Scope and access set the timeline more than build effort, and larger programs go live one workflow at a time.</p>
+        <p class="faq-context">Waiting on system credentials, or a decision about an edge case, is what stretches a project. A dashboard is the fast case, usually live within a week: it reads from systems rather than writing into them, so there is less that can go wrong and less to test. An automation that writes into SimPRO, Xero or a CRM takes longer, because the work that matters is testing it against real data and deciding what should happen to the jobs that do not fit the pattern. The fixed-price scope that comes out of the scoping conversation states the timeframe for that build, rather than a number quoted before anyone has seen the process.</p>
       </div>
 
       <div class="faq-item">
         <h3 class="faq-q">What do I need to have in place before automating?</h3>
         <p class="faq-capsule">A process that happens roughly the same way each time, the systems it runs through, and someone who can answer questions about the exceptions. You do not need clean data or documented procedures to start.</p>
-        <p class="faq-context">The common blocker isn't technology, it's a process that genuinely differs every time — usually a sign the decision should stay with a human. Messy is fine; inconsistent by design is not. Practically, you will need administrator access to the systems being connected so permissioned credentials can be issued, and about an hour from whoever knows how the work actually gets done, which is often not the business owner.</p>
+        <p class="faq-context">The common blocker isn't technology, it's a process that genuinely differs every time, which usually means the decision should stay with a human. Messy is fine; inconsistent by design is not. Practically, you will need administrator access to the systems being connected so permissioned credentials can be issued, and about an hour from whoever knows how the work actually gets done, which is often not the business owner.</p>
       </div>
 
       <div class="faq-item">
         <h3 class="faq-q">What happens if the automation breaks?</h3>
-        <p class="faq-capsule">It raises an alert rather than failing quietly. A failed run notifies a person with the original input attached, the work falls back to the manual process it replaced, and nothing is lost — the job waits rather than disappearing.</p>
+        <p class="faq-capsule">It raises an alert rather than failing quietly. A failed run notifies a person with the original input attached, the work falls back to the manual process it replaced, and nothing is lost: the job waits rather than disappearing.</p>
         <p class="faq-context">Silent failure is the real risk with automation, not failure itself, so monitoring is part of the build rather than an extra. Every run is logged, so a problem can be traced to the input that caused it instead of guessed at. Kontrol AI's pipelines log every run, surface failures as exceptions for a human to handle, and publish their current success rate and run counts on the home page, refreshed daily from production data. Support arrangements are agreed at handover, so there is a known path when something does need fixing.</p>
       </div>
 
       <div class="faq-item">
         <h3 class="faq-q">Who owns the automations after the project ends?</h3>
         <p class="faq-capsule">You do. The workflows are built on n8n, a standard and widely used automation platform, documented at handover and able to be picked up by another developer at any time. Nothing is locked inside a proprietary system.</p>
-        <p class="faq-context">This is worth asking any automation consultant directly, because building inside a closed platform the client cannot access or export is a well-documented industry pattern. Handover here means the working system, documentation of how it is built, and a walkthrough for whoever looks after it internally. Ongoing support is available but optional. The real test of ownership is whether the automation would keep running if you walked away — and it would.</p>
+        <p class="faq-context">This is worth asking any automation consultant directly, because building inside a closed platform the client cannot access or export is a well-documented industry pattern. Handover here means the working system, documentation of how it is built, and a walkthrough for whoever looks after it internally. Ongoing support is available but optional. The real test of ownership is whether the automation would keep running if you walked away, and it would.</p>
       </div>
 
       <div class="faq-item">

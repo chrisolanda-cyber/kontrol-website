@@ -91,7 +91,7 @@
           "name": "Does SimPRO integrate with Xero?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. SimPRO's Accounting Link transfers customer, supplier and contractor contacts, invoices and credits, and timesheets across to Xero, and payments sync in both directions. Where businesses get stuck is the edges it doesn't cover. The native link handles the standard flow well. Friction shows up in the specifics: a payment applied across several invoices in SimPRO arrives in Xero as separate payments, which complicates reconciliation, and supplier invoice line items post with a quantity of one regardless of the quantity in SimPRO. Those are the points where a custom workflow earns its keep — not by replacing the Accounting Link, but by handling what it wasn't built for. Check the behaviour against your own SimPRO plan before assuming it applies."
+            "text": "Yes. SimPRO's Accounting Link transfers customer, supplier and contractor contacts, invoices and credits, and timesheets across to Xero, and payments sync in both directions. Where businesses get stuck is the edges it doesn't cover. The native link handles the standard flow well. Friction shows up in the specifics: a payment applied across several invoices in SimPRO arrives in Xero as separate payments, which complicates reconciliation, and supplier invoice line items post with a quantity of one regardless of the quantity in SimPRO. Those are the points where a custom workflow earns its keep: not by replacing the Accounting Link, but by handling what it wasn't built for. Check the behaviour against your own SimPRO plan before assuming it applies."
           }
         },
         {
@@ -99,7 +99,7 @@
           "name": "How do I export timesheets from SimPRO to Xero?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Through SimPRO's Accounting Link, which supports timesheet export in Australia, New Zealand, the UK and Ireland. The catch that causes most of the pain: timesheets send once, so later adjustments in SimPRO don't flow through. That once-only behaviour is why payroll weeks go wrong. If a supervisor corrects hours in SimPRO after the export has run, Xero keeps the original figures and somebody has to notice. The payroll integration creates timesheets in Xero but cannot update existing ones. The practical fix is a check step before export — an automated comparison that flags edited entries and holds the transfer until they are reconciled — rather than trusting the sync and finding the problem after payroll has run."
+            "text": "Through SimPRO's Accounting Link, which supports timesheet export in Australia, New Zealand, the UK and Ireland. The catch that causes most of the pain: timesheets send once, so later adjustments in SimPRO don't flow through. That once-only behaviour is why payroll weeks go wrong. If a supervisor corrects hours in SimPRO after the export has run, Xero keeps the original figures and somebody has to notice. The payroll integration creates timesheets in Xero but cannot update existing ones. The practical fix is a check step before export (an automated comparison that flags edited entries and holds the transfer until they are reconciled) rather than trusting the sync and finding the problem after payroll has run."
           }
         },
         {
@@ -107,7 +107,7 @@
           "name": "When do I need custom API work instead of the native integration?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "When the gap costs more than the fix. If someone re-keys data the link doesn't carry, checks exported timesheets by hand weekly, or untangles split payments at reconciliation, that time is measurable — and worth pricing against a build. The native link is free and maintained by the vendor, so it should always do as much of the work as it can. Custom work earns its place at the edges: validating timesheets before they export, handling a payment allocation the link flattens, or moving data the link was never designed to touch — job intake, quote follow-ups, compliance documents. The right test is hours saved per week against build cost, which is what scoping measures before anything gets built."
+            "text": "When the gap costs more than the fix. If someone re-keys data the link doesn't carry, checks exported timesheets by hand weekly, or untangles split payments at reconciliation, that time is measurable, and worth pricing against a build. The native link is free and maintained by the vendor, so it should always do as much of the work as it can. Custom work earns its place at the edges: validating timesheets before they export, handling a payment allocation the link flattens, or moving data the link was never designed to touch: job intake, quote follow-ups, compliance documents. The right test is hours saved per week against build cost, which is what scoping measures before anything gets built."
           }
         },
         {
@@ -115,7 +115,7 @@
           "name": "Can employees enter their own timesheets and have it flow through to payroll?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Staff enter time in SimPRO, and the Accounting Link exports those timesheets to Xero for payroll. The step that catches people out is that the export runs once — later corrections in SimPRO don't follow. In practice that means the accuracy check has to happen before the export, not after. A supervisor approving hours on Friday afternoon after the transfer has already run leaves Xero holding the earlier figures, and payroll goes out wrong unless somebody notices. Automating the comparison is straightforward: flag any entry edited since the last export, hold the transfer, and notify whoever owns payroll. That is a small build that prevents an expensive, recurring, entirely human error."
+            "text": "Staff enter time in SimPRO, and the Accounting Link exports those timesheets to Xero for payroll. The step that catches people out is that the export runs once, so later corrections in SimPRO don't follow. In practice that means the accuracy check has to happen before the export, not after. A supervisor approving hours on Friday afternoon after the transfer has already run leaves Xero holding the earlier figures, and payroll goes out wrong unless somebody notices. Automating the comparison is straightforward: flag any entry edited since the last export, hold the transfer, and notify whoever owns payroll. That is a small build that prevents an expensive, recurring, entirely human error."
           }
         }
       ]
@@ -154,10 +154,10 @@
 
   <h2>What the Accounting Link transfers</h2>
   <ul>
-    <li><strong>Contacts</strong> — customers, suppliers and contractors.</li>
+    <li><strong>Contacts:</strong> customers, suppliers and contractors.</li>
     <li><strong>Invoices and credits</strong>, posted through to Xero.</li>
     <li><strong>Timesheets</strong>, in Australia, New Zealand, the UK and Ireland.</li>
-    <li><strong>Payments, both directions</strong> — applied in SimPRO and pushed across, or matched against a bank feed in Xero and synced back so the two systems reconcile.</li>
+    <li><strong>Payments, both directions:</strong> applied in SimPRO and pushed across, or matched against a bank feed in Xero and synced back so the two systems reconcile.</li>
   </ul>
   <p>For a lot of trade businesses that is genuinely enough, and it is free and vendor-maintained, so it should do as much of the work as it can. The problems start at the edges.</p>
 
@@ -178,12 +178,12 @@
   <p>When supplier invoices come through the accounting link, each line item posts with a quantity of one regardless of the quantity in SimPRO. Pricing is unaffected, but line-level reporting out of Xero no longer matches the source.</p>
 
   <h3>4. Everything before the invoice</h3>
-  <p>The Accounting Link is an accounting integration, so it starts at the invoice. The inbound email that should have become a job, the quote that went quiet, the compliance paperwork attached to a finished job — none of that is in scope, and that is usually where the hours actually are.</p>
+  <p>The Accounting Link is an accounting integration, so it starts at the invoice. The inbound email that should have become a job, the quote that went quiet, the compliance paperwork attached to a finished job. None of that is in scope, and that is usually where the hours actually are.</p>
 
   <h2>When custom work is worth it, and when it isn't</h2>
   <p>Not every gap deserves a build. The test is whether the workaround has a measurable weekly cost. Checking exported timesheets by hand every fortnight does. A quirk in line-item reporting that nobody looks at does not.</p>
   <p>Worth automating: validation before a timesheet export, payment allocations the link flattens, and the pre-invoice steps the integration was never designed to touch. Not worth automating: anything that happens rarely, anything still being argued about internally, and anything where the process genuinely differs every time.</p>
-  <p>Kontrol AI builds these as workflows on n8n that sit alongside the Accounting Link rather than replacing it — the native integration keeps doing the bulk of the work, and the automation handles what it was never built for.</p>
+  <p>Kontrol AI builds these as workflows on n8n that sit alongside the Accounting Link rather than replacing it: the native integration keeps doing the bulk of the work, and the automation handles what it was never built for.</p>
 
   <section class="faq-block">
     <div class="faq-block-head">
@@ -194,24 +194,24 @@
       <div class="faq-item">
         <h3 class="faq-q">Does SimPRO integrate with Xero?</h3>
         <p class="faq-capsule">Yes. SimPRO's Accounting Link transfers customer, supplier and contractor contacts, invoices and credits, and timesheets across to Xero, and payments sync in both directions. Where businesses get stuck is the edges it doesn't cover.</p>
-        <p class="faq-context">The native link handles the standard flow well. Friction shows up in the specifics: a payment applied across several invoices in SimPRO arrives in Xero as separate payments, which complicates reconciliation, and supplier invoice line items post with a quantity of one regardless of the quantity in SimPRO. Those are the points where a custom workflow earns its keep — not by replacing the Accounting Link, but by handling what it wasn't built for. Check the behaviour against your own SimPRO plan before assuming it applies.</p>
+        <p class="faq-context">The native link handles the standard flow well. Friction shows up in the specifics: a payment applied across several invoices in SimPRO arrives in Xero as separate payments, which complicates reconciliation, and supplier invoice line items post with a quantity of one regardless of the quantity in SimPRO. Those are the points where a custom workflow earns its keep: not by replacing the Accounting Link, but by handling what it wasn't built for. Check the behaviour against your own SimPRO plan before assuming it applies.</p>
       </div>
 
       <div class="faq-item">
         <h3 class="faq-q">How do I export timesheets from SimPRO to Xero?</h3>
         <p class="faq-capsule">Through SimPRO's Accounting Link, which supports timesheet export in Australia, New Zealand, the UK and Ireland. The catch that causes most of the pain: timesheets send once, so later adjustments in SimPRO don't flow through.</p>
-        <p class="faq-context">That once-only behaviour is why payroll weeks go wrong. If a supervisor corrects hours in SimPRO after the export has run, Xero keeps the original figures and somebody has to notice. The payroll integration creates timesheets in Xero but cannot update existing ones. The practical fix is a check step before export — an automated comparison that flags edited entries and holds the transfer until they are reconciled — rather than trusting the sync and finding the problem after payroll has run.</p>
+        <p class="faq-context">That once-only behaviour is why payroll weeks go wrong. If a supervisor corrects hours in SimPRO after the export has run, Xero keeps the original figures and somebody has to notice. The payroll integration creates timesheets in Xero but cannot update existing ones. The practical fix is a check step before export (an automated comparison that flags edited entries and holds the transfer until they are reconciled) rather than trusting the sync and finding the problem after payroll has run.</p>
       </div>
 
       <div class="faq-item">
         <h3 class="faq-q">When do I need custom API work instead of the native integration?</h3>
-        <p class="faq-capsule">When the gap costs more than the fix. If someone re-keys data the link doesn't carry, checks exported timesheets by hand weekly, or untangles split payments at reconciliation, that time is measurable — and worth pricing against a build.</p>
-        <p class="faq-context">The native link is free and maintained by the vendor, so it should always do as much of the work as it can. Custom work earns its place at the edges: validating timesheets before they export, handling a payment allocation the link flattens, or moving data the link was never designed to touch — job intake, quote follow-ups, compliance documents. The right test is hours saved per week against build cost, which is what scoping measures before anything gets built.</p>
+        <p class="faq-capsule">When the gap costs more than the fix. If someone re-keys data the link doesn't carry, checks exported timesheets by hand weekly, or untangles split payments at reconciliation, that time is measurable, and worth pricing against a build.</p>
+        <p class="faq-context">The native link is free and maintained by the vendor, so it should always do as much of the work as it can. Custom work earns its place at the edges: validating timesheets before they export, handling a payment allocation the link flattens, or moving data the link was never designed to touch: job intake, quote follow-ups, compliance documents. The right test is hours saved per week against build cost, which is what scoping measures before anything gets built.</p>
       </div>
 
       <div class="faq-item">
         <h3 class="faq-q">Can employees enter their own timesheets and have it flow through to payroll?</h3>
-        <p class="faq-capsule">Staff enter time in SimPRO, and the Accounting Link exports those timesheets to Xero for payroll. The step that catches people out is that the export runs once — later corrections in SimPRO don't follow.</p>
+        <p class="faq-capsule">Staff enter time in SimPRO, and the Accounting Link exports those timesheets to Xero for payroll. The step that catches people out is that the export runs once, so later corrections in SimPRO don't follow.</p>
         <p class="faq-context">In practice that means the accuracy check has to happen before the export, not after. A supervisor approving hours on Friday afternoon after the transfer has already run leaves Xero holding the earlier figures, and payroll goes out wrong unless somebody notices. Automating the comparison is straightforward: flag any entry edited since the last export, hold the transfer, and notify whoever owns payroll. That is a small build that prevents an expensive, recurring, entirely human error.</p>
       </div>
     </div>
