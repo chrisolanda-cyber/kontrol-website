@@ -1,72 +1,51 @@
 {
- "dateLine": "Friday 20 November 2026",
- "edition": "weekly",
+ "dateLine": "Saturday 21 November 2026",
+ "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Friday 20 November 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Saturday 21 November 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "The A$600 credit is fully drawn (creditRemainingExGst at $0) against spendExGst of $754.48, and the Kontrol Search National campaign now sits PAUSED with spendLast7 at $0 versus $141.60 the week before."
+    "text": "The A$600 test credit is now at zero (creditRemainingExGst $0) against total spend of $754.48 ex GST across 108 raw paid clicks; campaign status shows PAUSED, so the pause-unless rule now applies pending a qualified-enquiry check."
    },
    {
     "who": "Vallaeys",
-    "text": "Raw paid clicks on the landing page test reached 108, well past the 75-click checkpoint, with review_cta_click still at 0 since the test started on 6 Oct, meaning no booked review has been logged against the rule."
+    "text": "No external account changes were recorded in the last 24 hours or 7 days (externalLast24h and externalLast7d both 0), so test data since 6 Oct is not contaminated; impression share sits at only 10% with rank lost at 74.7%, well above budget lost at 16.1%, so no budget action is warranted."
    },
    {
-    "who": "Dib",
-    "text": "generate_lead has fired 3 times since the test started but 0 in the last 7 days (down from 2 the week before); these remain unverified enquiries that still need grading against the real business, repeatable process and named system rule."
+    "who": "Wiebe · Gardner",
+    "text": "Of the 17 ask_cta_click events logged since the test started, none have converted to a review_cta_click (0), meaning visitors are taking the light first step but not booking the deeper review yet."
    },
    {
     "who": "Fishkin",
-    "text": "Organic Search is the only trustworthy unpaid signal and it fell to 5 sessions from 14, while Paid Search dropped to 1 from 19 and AI Assistant sessions stayed at 0; search impressions8d sat at 280 with just 7 clicks through 17 Nov, and top queries like \"business automation for tradies\" and \"simpro integration\" sit at positions 58 and 65."
+    "text": "Organic Search sessions fell from 12 to 7 week on week, the only unpaid signal worth trusting, while Search Console (through 18 Nov, lagging as usual) shows just 6 clicks from 294 impressions over 8 days, with top queries like 'business automation for tradies' (29 impressions) sitting at position 48."
    }
   ],
   "actions": [
    {
     "who": "Marshall",
-    "text": "Credit is exhausted and the campaign has paused itself; confirm this matches the decision rule since review_cta_click is 0, meaning no qualified prospect has booked and the pause should stand until that changes."
+    "text": "Confirm cost per qualified enquiry against the A$480 cap and check whether a qualified prospect has booked before considering any resume of paid search; the credit is now exhausted at $0 remaining."
    },
    {
     "who": "Vallaeys",
-    "text": "With raw clicks at 108, the page stays frozen past click 25; check the test log now to see whether qualified enquiries are still at zero, which would make the 75-click red flag active."
+    "text": "With totalPaidClicks at 108, past the 75-click checkpoint, confirm the qualified count in the test log; zero qualified enquiries at this volume would mean the red flag stands."
    },
    {
     "who": "Dib",
-    "text": "Three generate_lead events have fired since the test started; pull the Formspree and Cal.com emails to check source attribution on each and log them against the qualified rule in the test log."
-   },
-   {
-    "who": "Wiebe · Gardner",
-    "text": "Logo and image assets for the serving ad groups are still outstanding."
+    "text": "Three generate_lead events have fired since the test started (eventsSinceStart.generate_lead: 3); check the Formspree and Cal.com emails for source data and grade each against the qualified rule in the test log."
    },
    {
     "who": "Wiebe",
-    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success and need updating to current site stats."
+    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success; update them to match current site stats."
+   },
+   {
+    "who": "Gardner",
+    "text": "Logo and image assets are still outstanding for the serving ad groups."
    }
   ]
  },
- "weekly": [
-  [
-   "Landing-page test credit is exhausted,",
-   "108 raw clicks logged since 6 Oct, spend at $754.48 ex GST against the A$600 credit, and the campaign has now paused."
-  ],
-  [
-   "Sessions fell sharply this week,",
-   "17 sessions versus 63 the week before, a 73% drop, with Thu 19 at 3 sessions against 7 on the same weekday last week (Thu 12)."
-  ],
-  [
-   "No new qualified leads confirmed,",
-   "generate_lead has fired 3 times since the test started but none in the last 7 days (down from 2 the prior week), and these remain unverified enquiries for Chris to grade."
-  ],
-  [
-   "Paid Search traffic collapsed,",
-   "1 session this week versus 19 prior, while Organic Search held the only trustworthy unpaid signal at 5 versus 14, and AI Assistant traffic stayed at 0."
-  ],
-  [
-   "Search visibility stayed weak,",
-   "280 impressions and 7 clicks over the 8 days through 17 Nov (lagged by about two days), with queries like \"business automation for tradies\" and \"simpro integration\" still sitting at positions 58 and 65."
-  ]
- ],
- "weeklySub": "Week of Fri 13 Nov – Thu 19 Nov, vs the seven days before it",
+ "weekly": [],
+ "weeklySub": "Week of Sat 14 Nov – Fri 20 Nov, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
