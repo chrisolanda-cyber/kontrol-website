@@ -1,51 +1,51 @@
 {
- "dateLine": "Tuesday 24 November 2026",
+ "dateLine": "Wednesday 25 November 2026",
  "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Tuesday 24 November 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Wednesday 25 November 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
-    "who": "Marshall",
-    "text": "Spend fell to $0 over the last 7 days (from $67.69 prior7) with creditRemainingExGst at $0 and campaignStatus PAUSED; total landing page test spend sits at $754.48 ex GST with review_cta_click still at 0, so the pause-unless rule is currently unmet."
+    "who": "Vallaeys",
+    "text": "The landing-page test credit is now at A$0 (creditRemainingExGst) after 108 raw paid clicks since 6 Oct, and campaignStatus already shows PAUSED; adsChanges shows externalLast24h and externalLast7d both at 0, so the test numbers are not contaminated by outside edits."
    },
    {
-    "who": "Vallaeys",
-    "text": "adsChanges logged no external edits this period (externalLast24h 0, externalLast7d 0), so test figures are not contaminated; impressionShare30d is 10% with rankLost30d at 73.3% well ahead of budgetLost30d at 17.1%."
+    "who": "Marshall",
+    "text": "Paid spend fell to A$0 last 7 days from A$32.24 prior, with clicksLast7 at 0 versus 5 prior; lifetime spend sits at A$1,977.43 ex GST and the A$600 test credit is fully drawn down, so there is no live cost-per-click signal to assess this week."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "Since the test started, ask_cta_click sits at 18 and quick_question_click at 5 while review_cta_click remains 0; the question-first path keeps drawing clicks but the deeper booking step has none, and the page stays frozen with totalPaidClicks now at 108."
+    "text": "Since the test started, ask_cta_click sits at 18 and quick_question_click at 5, but review_cta_click is still 0; the short question form is getting used while nobody has stepped up to the deeper booking step."
    },
    {
-    "who": "Fishkin",
-    "text": "aiVisits.last7 is 0 again, no AI referral signal this week; Organic Search sessions dropped to 7 from 10 prior7, and the top page /simpro-xero-integration.html logged just 1 click from 99 impressions at position 17 (data through 21 Nov, two days behind yesterday), unpaid visibility stays thin."
+    "who": "Dib",
+    "text": "eventsSinceStart.generate_lead shows 3 since the test began, against leads.last7 of 0 this week (prior7 was 1); these are unverified enquiry candidates, not confirmed demand, until graded against the qualified rule."
    }
   ],
   "actions": [
    {
-    "who": "Marshall",
-    "text": "landingPageTest.totalPaidClicks has reached 108, past the 75 mark: Chris should check the test log now, and if relevant clicks sit at 75 or more with zero qualified enquiries the red flag fires. The page stays frozen past click 25, no copy changes."
+    "who": "Chris",
+    "text": "The A$600 promo credit is exhausted (creditRemainingExGst is A$0). Apply the decision rule now: keep paid search paused unless cost per qualified enquiry is A$480 or less and at least one qualified prospect has booked a review."
    },
    {
-    "who": "Marshall",
-    "text": "creditRemainingExGst is $0, so the decision point is due: pause stays in force unless cost per qualified enquiry is $480 or less and at least one qualified prospect has booked a review; review_cta_click is still 0, so that condition is not met."
+    "who": "Chris",
+    "text": "Raw paid clicks have reached 108, past the 75-click checkpoint. Check the test log: if relevant clicks are 75 or more with zero qualified enquiries, the red flag fires."
    },
    {
-    "who": "Dib",
-    "text": "generate_lead shows 3 events since the test started: check the Formspree and Cal.com emails for source and grade each against the qualified rule in the test log."
+    "who": "Chris",
+    "text": "Three generate_lead events have fired since the test started. Check the Formspree and Cal.com emails for source on each and grade them against the qualified rule in the test log."
    },
    {
-    "who": "Gardner",
-    "text": "Logo and image assets for the serving ad groups (Agency, Job Intake) are still outstanding."
+    "who": "Chris",
+    "text": "Logo and image assets for the serving ad groups are still outstanding."
    },
    {
-    "who": "Wiebe",
-    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success: update to current site stats."
+    "who": "Chris",
+    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success; update them to current site stats."
    }
   ]
  },
  "weekly": [],
- "weeklySub": "Week of Tue 17 Nov – Mon 23 Nov, vs the seven days before it",
+ "weeklySub": "Week of Wed 18 Nov – Tue 24 Nov, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
