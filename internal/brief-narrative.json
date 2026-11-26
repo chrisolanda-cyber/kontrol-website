@@ -1,51 +1,72 @@
 {
- "dateLine": "Thursday 26 November 2026",
- "edition": "daily",
+ "dateLine": "Friday 27 November 2026",
+ "edition": "weekly",
  "committee": {
-  "sub": "Morning brief · Thursday 26 November 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Friday 27 November 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Paid Search spend is A$0 this week versus A$6.27 last week, creditRemainingExGst sits at A$0, and campaignStatus reads PAUSED, consistent with the rule to pause unless cost per qualified enquiry is A$480 or under with at least one review booked."
+    "text": "Landing page test spend sits at $754.48 ex GST against 108 raw paid clicks, and creditRemainingExGst is now $0: the $600 credit is fully used, with zero review bookings (review_cta_click 0) and no confirmed qualified enquiry, so the pause-unless rule applies and matches ads.campaignStatus PAUSED."
    },
    {
     "who": "Vallaeys",
-    "text": "Search Console data runs through 23 Nov, two days behind yesterday (25 Nov), so visibility figures lag; totalPaidClicks has reached 108, well past the 75-click checkpoint, so the relevant and qualified counts need confirming in the test log."
+    "text": "No external Ads account changes fired in the last 24 hours or 7 days (externalLast24h 0, externalLast7d 0), so test numbers are not contaminated by outside edits; impression share is 10% with rank lost 68.6% against budget lost 21.8%, but budget stays fixed until the test concludes."
    },
    {
-    "who": "Gardner",
-    "text": "Since the test began, ask_cta_click sits at 11 and quick_question_click at 5, but review_cta_click is still 0, so visitors keep taking the shallow question form rather than booking the deeper review."
+    "who": "Wiebe · Gardner",
+    "text": "Since the test began, ask_cta_click (11) and quick_question_click (5) are carrying all the engagement on /free-workflow-review.html, while review_cta_click sits at 0: the short question form is doing the work the deeper Cal.com booking step still is not."
    },
    {
-    "who": "Fishkin",
-    "text": "Organic Search is the only trustworthy signal this week, up to 11 sessions from 5 (google / organic 10 vs 4), while Direct fell from 14 to 7, which fits it being untracked traffic rather than real demand; AI Assistant sessions stayed at 0 both weeks."
+    "who": "Dib",
+    "text": "generate_lead has fired 3 times since the test started: each is only an unverified enquiry candidate that needs checking against the Formspree/Cal.com source email and grading against the real-business-plus-repeatable-admin-plus-named-system rule before it counts as qualified."
    }
   ],
   "actions": [
    {
     "who": "Marshall",
-    "text": "With creditRemainingExGst at A$0 the decision point is live: resume spend only if cost per qualified enquiry is A$480 or less and at least one qualified prospect has booked, otherwise leave the campaign paused as it already is."
+    "text": "Raw paid clicks have reached 108, well past the 75-click check point: confirm with the test log whether relevant clicks sit at 75 or more with zero qualified enquiries, which would trigger the red flag."
    },
    {
-    "who": "Vallaeys",
-    "text": "totalPaidClicks has passed 75 (now 108): have Chris check the test log for relevant and qualified counts; if relevant clicks are 75 or more with zero qualified enquiries, the red flag fires. The page stays frozen past click 25, no further copy or CTA changes."
+    "who": "Marshall",
+    "text": "The $600 promo credit is fully spent (creditRemainingExGst $0, spend $754.48 ex GST): apply the standing rule and keep paid search paused unless cost per qualified enquiry is $480 or less and at least one qualified prospect has booked a review."
    },
    {
     "who": "Dib",
-    "text": "eventsSinceStart shows 3 generate_lead fires since the test started: check the Formspree and Cal.com emails for source detail and grade each against the qualified rule (real business, repeatable admin process, named system) in the test log."
+    "text": "Three generate_lead events have fired since the test started: check each against its Formspree/Cal.com source email and grade it in the test log against the qualified-enquiry rule."
    },
    {
     "who": "Gardner",
-    "text": "Standing item: logo and image assets are still needed for the serving ad groups."
+    "text": "Logo and image assets for the currently serving ad groups are still outstanding."
    },
    {
     "who": "Wiebe",
-    "text": "Standing item: RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success and need updating to current site stats."
+    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6 percent success: these need updating to match current site stats."
    }
   ]
  },
- "weekly": [],
- "weeklySub": "Week of Thu 19 Nov – Wed 25 Nov, vs the seven days before it",
+ "weekly": [
+  [
+   "Landing page test wraps on spend:",
+   "the $600 credit is used up at 108 raw paid clicks and $754.48 ex GST, with zero review bookings logged, so paid search stays paused under the standing rule."
+  ],
+  [
+   "Sessions ticked up:",
+   "last7 sessions reached 18 against 17 the week before (up 6%), with visitors rising from 14 to 17."
+  ],
+  [
+   "No new leads this week:",
+   "leads.last7 held at 0, and the 3 unverified enquiry candidates logged since the landing page test began still need grading; only one genuine enquiry (23 Sept, before the test, traffic unverified) exists to date."
+  ],
+  [
+   "Organic Search carried the week:",
+   "sessions rose from 5 to 9, the only trustworthy unpaid signal; LinkedIn picked up its first session since Chris resumed posting; AI Assistant traffic remained at zero (it undercounts, since untagged AI clicks can land in Direct, which held flat at 8)."
+  ],
+  [
+   "Search visibility held low:",
+   "269 impressions produced just 7 clicks through 24 Nov (Search Console lags, so this is not current), with the trade-focussed query 'ai automation for trades businesses' sitting at position 23 but still no clicks."
+  ]
+ ],
+ "weeklySub": "Week of Fri 20 Nov – Thu 26 Nov, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
