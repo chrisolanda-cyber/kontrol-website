@@ -1,72 +1,51 @@
 {
- "dateLine": "Friday 27 November 2026",
- "edition": "weekly",
+ "dateLine": "Saturday 28 November 2026",
+ "edition": "daily",
  "committee": {
-  "sub": "Morning brief · Friday 27 November 2026 · the committee’s read on the 7am numbers",
+  "sub": "Morning brief · Saturday 28 November 2026 · the committee’s read on the 7am numbers",
   "items": [
    {
     "who": "Marshall",
-    "text": "Landing page test spend sits at $754.48 ex GST against 108 raw paid clicks, and creditRemainingExGst is now $0: the $600 credit is fully used, with zero review bookings (review_cta_click 0) and no confirmed qualified enquiry, so the pause-unless rule applies and matches ads.campaignStatus PAUSED."
-   },
-   {
-    "who": "Vallaeys",
-    "text": "No external Ads account changes fired in the last 24 hours or 7 days (externalLast24h 0, externalLast7d 0), so test numbers are not contaminated by outside edits; impression share is 10% with rank lost 68.6% against budget lost 21.8%, but budget stays fixed until the test concludes."
+    "text": "Lifetime spend is $1,977.43 ex GST across 39 lifetime clicks, and since the landing page test began it has logged 108 raw paid clicks for $754.48, with the $600 promo credit now fully drawn (creditRemainingExGst $0). campaignStatus shows PAUSED, which matches the pre-agreed rule given review_cta_click still sits at 0, no qualified prospect has booked."
    },
    {
     "who": "Wiebe · Gardner",
-    "text": "Since the test began, ask_cta_click (11) and quick_question_click (5) are carrying all the engagement on /free-workflow-review.html, while review_cta_click sits at 0: the short question form is doing the work the deeper Cal.com booking step still is not."
+    "text": "Of the 108 raw clicks on /free-workflow-review.html, ask_cta_click fired 11 times and quick_question_click 5 times, but review_cta_click is still 0: the short question form is drawing interest while the deeper booking step gets none. The page has been frozen since click 25 under the test rule, so no further copy changes unless something breaks."
    },
    {
     "who": "Dib",
-    "text": "generate_lead has fired 3 times since the test started: each is only an unverified enquiry candidate that needs checking against the Formspree/Cal.com source email and grading against the real-business-plus-repeatable-admin-plus-named-system rule before it counts as qualified."
+    "text": "generate_lead has fired 3 times since the test started (eventsSinceStart.generate_lead=3), yet leads.last7 is 0, so none of those three landed in the past week. Each needs grading against the qualified rule (real business, repeatable admin process, named system) by checking its Formspree/Cal.com source email before it counts as a genuine enquiry."
+   },
+   {
+    "who": "Fishkin",
+    "text": "Organic Search held flat at 7 sessions (prior 7, google/organic now 7 vs 6), still the only unpaid signal worth trusting given Direct's 7 sessions likely include Chris and untracked referrers. Search Console data (through 2026-11-25, already two days behind yesterday) shows 257 impressions but only 5 clicks over 8 days, and the top page /simpro-xero-integration.html drew 76 impressions for 0 clicks at position 14: visibility without traction. AI Assistant sessions are flat at 0 this week."
    }
   ],
   "actions": [
    {
     "who": "Marshall",
-    "text": "Raw paid clicks have reached 108, well past the 75-click check point: confirm with the test log whether relevant clicks sit at 75 or more with zero qualified enquiries, which would trigger the red flag."
-   },
-   {
-    "who": "Marshall",
-    "text": "The $600 promo credit is fully spent (creditRemainingExGst $0, spend $754.48 ex GST): apply the standing rule and keep paid search paused unless cost per qualified enquiry is $480 or less and at least one qualified prospect has booked a review."
+    "text": "The $600 test credit has hit $0 remaining, so the decision point is due: paid search stays paused unless cost per qualified enquiry is $480 or less and at least one qualified prospect has booked a review. No qualified booking exists yet, so the current pause stands."
    },
    {
     "who": "Dib",
-    "text": "Three generate_lead events have fired since the test started: check each against its Formspree/Cal.com source email and grade it in the test log against the qualified-enquiry rule."
+    "text": "totalPaidClicks has reached 108, well past the 75-click checkpoint. Chris needs to check the test log: if relevant clicks are 75 or more with zero qualified enquiries, the red flag fires."
+   },
+   {
+    "who": "Dib",
+    "text": "Three generate_lead events have fired since the test started. Check each Formspree/Cal.com email for its source and grade it in the test log against the qualified rule."
    },
    {
     "who": "Gardner",
-    "text": "Logo and image assets for the currently serving ad groups are still outstanding."
+    "text": "Standing item: logo and image assets for the serving ad groups (Agency, Job Intake) are still outstanding."
    },
    {
     "who": "Wiebe",
-    "text": "RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6 percent success: these need updating to match current site stats."
+    "text": "Standing item: RSA descriptions on the non-Agency ads still claim 13.3 hours of admin per week and 99.6% success and need updating to current site stats."
    }
   ]
  },
- "weekly": [
-  [
-   "Landing page test wraps on spend:",
-   "the $600 credit is used up at 108 raw paid clicks and $754.48 ex GST, with zero review bookings logged, so paid search stays paused under the standing rule."
-  ],
-  [
-   "Sessions ticked up:",
-   "last7 sessions reached 18 against 17 the week before (up 6%), with visitors rising from 14 to 17."
-  ],
-  [
-   "No new leads this week:",
-   "leads.last7 held at 0, and the 3 unverified enquiry candidates logged since the landing page test began still need grading; only one genuine enquiry (23 Sept, before the test, traffic unverified) exists to date."
-  ],
-  [
-   "Organic Search carried the week:",
-   "sessions rose from 5 to 9, the only trustworthy unpaid signal; LinkedIn picked up its first session since Chris resumed posting; AI Assistant traffic remained at zero (it undercounts, since untagged AI clicks can land in Direct, which held flat at 8)."
-  ],
-  [
-   "Search visibility held low:",
-   "269 impressions produced just 7 clicks through 24 Nov (Search Console lags, so this is not current), with the trade-focussed query 'ai automation for trades businesses' sitting at position 23 but still no clicks."
-  ]
- ],
- "weeklySub": "Week of Fri 20 Nov – Thu 26 Nov, vs the seven days before it",
+ "weekly": [],
+ "weeklySub": "Week of Sat 21 Nov – Fri 27 Nov, vs the seven days before it",
  "adsChanges": {
   "status": "ok",
   "externalLast24h": 0,
